@@ -1,0 +1,7 @@
+INFO - 2024-01-20 20:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-20 20:27:41 --> Return value of App\Controllers\Kegiatan_Csr::index() must be of the type string, object returned
+in APPPATH/Controllers/Kegiatan_Csr.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->index()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

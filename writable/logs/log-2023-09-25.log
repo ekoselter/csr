@@ -1,0 +1,137 @@
+CRITICAL - 2023-09-25 02:37:05 --> Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 124.
+ 1 SYSTEMPATH\Encryption\Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(251): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\Perusahaan.php(40): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->perusahaan_save()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:38:05 --> Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 124.
+ 1 SYSTEMPATH\Encryption\Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(251): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\BaseController.php(60): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:39:44 --> Call to a member function encrypt() on null
+in APPPATH\Controllers\Perusahaan.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->perusahaan_save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:43:51 --> Undefined variable: encrypter
+in APPPATH\Controllers\Perusahaan.php on line 43.
+ 1 APPPATH\Controllers\Perusahaan.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: encrypter', 'D:\\laragon\\www\\csr\\app\\Controllers\\Perusahaan.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->perusahaan_save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:44:13 --> Undefined variable: encrypter
+in APPPATH\Controllers\Perusahaan.php on line 43.
+ 1 APPPATH\Controllers\Perusahaan.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: encrypter', 'D:\\laragon\\www\\csr\\app\\Controllers\\Perusahaan.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->perusahaan_save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:45:39 --> Undefined variable: encrypter
+in APPPATH\Controllers\Perusahaan.php on line 44.
+ 1 APPPATH\Controllers\Perusahaan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: encrypter', 'D:\\laragon\\www\\csr\\app\\Controllers\\Perusahaan.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->perusahaan_save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:47:57 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Controllers\Perusahaan.php on line 45.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\csr\\app\\Controllers\\Perusahaan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Perusahaan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Perusahaan')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Perusahaan')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Perusahaan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:52:22 --> Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 124.
+ 1 SYSTEMPATH\Encryption\Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(251): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\BaseController.php(60): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(892): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:55:56 --> Use of undefined constant SODIUM_CRYPTO_SECRETBOX_NONCEBYTES - assumed 'SODIUM_CRYPTO_SECRETBOX_NONCEBYTES' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\Perusahaan.php on line 42.
+ 1 APPPATH\Controllers\Perusahaan.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant SODIUM_CRYPTO_SECRETBOX_NONCEBYTES - assumed \'SODIUM_CRYPTO_SECRETBOX_NONCEBYTES\' (this will throw an Error in a future version of PHP)', 'D:\\laragon\\www\\csr\\app\\Controllers\\Perusahaan.php', 42, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->perusahaan_save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 02:59:46 --> Undefined variable: data
+in APPPATH\Controllers\Perusahaan.php on line 42.
+ 1 APPPATH\Controllers\Perusahaan.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'D:\\laragon\\www\\csr\\app\\Controllers\\Perusahaan.php', 42, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->perusahaan_save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 03:06:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getInsertID()
+in APPPATH\Controllers\Perusahaan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->perusahaan_save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 03:08:01 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Controllers\Perusahaan.php on line 55.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\csr\\app\\Controllers\\Perusahaan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Perusahaan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Perusahaan')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Perusahaan')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Perusahaan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 03:08:11 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getInsertID()
+in APPPATH\Controllers\Perusahaan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->perusahaan_save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 03:11:55 --> Call to a member function getInsertID() on bool
+in APPPATH\Controllers\Perusahaan.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->perusahaan_save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 03:13:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert_id()
+in APPPATH\Controllers\Perusahaan.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->perusahaan_save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 07:36:59 --> Undefined variable: ruang_lingkup
+in APPPATH\Views\admin\kegiatan_csr\kegiatan_csr_edit.php on line 37.
+ 1 APPPATH\Views\admin\kegiatan_csr\kegiatan_csr_edit.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ruang_lingkup', 'D:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\kegiatan_csr_edit.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\kegiatan_csr_edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/kegiatan_csr_edit', [], true)
+ 5 APPPATH\Controllers\Perusahaan.php(55): view('admin/kegiatan_csr/kegiatan_csr_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 07:44:20 --> Undefined index: username
+in APPPATH\Views\admin\perusahaan\perusahaan_edit.php on line 50.
+ 1 APPPATH\Views\admin\perusahaan\perusahaan_edit.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: username', 'D:\\laragon\\www\\csr\\app\\Views\\admin\\perusahaan\\perusahaan_edit.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\csr\\app\\Views\\admin\\perusahaan\\perusahaan_edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/perusahaan/perusahaan_edit', [], true)
+ 5 APPPATH\Controllers\Perusahaan.php(55): view('admin/perusahaan/perusahaan_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Perusahaan->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perusahaan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

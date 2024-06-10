@@ -1,0 +1,11 @@
+CRITICAL - 2023-09-19 03:39:42 --> Undefined variable: edit
+in APPPATH\Views\admin\kegiatan_csr_edit.php on line 28.
+ 1 APPPATH\Views\admin\kegiatan_csr_edit.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: edit', 'D:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr_edit.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr_edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr_edit', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(76): view('admin/kegiatan_csr_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

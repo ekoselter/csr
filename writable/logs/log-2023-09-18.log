@@ -1,0 +1,106 @@
+CRITICAL - 2023-09-18 02:10:49 --> Return value of App\Controllers\Kegiatan_Csr::kegiatan_save() must be of the type string, none returned
+in APPPATH\Controllers\Kegiatan_Csr.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 02:12:33 --> Return value of App\Controllers\Kegiatan_Csr::kegiatan_save() must be of the type string, object returned
+in APPPATH\Controllers\Kegiatan_Csr.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 02:13:10 --> Return value of App\Controllers\Kegiatan_Csr::kegiatan_save() must be of the type string, object returned
+in APPPATH\Controllers\Kegiatan_Csr.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 02:14:26 --> Return value of App\Controllers\Kegiatan_Csr::kegiatan_save() must be of the type string, object returned
+in APPPATH\Controllers\Kegiatan_Csr.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 02:16:23 --> Return value of App\Controllers\Kegiatan_Csr::kegiatan_save() must be of the type string, object returned
+in APPPATH\Controllers\Kegiatan_Csr.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 02:16:54 --> Return value of App\Controllers\Kegiatan_Csr::kegiatan_save() must be of the type string, object returned
+in APPPATH\Controllers\Kegiatan_Csr.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 02:18:53 --> Return value of App\Controllers\Kegiatan_Csr::kegiatan_save() must be of the type string, object returned
+in APPPATH\Controllers\Kegiatan_Csr.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-18 03:21:38 --> mysqli_sql_exception: Unknown column 'kalurahan.kapanewon' in 'field list' in D:\laragon\www\csr\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\laragon\www\csr\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ruang_l...', 0)
+#1 D:\laragon\www\csr\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ruang_l...')
+#2 D:\laragon\www\csr\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ruang_l...')
+#3 D:\laragon\www\csr\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ruang_l...', Array, false)
+#4 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->index()
+#6 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#7 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-18 03:21:38 --> Unknown column 'kalurahan.kapanewon' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ruang_lingkup`.`ket` as `ruang_lingkup`, `urusan_bidang`.`ket` as `urusan_bidang`, `kegiatan_csr`.`program_kegiatan`, `kegiatan_csr`.`permasalahan`, `kegiatan_csr`.`alamat`, `kalurahan`.`kapanewon`, `kalurahan`.`kalurahan`, `kegiatan_csr`.`biaya`, `kegiatan_csr`.`sumber_usulan`
+FROM `kegiatan_csr`
+JOIN `ruang_lingkup` ON `kegiatan_csr`.`ruang_lingkup`=`ruang_lingkup`.`id`
+JOIN `urusan_bidang` ON `kegiatan_csr`.`urusan_bidang`=`urusan_bidang`.`id`
+JOIN `kalurahan` ON `kegiatan_csr`.`kalurahan`=`kalurahan`.`id_kalurahan`', [], false)
+ 2 APPPATH\Controllers\Kegiatan_Csr.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:35:13 --> Undefined index: id
+in APPPATH\Views\admin\kegiatan_csr.php on line 175.
+ 1 APPPATH\Views\admin\kegiatan_csr.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'D:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr.php', 175, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(31): view('admin/kegiatan_csr', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 07:35:40 --> Undefined variable: d
+in APPPATH\Views\admin\kegiatan_csr.php on line 176.
+ 1 APPPATH\Views\admin\kegiatan_csr.php(176): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: d', 'D:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr.php', 176, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(31): view('admin/kegiatan_csr', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:16:58 --> Invalid argument supplied for foreach()
+in APPPATH\Views\admin\kegiatan_csr_edit.php on line 49.
+ 1 APPPATH\Views\admin\kegiatan_csr_edit.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'D:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr_edit.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr_edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr_edit', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(63): view('admin/kegiatan_csr_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-18 13:18:04 --> Undefined variable: kegiatan
+in APPPATH\Controllers\Kegiatan_Csr.php on line 72.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kegiatan', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 72, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

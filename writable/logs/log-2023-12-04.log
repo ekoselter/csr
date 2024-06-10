@@ -1,0 +1,347 @@
+INFO - 2023-12-04 00:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 00:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 00:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 02:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 02:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 02:43:24 --> Call to a member function getClientMimeType() on null
+in APPPATH\Controllers\Kegiatan_Csr.php on line 170.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-04 02:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 02:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 02:56:47 --> Call to a member function getClientMimeType() on null
+in APPPATH\Controllers\Kegiatan_Csr.php on line 170.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-04 02:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 02:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 02:57:50 --> Undefined variable: file
+in APPPATH\Controllers\Kegiatan_Csr.php on line 170.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(170): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 170, [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-04 03:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 03:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 03:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 03:07:23 --> Argument 2 passed to PhpOffice\PhpSpreadsheet\IOFactory::load() must be of the type int, array given, called in D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php on line 176
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 104.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(176): PhpOffice\PhpSpreadsheet\IOFactory::load('C:\\Users\\user\\AppData\\Local\\Temp\\php98F1.tmp', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 03:48:53 --> Undefined offset: 1
+in APPPATH\Controllers\Kegiatan_Csr.php on line 179.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(179): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 179, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 03:49:02 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+【Previous Exception】
+ErrorException
+Undefined offset: 1
+#0 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(179): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\laragon\\www\\...', 179, Array)
+#1 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+#2 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#3 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 03:49:48 --> Undefined offset: 0
+in APPPATH\Controllers\Kegiatan_Csr.php on line 179.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(179): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 179, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 03:49:56 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+【Previous Exception】
+ErrorException
+Undefined offset: 0
+#0 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(179): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\laragon\\www\\...', 179, Array)
+#1 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+#2 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#3 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-04 03:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 03:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 03:50:20 --> Undefined offset: 0
+in APPPATH\Controllers\Kegiatan_Csr.php on line 179.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(179): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 179, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 03:50:29 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 264245248 bytes)
+【Previous Exception】
+ErrorException
+Undefined offset: 0
+#0 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(179): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\laragon\\www\\...', 179, Array)
+#1 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+#2 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#3 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-04 04:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 04:24:29 --> Argument 1 passed to PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::rangeToArray() must be of the type string, null given, called in D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php on line 179
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php on line 3072.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(179): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->rangeToArray(null, null, null, true, true, true, 3)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 04:24:47 --> Argument 1 passed to PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::rangeToArray() must be of the type string, null given, called in D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php on line 179
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php on line 3072.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(179): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->rangeToArray(null, true, true, true, 3)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-04 06:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 06:33:40 --> You tried to set a sheet active by the out of bounds index: 2. The actual number of sheets is 2.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 822.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(173): PhpOffice\PhpSpreadsheet\Spreadsheet->setActiveSheetIndex(2)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-04 06:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 06:56:52 --> Undefined variable: program_kegiatan
+in APPPATH\Controllers\Kegiatan_Csr.php on line 185.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: program_kegiatan', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 185, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 06:57:02 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+【Previous Exception】
+ErrorException
+Undefined variable: program_kegiatan
+#0 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\laragon\\www\\...', 185, Array)
+#1 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+#2 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#3 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-04 07:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 07:46:55 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Kegiatan_Csr.php on line 198.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(198): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 198, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 07:47:05 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+【Previous Exception】
+ErrorException
+Trying to access array offset on value of type null
+#0 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(198): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\laragon\\www\\...', 198, Array)
+#1 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+#2 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#3 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 07:48:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Kegiatan_Csr.php on line 199.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(199): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 199, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 07:48:38 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+【Previous Exception】
+ErrorException
+Trying to access array offset on value of type null
+#0 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(199): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\laragon\\www\\...', 199, Array)
+#1 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+#2 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#3 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 07:49:18 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH\Controllers\Kegiatan_Csr.php on line 195.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kegiatan_Csr')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kegiatan_Csr')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Kegiatan_Csr')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Kegiatan_Csr', true)
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 07:49:30 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Kegiatan_Csr.php on line 193.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 193, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 07:49:39 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 264245248 bytes)
+【Previous Exception】
+ErrorException
+Trying to access array offset on value of type null
+#0 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\laragon\\www\\...', 193, Array)
+#1 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+#2 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#3 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 07:50:08 --> syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Controllers\Kegiatan_Csr.php on line 193.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kegiatan_Csr')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kegiatan_Csr')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Kegiatan_Csr')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Kegiatan_Csr', true)
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 07:51:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Kegiatan_Csr.php on line 193.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 193, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 07:51:15 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+【Previous Exception】
+ErrorException
+Trying to access array offset on value of type null
+#0 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\laragon\\www\\...', 193, Array)
+#1 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+#2 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#3 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 07:51:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Kegiatan_Csr.php on line 193.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 193, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 07:51:45 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+【Previous Exception】
+ErrorException
+Trying to access array offset on value of type null
+#0 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\laragon\\www\\...', 193, Array)
+#1 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+#2 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#3 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 07:52:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Kegiatan_Csr.php on line 193.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 193, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 07:52:29 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+【Previous Exception】
+ErrorException
+Trying to access array offset on value of type null
+#0 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\laragon\\www\\...', 193, Array)
+#1 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+#2 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#3 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 07:54:30 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Kegiatan_Csr.php on line 192.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(192): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 192, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 07:54:40 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+【Previous Exception】
+ErrorException
+Trying to access array offset on value of type null
+#0 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(192): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\laragon\\www\\...', 192, Array)
+#1 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+#2 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#3 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 07:56:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Kegiatan_Csr.php on line 192.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(192): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'D:\\laragon\\www\\csr\\app\\Controllers\\Kegiatan_Csr.php', 192, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 07:56:42 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+【Previous Exception】
+ErrorException
+Trying to access array offset on value of type null
+#0 D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(192): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\laragon\\www\\...', 192, Array)
+#1 D:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+#2 D:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#3 D:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#5 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 07:58:26 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php on line 190
+in SYSTEMPATH\Database\BaseBuilder.php on line 983.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(190): CodeIgniter\Database\BaseBuilder->like('ket', null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-04 08:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 08:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 08:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 08:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 08:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 08:32:52 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php on line 190
+in SYSTEMPATH\Database\BaseBuilder.php on line 983.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(190): CodeIgniter\Database\BaseBuilder->like('ket', null, 'after')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 08:33:47 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in D:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php on line 190
+in SYSTEMPATH\Database\BaseBuilder.php on line 983.
+ 1 APPPATH\Controllers\Kegiatan_Csr.php(190): CodeIgniter\Database\BaseBuilder->like('ket', null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_upload()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
