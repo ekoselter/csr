@@ -80,7 +80,6 @@
                                         <!-- <td><?= $k['ruang_lingkup']; ?></td>
                                         <td><?= $k['urusan_bidang']; ?></td> -->
                                         <td><?= $k['program_kegiatan']; ?></td>
-                                        <!-- <td><?= $k['permasalahan']; ?></td> -->
                                         <td><?= $k['alamat']; ?></td>
                                         <td><?= $k['kapanewon']; ?></td>
                                         <td><?= $k['kalurahan']; ?></td>
@@ -89,13 +88,8 @@
                                                 <?= number_format($k['biaya'], 0, ',', '.'); ?>
                                             <?php } ?>
                                         </td>
-                                        <td>
-                                            <?php if (!empty($k['biaya2'])) { ?>
-                                                <?= number_format($k['biaya2'], 0, ',', '.'); ?>
-                                            <?php } ?>
-                                        </td>
-                                        <td><?= $k['keterangan']; ?></td>
-                                        <td><?= strtoupper($k['sumber_usulan']); ?></td>
+                                        <td><?= $k['volume']; ?></td>
+                                        <td><?= strtoupper($k['satuan']); ?></td>
                                         <td><?= $k['opd']; ?></td>
                                         <td>
                                             <?php if (!empty($k['nominal'])) { ?>

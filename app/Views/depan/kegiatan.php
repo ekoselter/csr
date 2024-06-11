@@ -61,7 +61,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <div class="single-select-inner style-bg-border">
                             <span class="label">Sumber Usulan</span>
                             <select name="sumber_usulan" id="sumber_usulan">
@@ -70,7 +70,7 @@
                                 <option value="proposal">PROPOSAL</option>
                             </select>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-12 text-center mb-4">
                         <button type="button" class="btn btn-base" id="search">Pencarian</button>
                     </div>
@@ -107,7 +107,7 @@
                                         <td><?= $k['program_kegiatan']; ?></td>
                                         <td><?= $k['kapanewon']; ?></td>
                                         <td><?= $k['kalurahan']; ?></td>
-                                        <td><?= strtoupper($k['sumber_usulan']); ?></td>
+                                        <td><?= strtoupper($k['satuan']); ?></td>
                                     </tr>
                                 <?php endforeach; ?>
                             </tbody>

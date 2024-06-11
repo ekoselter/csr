@@ -93,11 +93,6 @@
                                                             </div>
 
                                                             <div class="col-md-12 mt-3">
-                                                                <h6 class="input-title mt-0">Permasalahan</h6>
-                                                                <textarea class="form-control" name="permasalahan" id="" cols="30" rows="3"></textarea>
-                                                            </div>
-
-                                                            <div class="col-md-12 mt-3">
                                                                 <h6 class="input-title mt-0">Alamat</h6>
                                                                 <textarea class="form-control" name="alamat" id="" cols="30" rows="2"></textarea>
                                                             </div>
@@ -121,28 +116,20 @@
                                                                 </select>
                                                             </div>
 
-                                                            <div class="col-md-4 mt-3">
-                                                                <h6 class="input-title mt-0">Sumber Usulan</h6>
-                                                                <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;" name="sumber_usulan" required>
-                                                                    <option value="">Pilih Sumber Usulan</option>
-                                                                    <option value="musrembang">MUSREMBANG</option>
-                                                                    <option value="proposal">PROPOSAL</option>
-                                                                </select>
+                                                            <div class="col-md-6">
+                                                                <h6 class="input-title mt-0">Satuan</h6>
+                                                                <input type="text" id="satuan" class="form-control" name="satuan">
                                                             </div>
 
                                                             <div class="col-md-6">
-                                                                <h6 class="input-title mt-0">Biaya Perkiraan (start range)</h6>
+                                                                <h6 class="input-title mt-0">Perkiraan Biaya</h6>
                                                                 <input type="text" id="biaya" class="form-control" name="biaya" oninput="updateRupiahInput()">
                                                             </div>
-                                                            <div class="col-md-6">
-                                                                <h6 class="input-title mt-0">Biaya Perkiraan (end range)</h6>
-                                                                <input type="text" id="biaya2" class="form-control" name="biaya2" oninput="updateRupiahInput2()">
+                                                            <div class="col-md-6 mt-3">
+                                                                <h6 class="input-title mt-0">Volume</h6>
+                                                                <input type="text" id="volume" class="form-control" name="volume">
                                                             </div>
 
-                                                            <div class="col-md-6 mt-3">
-                                                                <h6 class="input-title mt-0">Keterangan</h6>
-                                                                <textarea class="form-control" name="keterangan" id="" cols="30" rows="3"></textarea>
-                                                            </div>
                                                             <div class="col-md-6 mt-3">
                                                                 <h6 class="input-title mt-0">OPD</h6>
                                                                 <textarea class="form-control" name="opd" id="" cols="30" rows="3"></textarea>
@@ -229,14 +216,12 @@
                                     <th>Ruang Lingkup TSP</th>
                                     <th>Urusan / Bidang</th>
                                     <th>Program / Kegiatan</th>
-                                    <th>Permasalahan</th>
                                     <th>Alamat</th>
                                     <th>Kapanewon</th>
                                     <th>Kalurahan</th>
-                                    <th>Biaya (star range)</th>
-                                    <th>Biaya (end range)</th>
-                                    <th>Keterangan</th>
-                                    <th>Sumber Usulan</th>
+                                    <th>Perkiraan Biaya</th>
+                                    <th>Volume</th>
+                                    <th>Satuan</th>
                                     <th>OPD</th>
                                     <th>Aksi</th>
                                 </tr>
@@ -251,7 +236,6 @@
                                         <td><?= $k['ruang_lingkup']; ?></td>
                                         <td><?= $k['urusan_bidang']; ?></td>
                                         <td><?= $k['program_kegiatan']; ?></td>
-                                        <td><?= $k['permasalahan']; ?></td>
                                         <td><?= $k['alamat']; ?></td>
                                         <td><?= $k['kapanewon']; ?></td>
                                         <td><?= $k['kalurahan']; ?></td>
@@ -260,13 +244,8 @@
                                                 <?= number_format($k['biaya'], 0, ',', '.'); ?>
                                             <?php } ?>
                                         </td>
-                                        <td>
-                                            <?php if (!empty($k['biaya2'])) { ?>
-                                                <?= number_format($k['biaya2'], 0, ',', '.'); ?>
-                                            <?php } ?>
-                                        </td>
-                                        <td><?= $k['keterangan']; ?></td>
-                                        <td><?= strtoupper($k['sumber_usulan']); ?></td>
+                                        <td><?= $k['volume']; ?></td>
+                                        <td><?= strtoupper($k['satuan']); ?></td>
                                         <td><?= $k['opd']; ?></td>
                                         <td>
                                             <?php if (session('level') > 0) { ?>

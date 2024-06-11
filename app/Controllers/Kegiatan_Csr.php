@@ -14,7 +14,7 @@ class Kegiatan_Csr extends BaseController
         }
 
         $kegiatan = $this->db->table('kegiatan_csr')
-            ->select('kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.permasalahan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.biaya2, kegiatan_csr.keterangan, kegiatan_csr.sumber_usulan, kegiatan_csr.opd')
+            ->select('kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd')
             ->join('ruang_lingkup', 'kegiatan_csr.ruang_lingkup=ruang_lingkup.id')
             ->join('urusan_bidang', 'kegiatan_csr.urusan_bidang=urusan_bidang.id')
             ->join('kalurahan', 'kegiatan_csr.kalurahan=kalurahan.id_kalurahan')
@@ -48,21 +48,18 @@ class Kegiatan_Csr extends BaseController
     {
         // Hapus tanda titik
         $biaya = str_replace('.', '', $this->request->getVar('biaya'));
-        $biaya2 = str_replace('.', '', $this->request->getVar('biaya2'));
 
         $this->db->table('kegiatan_csr')
             ->set('tahun', $this->request->getVar('tahun'))
             ->set('ruang_lingkup', $this->request->getVar('ruang_lingkup'))
             ->set('urusan_bidang', $this->request->getVar('urusan_bidang'))
             ->set('program_kegiatan', $this->request->getVar('program_kegiatan'))
-            ->set('permasalahan', $this->request->getVar('permasalahan'))
             ->set('alamat', $this->request->getVar('alamat'))
             ->set('kapanewon', $this->request->getVar('kapanewon'))
             ->set('kalurahan', $this->request->getVar('kalurahan'))
             ->set('biaya', $biaya)
-            ->set('biaya2', $biaya2)
-            ->set('keterangan', $this->request->getVar('keterangan'))
-            ->set('sumber_usulan', $this->request->getVar('sumber_usulan'))
+            ->set('volume', $this->request->getVar('volume'))
+            ->set('satuan', $this->request->getVar('satuan'))
             ->set('opd', $this->request->getVar('opd'))
             ->insert();
 
@@ -104,14 +101,12 @@ class Kegiatan_Csr extends BaseController
             ->set('ruang_lingkup', $this->request->getVar('ruang_lingkup'))
             ->set('urusan_bidang', $this->request->getVar('urusan_bidang'))
             ->set('program_kegiatan', $this->request->getVar('program_kegiatan'))
-            ->set('permasalahan', $this->request->getVar('permasalahan'))
             ->set('alamat', $this->request->getVar('alamat'))
             ->set('kapanewon', $this->request->getVar('kapanewon'))
             ->set('kalurahan', $this->request->getVar('kalurahan'))
             ->set('biaya', $this->request->getVar('biaya'))
-            ->set('biaya2', $this->request->getVar('biaya2'))
-            ->set('keterangan', $this->request->getVar('keterangan'))
-            ->set('sumber_usulan', $this->request->getVar('sumber_usulan'))
+            ->set('volume', $this->request->getVar('volume'))
+            ->set('satuan', $this->request->getVar('satuan'))
             ->set('opd', $this->request->getVar('opd'))
             ->where('id', $this->request->getVar('id'))
             ->update();
@@ -141,7 +136,7 @@ class Kegiatan_Csr extends BaseController
     public function my_kegiatan_csr()
     {
         $kegiatan = $this->db->table('detail_kegiatan_csr')
-            ->select('detail_kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.permasalahan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.biaya2, kegiatan_csr.keterangan, kegiatan_csr.sumber_usulan, kegiatan_csr.opd, detail_kegiatan_csr.nominal, detail_kegiatan_csr.file')
+            ->select('detail_kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, detail_kegiatan_csr.nominal, detail_kegiatan_csr.file')
             ->where('id_user', session('id_user'))
             ->join('kegiatan_csr', 'detail_kegiatan_csr.id_kegiatan_csr=kegiatan_csr.id')
             ->join('ruang_lingkup', 'kegiatan_csr.ruang_lingkup=ruang_lingkup.id')
@@ -198,15 +193,13 @@ class Kegiatan_Csr extends BaseController
                 $ruang_lingkup = $row[2];
                 $urusan_bidang = $row[3];
                 $program_kegiatan = $row[4];
-                $permasalahan = $row[5];
-                $alamat = $row[6];
-                $kalurahan = $row[7];
-                $kapanewon = $row[8];
-                $harga = $row[9];
-                $harga2 = $row[10];
-                $keterangan = $row[11];
-                $sumber_usulan = $row[12];
-                $opd = $row[13];
+                $alamat = $row[5];
+                $kalurahan = $row[6];
+                $kapanewon = $row[7];
+                $harga = $row[8];
+                $volume = $row[9];
+                $satuan = $row[10];
+                $opd = $row[11];
 
                 //ruang lingkup
                 if (empty($ruang_lingkup)) {
@@ -265,16 +258,14 @@ class Kegiatan_Csr extends BaseController
                     'id_urusan' => $id_urusan,
                     'urusan_bidang' => $urusan_bidang,
                     'program_kegiatan' => $program_kegiatan,
-                    'permasalahan' => $permasalahan,
                     'alamat' => $alamat,
                     'id_kalurahan' => $id_kalurahan,
                     'kalurahan' => $kalurahan,
                     'id_kapanewon' => $id_kapanewon,
                     'kapanewon' => $kapanewon,
                     'biaya' => str_replace(array(".", ","), '', $harga),
-                    'biaya2' => str_replace(array(".", ","), '', $harga2),
-                    'keterangan' => $keterangan,
-                    'sumber_usulan' => $sumber_usulan,
+                    'volume' => str_replace(array(".", ","), '', $volume),
+                    'satuan' => $satuan,
                     'opd' => $opd,
                 ];
 
@@ -311,14 +302,12 @@ class Kegiatan_Csr extends BaseController
                 'ruang_lingkup' => $k['id_ruang'],
                 'urusan_bidang' => $k['id_urusan'],
                 'program_kegiatan' => $k['program_kegiatan'],
-                'permasalahan' => $k['permasalahan'],
                 'alamat' => $k['alamat'],
                 'kapanewon' => $k['id_kapanewon'],
                 'kalurahan' => $k['id_kalurahan'],
                 'biaya' => $k['biaya'],
-                'biaya2' => $k['biaya2'],
-                'keterangan' => $k['keterangan'],
-                'sumber_usulan' => $k['sumber_usulan'],
+                'volume' => $k['volume'],
+                'satuan' => $k['satuan'],
                 'opd' => $k['opd'],
             ];
 
@@ -377,16 +366,14 @@ class Kegiatan_Csr extends BaseController
             ->set('id_urusan', $this->request->getVar('urusan_bidang'))
             ->set('urusan_bidang', $urusan['ket'])
             ->set('program_kegiatan', $this->request->getVar('program_kegiatan'))
-            ->set('permasalahan', $this->request->getVar('permasalahan'))
             ->set('alamat', $this->request->getVar('alamat'))
             ->set('id_kapanewon', $this->request->getVar('kapanewon'))
             ->set('kapanewon', $kalurahan['nm_kapanewon'])
             ->set('id_kalurahan', $this->request->getVar('kalurahan'))
             ->set('kalurahan', $kalurahan['nm_kalurahan'])
             ->set('biaya', $this->request->getVar('biaya'))
-            ->set('biaya2', $this->request->getVar('biaya2'))
-            ->set('keterangan', $this->request->getVar('keterangan'))
-            ->set('sumber_usulan', $this->request->getVar('sumber_usulan'))
+            ->set('volume', $this->request->getVar('volume'))
+            ->set('satuan', $this->request->getVar('satuan'))
             ->set('opd', $this->request->getVar('opd'))
             ->where('id', $this->request->getVar('id'))
             ->update();
@@ -432,7 +419,7 @@ class Kegiatan_Csr extends BaseController
     public function print_allkegiatan()
     {
         $kegiatan = $this->db->table('kegiatan_csr')
-            ->select('kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.permasalahan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.biaya2, kegiatan_csr.keterangan, kegiatan_csr.sumber_usulan, kegiatan_csr.opd')
+            ->select('kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd')
             ->join('ruang_lingkup', 'kegiatan_csr.ruang_lingkup=ruang_lingkup.id')
             ->join('urusan_bidang', 'kegiatan_csr.urusan_bidang=urusan_bidang.id')
             ->join('kalurahan', 'kegiatan_csr.kalurahan=kalurahan.id_kalurahan')
@@ -446,7 +433,7 @@ class Kegiatan_Csr extends BaseController
     public function print_mykegiatan()
     {
         $kegiatan = $this->db->table('detail_kegiatan_csr')
-            ->select('detail_kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.permasalahan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.biaya2, kegiatan_csr.keterangan, kegiatan_csr.sumber_usulan, kegiatan_csr.opd, detail_kegiatan_csr.nominal, detail_kegiatan_csr.file')
+            ->select('detail_kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, detail_kegiatan_csr.nominal, detail_kegiatan_csr.file')
             ->where('id_user', session('id_user'))
             ->join('kegiatan_csr', 'detail_kegiatan_csr.id_kegiatan_csr=kegiatan_csr.id')
             ->join('ruang_lingkup', 'kegiatan_csr.ruang_lingkup=ruang_lingkup.id')
@@ -466,7 +453,7 @@ class Kegiatan_Csr extends BaseController
             return redirect()->to('/login');
         }
         $laporan_kegiatan = $this->db->table('detail_kegiatan_csr')
-            ->select('detail_kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.permasalahan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.biaya2, kegiatan_csr.keterangan, kegiatan_csr.sumber_usulan, kegiatan_csr.opd, detail_kegiatan_csr.nominal, detail_kegiatan_csr.file')
+            ->select('detail_kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, detail_kegiatan_csr.nominal, detail_kegiatan_csr.file')
             ->join('user', 'detail_kegiatan_csr.id_user=user.id')
             ->join('perusahaan', 'user.id_user=user.id')
             ->join('kegiatan_csr', 'detail_kegiatan_csr.id_kegiatan_csr=kegiatan_csr.id')
@@ -476,7 +463,7 @@ class Kegiatan_Csr extends BaseController
             ->get()->getResultArray();
 
         $kegiatan = $this->db->table('kegiatan_csr')
-            ->select('kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.permasalahan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.biaya2, kegiatan_csr.keterangan, kegiatan_csr.sumber_usulan, kegiatan_csr.opd')
+            ->select('kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd')
             ->join('ruang_lingkup', 'kegiatan_csr.ruang_lingkup=ruang_lingkup.id')
             ->join('urusan_bidang', 'kegiatan_csr.urusan_bidang=urusan_bidang.id')
             ->join('kalurahan', 'kegiatan_csr.kalurahan=kalurahan.id_kalurahan')
