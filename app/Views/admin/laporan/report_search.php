@@ -18,6 +18,7 @@
                             <th>Kegiatan</th>
                             <th>Waktu Pelaksanaan</th>
                             <th>Lokasi</th>
+                            <th>Laporan</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,6 +37,13 @@
                                     <br>
                                     <b>Kapanewon:</b> <?= $r['kapanewon']; ?>
                                     <br>
+                                </td>
+                                <td>
+                                    <a href="<?= base_url(); ?>preview_laporan/<?= $r['file'] ?>" target="_blank">
+                                            <button type="button" class="btn btn-danger waves-effect waves-light">
+                                                <i class="fa fa-eye"></i> Lihat Laporan
+                                            </button>
+                                    </a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

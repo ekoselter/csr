@@ -231,3 +231,317 @@ INFO - 2024-06-12 11:39:28 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-06-12 11:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-06-12 11:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-06-12 11:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 13:23:48 --> Undefined index: file
+in APPPATH\Views\admin\laporan\index_admin.php on line 190.
+ 1 APPPATH\Views\admin\laporan\index_admin.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\index_admin.php', 190, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\index_admin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/index_admin', [], true)
+ 5 APPPATH\Controllers\Laporan.php(41): view('admin/laporan/index_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-12 13:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 13:27:02 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:05 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:06 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:07 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:07 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:07 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:07 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:43 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:48 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:49 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:49 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:49 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:49 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:27:49 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-12 13:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 13:28:01 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:28:06 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:28:06 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:28:07 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:28:07 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:28:07 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:28:07 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:28:08 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-12 13:28:08 --> Undefined index: file
+in APPPATH\Views\admin\laporan\report_search.php on line 42.
+ 1 APPPATH\Views\admin\laporan\report_search.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: file', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\report_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/report_search', [], true)
+ 5 APPPATH\Controllers\Laporan.php(126): view('admin/laporan/report_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->report_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-12 13:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 13:59:07 --> Undefined variable: volume
+in APPPATH\Views\admin\kegiatan_csr\kegiatan_csr.php on line 286.
+ 1 APPPATH\Views\admin\kegiatan_csr\kegiatan_csr.php(286): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: volume', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\kegiatan_csr.php', 286, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\kegiatan_csr.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/kegiatan_csr', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(38): view('admin/kegiatan_csr/kegiatan_csr', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-12 14:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 14:01:32 --> Undefined variable: satuan
+in APPPATH\Views\admin\kegiatan_csr\kegiatan_csr.php on line 290.
+ 1 APPPATH\Views\admin\kegiatan_csr\kegiatan_csr.php(290): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: satuan', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\kegiatan_csr.php', 290, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\kegiatan_csr.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/kegiatan_csr', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(38): view('admin/kegiatan_csr/kegiatan_csr', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-12 14:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

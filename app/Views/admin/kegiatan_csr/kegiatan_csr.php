@@ -278,10 +278,18 @@
                                                                         ?>
                                                                         <input type="hidden" name="id_kegiatan_csr" value="<?= $k['id'] ?>">
                                                                         <div class="col-md-6">
-                                                                            <h6 class="input-title mt-0">Total Seluruh Biaya</h6>
+                                                                            <h6 class="input-title mt-0">Perkiraan Biaya</h6>
                                                                             <input type="text" class="form-control" value="<?= $biaya; ?>" readonly>
                                                                         </div>
                                                                         <div class="col-md-6">
+                                                                            <h6 class="input-title mt-0">Volume</h6>
+                                                                            <input type="text" class="form-control" value="<?php echo $k['volume'] ?>" readonly>
+                                                                        </div>
+                                                                        <div class="col-md-6 mt-3">
+                                                                            <h6 class="input-title mt-0">Satuan</h6>
+                                                                            <input type="text" class="form-control" value="<?php echo $k['satuan'] ?>" readonly>
+                                                                        </div>
+                                                                        <div class="col-md-6 mt-3">
                                                                             <h6 class="input-title mt-0">Biaya yang akan di salurkan</h6>
                                                                             <input type="text" id="nominal<?php echo $k['id'] ?>" class="form-control" name="nominal" oninput="updatenominal<?php echo $k['id'] ?>()">
                                                                         </div>
