@@ -14,6 +14,7 @@ $routes->get('/kegiatan', 'Depan::kegiatan');
 $routes->post('/depan/kegiatan_search', 'Depan::kegiatan_search');
 $routes->get('/report', 'Depan::report');
 $routes->post('/depan/report_search', 'Depan::report_search');
+$routes->post('/laporan/report_search', 'Laporan::report_search');
 $routes->get('/publikasi_csr', 'Depan::publikasi_csr');
 $routes->get('/kontak_kami', 'Depan::kontak_kami');
 
@@ -54,3 +55,4 @@ $routes->get('/print_allkegiatan', 'Kegiatan_Csr::print_allkegiatan');
 $routes->get('/print_mykegiatan', 'Kegiatan_Csr::print_mykegiatan');
 $routes->get('/laporan_kegiatan', 'Laporan::index');
 $routes->get('/laporan_print', 'Laporan::laporan_print');
+$routes->get('/preview_laporan/(:any)', 'Kegiatan_Csr::preview_laporan/$1');

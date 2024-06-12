@@ -75,6 +75,16 @@
                                                 <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-animation="bounce" data-target=".uploadLap<?= $k['id'] ?>">
                                                     <i class="fa fa-upload"></i> Upload Laporan
                                                 </button>
+                                            <?php } else { ?>
+                                                <!-- <button type="button" class="btn btn-danger waves-effect waves-light" data-toggle="modal" data-animation="bounce" data-target=".lihatLap<?= $k['id'] ?>">
+                                                    <i class="fa fa-eye"></i> Lihat Laporan
+                                                </button> -->
+
+                                                <a href="<?= base_url(); ?>preview_laporan/<?= $k['file'] ?>" target="_blank">
+                                                    <button type="button" class="btn btn-danger waves-effect waves-light">
+                                                        <i class="fa fa-eye"></i> Lihat Laporan
+                                                    </button>
+                                                </a>
                                             <?php } ?>
                                         </td>
                                         <!-- <td><?= $k['ruang_lingkup']; ?></td>
@@ -98,6 +108,7 @@
                                         </td>
 
                                     </tr>
+                                    <!-- modal upload -->
                                     <div class="modal fade uploadLap<?= $k['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg">
                                             <div class="modal-content">
@@ -110,6 +121,62 @@
                                                         <div class="col-lg-12">
                                                             <form class="" action="<?= base_url('upload_laporan'); ?>" method="post" enctype="multipart/form-data">
                                                                 <input type="hidden" name="id" value="<?= $k['id']; ?>">
+                                                                <div class="card-body bootstrap-select-1">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <h6 class="input-title mt-0">Tanggal Pelaksanaan</h6>
+                                                                            <div class="card m-b-30">
+                                                                                <input type="date" class="form-control" name="tgl_pelaksanaan" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <h6 class="input-title mt-0">File Laporan</h6>
+                                                                            <div class="card m-b-30">
+                                                                                <div class="card-body">
+
+                                                                                    <input type="file" name="laporan" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <p>Upload File dengan format .jpg, .jpeg, .png, .pdf maksimal 2 MB</p>
+                                                                        </div>
+
+                                                                        <div class="col-md-12 mt-4">
+                                                                            <div class="form-group">
+                                                                                <div>
+                                                                                    <button type="submit" class="btn btn-primary waves-effect waves-light">
+                                                                                        Submit
+                                                                                    </button>
+                                                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5">
+                                                                                        Reset
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div> <!-- end col -->
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.modal-content -->
+                                        </div><!-- /.modal-dialog -->
+                                    </div>
+
+                                    <!-- modal lihat -->
+                                    <div class="modal fade lihatLap<?= $k['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title mt-0" id="myLargeModalLabel">Lihat Laporan</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <form class="" action="<?= base_url('upload_laporan'); ?>" method="post" enctype="multipart/form-data">
+                                                                <input type="text" name="id" value="<?= $k['file']; ?>">
+                                                                <img src=<?= base_url('laporan/'.$k['file']); ?>>
                                                                 <div class="card-body bootstrap-select-1">
                                                                     <div class="row">
                                                                         <div class="col-md-12">

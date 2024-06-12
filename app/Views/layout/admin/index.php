@@ -24,6 +24,7 @@
     <link href="<?= base_url('admin'); ?>/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="<?= base_url('admin'); ?>/assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="<?= base_url('admin'); ?>/assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
 
 </head>
 

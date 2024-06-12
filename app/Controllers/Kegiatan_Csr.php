@@ -487,4 +487,17 @@ class Kegiatan_Csr extends BaseController
         dd($data);
         return view('admin/kegiatan_csr/kegiatan_csr', $data);
     }
+
+    public function preview_laporan($nm_file)
+    {
+        $sub = substr($nm_file,-3);
+        $data = [
+            'nm_file' => $nm_file
+        ];
+        if ($sub == 'pdf'){
+            return view('admin/kegiatan_csr/preview_upload', $data);
+        }else{
+            return view('admin/kegiatan_csr/preview_upload_gambar', $data);
+        }
+    }
 }
