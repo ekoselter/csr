@@ -1,0 +1,425 @@
+CRITICAL - 2024-08-23 17:12:14 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:12:16 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:02 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:08 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:08 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:09 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:09 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:10 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:10 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:10 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:10 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:10 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:11 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:11 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:16 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:16 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:17 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:17 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:17 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:17 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:17 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:18 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:18 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:18 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:18 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:22 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:22 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:23 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:23 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:24 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:24 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:24 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:25 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:26 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:13:51 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:14:26 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-23 17:14:31 --> Undefined index: sumber_usulan
+in APPPATH\Views\depan\kegiatan_search.php on line 27.
+ 1 APPPATH\Views\depan\kegiatan_search.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sumber_usulan', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\kegiatan_search.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/kegiatan_search', [], true)
+ 5 APPPATH\Controllers\Depan.php(80): view('depan/kegiatan_search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Depan->kegiatan_search()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Depan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-08-23 17:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-23 17:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
