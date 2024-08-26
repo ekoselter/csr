@@ -24,7 +24,7 @@
                                 <td><?= $k['program_kegiatan']; ?></td>
                                 <td><?= $k['kapanewon']; ?></td>
                                 <td><?= $k['kalurahan']; ?></td>
-                                <td><?= strtoupper($k['sumber_usulan']); ?></td>
+                                <td><?= strtoupper($k['satuan']); ?></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
