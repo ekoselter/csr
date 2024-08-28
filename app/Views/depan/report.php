@@ -66,7 +66,17 @@
                             </select>
                         </div>
                     </div>
-
+                    <div class="col-md-4">
+                        <div class="single-select-inner style-bg-border">
+                            <span class="label">Kegiatan</span>
+                            <select name="kegiatan" id="kegiatan">
+                                <option value="">Pilih kegiatan</option>
+                                <?php foreach ($kegiatan_filter as $k) : ?>
+                                    <option value="<?= $k['program_kegiatan']; ?>"><?= $k['program_kegiatan']; ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                    </div>
                     <div class="col-12 text-center mb-4">
                         <button type="button" class="btn btn-base" id="search">Pencarian</button>
                     </div>
@@ -163,6 +173,7 @@
             var urusan_bidang = $('#urusan_bidang').val();
             var kapanewon = $('#kapanewon').val();
             var kalurahan = $('#kalurahan').val();
+            var kegiatan = $('#kegiatan').val();
 
             $.ajax({
                 url: '<?= base_url() ?>/depan/report_search',
@@ -172,6 +183,7 @@
                     urusan_bidang: urusan_bidang,
                     kapanewon: kapanewon,
                     kalurahan: kalurahan,
+                    kegiatan: kegiatan,
                 },
                 success: function(data) {
                     $('#hasilsearch').html(data);

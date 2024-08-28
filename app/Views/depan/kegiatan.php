@@ -61,16 +61,17 @@
                             </select>
                         </div>
                     </div>
-                    <!-- <div class="col-md-4">
+                    <div class="col-md-4">
                         <div class="single-select-inner style-bg-border">
-                            <span class="label">Sumber Usulan</span>
-                            <select name="sumber_usulan" id="sumber_usulan">
-                                <option value="">Pilih sumber usulan</option>
-                                <option value="musrembang">MUSREMBANG</option>
-                                <option value="proposal">PROPOSAL</option>
+                            <span class="label">Kegiatan</span>
+                            <select name="kegiatan" id="kegiatan">
+                                <option value="">Pilih kegiatan</option>
+                                <?php foreach ($kegiatan_filter as $k) : ?>
+                                    <option value="<?= $k['program_kegiatan']; ?>"><?= $k['program_kegiatan']; ?></option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="col-12 text-center mb-4">
                         <button type="button" class="btn btn-base" id="search">Pencarian</button>
                     </div>
@@ -162,6 +163,8 @@
             var urusan_bidang = $('#urusan_bidang').val();
             var kapanewon = $('#kapanewon').val();
             var kalurahan = $('#kalurahan').val();
+            var kegiatan = $('#kegiatan').val();
+            // console.log(kegiatan);
 
             $.ajax({
                 url: '<?= base_url() ?>/depan/kegiatan_search',
@@ -171,6 +174,7 @@
                     urusan_bidang: urusan_bidang,
                     kapanewon: kapanewon,
                     kalurahan: kalurahan,
+                    kegiatan: kegiatan,
                 },
                 success: function(data) {
                     $('#hasilsearch').html(data);

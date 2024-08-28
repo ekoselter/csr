@@ -40,10 +40,16 @@ class Depan extends BaseController
             ->groupBy('kalurahan.nm_kapanewon')
             ->get()
             ->getResultArray();
+         $kegiatan_filter = $this->db->table('kegiatan_csr')
+            ->select('program_kegiatan')
+            ->groupby('program_kegiatan')
+            ->orderby('program_kegiatan','ASC')
+            ->get()->getResultArray();
         $data = [
             'kegiatan' => $kegiatan,
             'urusan_bidang' => $urusan_bidang,
             'kapanewon' => $kapanewon,
+            'kegiatan_filter' => $kegiatan_filter,
         ];
 
         // dd($kegiatan);
@@ -72,11 +78,15 @@ class Depan extends BaseController
         if ($this->request->getVar('kalurahan') != '') {
             $query->where('id_kalurahan', $this->request->getVar('kalurahan'));
         }
+        if ($this->request->getVar('kegiatan') != '') {
+            $query->where('program_kegiatan', $this->request->getVar('kegiatan'));
+        }
         $kegiatan = $query->get()->getResultArray();
         $data = [
             'kegiatan' => $kegiatan
         ];
-        // dd($kegiatan);
+        // $tes=$this->request->getVar('kegiatan');
+        // dd($tes);
         return view('depan/kegiatan_search', $data);
     }
 
@@ -104,11 +114,17 @@ class Depan extends BaseController
             ->join('user', 'perusahaan.id_user=user.id')
             ->where('level >', 0)
             ->get()->getResultArray();
+        $kegiatan_filter = $this->db->table('kegiatan_csr')
+            ->select('program_kegiatan')
+            ->groupby('program_kegiatan')
+            ->orderby('program_kegiatan','ASC')
+            ->get()->getResultArray();
         $data = [
             'report' => $report,
             'urusan_bidang' => $urusan_bidang,
             'kapanewon' => $kapanewon,
-            'perusahaan' => $perusahaan
+            'perusahaan' => $perusahaan,
+            'kegiatan_filter' => $kegiatan_filter,
         ];
 
         // dd($data);
@@ -140,6 +156,9 @@ class Depan extends BaseController
         }
         if ($this->request->getVar('kalurahan') != '') {
             $query->where('id_kalurahan', $this->request->getVar('kalurahan'));
+        }
+        if ($this->request->getVar('kegiatan') != '') {
+            $query->where('program_kegiatan', $this->request->getVar('kegiatan'));
         }
         $report = $query->get()->getResultArray();
         $data = [

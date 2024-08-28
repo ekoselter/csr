@@ -6,6 +6,6 @@ class Dashboard extends BaseController
 {
     public function index(): string
     {
-        return view('layout/admin/index');
+        return view('admin/home_admin');
     }
 }
