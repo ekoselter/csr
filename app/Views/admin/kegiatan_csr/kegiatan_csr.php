@@ -178,6 +178,7 @@
 
                                                             <div class="col-md-12">
                                                                 <h6 class="input-title mt-3">File Excel</h6>
+                                                                <a href="<?= base_url(); ?>/kegiatan_csr/format_kegiatan" class="btn btn-success">Download Format</a>
                                                                 <div class="card m-b-30">
                                                                     <div class="card-body">
 

@@ -11,7 +11,7 @@
                             <th>Kegiatan</th>
                             <th>Kapanewon</th>
                             <th>Kalurahan</th>
-                            <th>Sumber Usulan</th>
+                            <!-- <th>Sumber Usulan</th> -->
                         </tr>
                     </thead>
                     <tbody>
@@ -24,7 +24,7 @@
                                 <td><?= $k['program_kegiatan']; ?></td>
                                 <td><?= $k['kapanewon']; ?></td>
                                 <td><?= $k['kalurahan']; ?></td>
-                                <td><?= strtoupper($k['satuan']); ?></td>
+                                <!-- <td><?= strtoupper($k['satuan']); ?></td> -->
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

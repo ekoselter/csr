@@ -21,6 +21,7 @@ $routes->get('/kontak_kami', 'Depan::kontak_kami');
 // admin
 $routes->get('/dashboard', 'Dashboard::index');
 $routes->get('/kegiatan_csr', 'Kegiatan_Csr::index');
+$routes->get('/kegiatan_csr/format_kegiatan', 'Kegiatan_Csr::format_kegiatan');
 $routes->get('/kegiatan_csr/getkalurahan/(:any)', 'Kegiatan_Csr::getKalurahan/$1');
 $routes->post('/kegiatan_save', 'Kegiatan_Csr::kegiatan_save');
 $routes->get('/kegiatan_csr/edit/(:any)', 'Kegiatan_Csr::edit/$1');

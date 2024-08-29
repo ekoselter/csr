@@ -3,6 +3,9 @@
 namespace App\Controllers;
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
+// Include librari PhpSpreadsheet
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 class Kegiatan_Csr extends BaseController
 {
@@ -500,4 +503,53 @@ class Kegiatan_Csr extends BaseController
             return view('admin/kegiatan_csr/preview_upload_gambar', $data);
         }
     }
+
+    public function format_kegiatan(){
+        $spreadsheet = new Spreadsheet();
+        $sheet = $spreadsheet->getActiveSheet();
+        // Buat sebuah variabel untuk menampung pengaturan style dari header tabel
+        
+
+        // Buat header tabel nya pada baris ke 3
+        $sheet->setCellValue('A1', "NO.");  
+        $sheet->setCellValue('B1', "TAHUN");
+        $sheet->setCellValue('C1', "RUANG LINGKUP TSP"); 
+        $sheet->setCellValue('D1', "URUSAN/BIDANG");
+        $sheet->setCellValue('E1', "USULAN PROGRAM/KEGIATAN");
+        $sheet->setCellValue('F1', "ALAMAT");
+        $sheet->setCellValue('G1', "KALURAHAN"); 
+        $sheet->setCellValue('H1', "KAPANEWON"); 
+        $sheet->setCellValue('I1', "PERKIRAAN BIAYA"); 
+        $sheet->setCellValue('J1', "VOLUME (RINCIAN)"); 
+        $sheet->setCellValue('K1', "SATUAN"); 
+        $sheet->setCellValue('L1', "OPD"); 
+    
+        // Set width kolom
+        $sheet->getColumnDimension('A')->setAutoSize(true); // Set width kolom A
+        $sheet->getColumnDimension('B')->setAutoSize(true); // Set width kolom B
+        $sheet->getColumnDimension('C')->setAutoSize(true); // Set width kolom C
+        $sheet->getColumnDimension('D')->setAutoSize(true); // Set width kolom D
+        $sheet->getColumnDimension('E')->setAutoSize(true); // Set width kolom E
+        $sheet->getColumnDimension('F')->setAutoSize(true);
+        $sheet->getColumnDimension('G')->setAutoSize(true);
+        $sheet->getColumnDimension('H')->setAutoSize(true);
+        $sheet->getColumnDimension('I')->setAutoSize(true);
+        $sheet->getColumnDimension('J')->setAutoSize(true);
+        $sheet->getColumnDimension('K')->setAutoSize(true);
+        $sheet->getColumnDimension('L')->setAutoSize(true);
+        
+        // Set height semua kolom menjadi auto (mengikuti height isi dari kolommnya, jadi otomatis)
+        $sheet->getDefaultRowDimension()->setRowHeight(-1);
+        // Set orientasi kertas jadi LANDSCAPE
+        $sheet->getPageSetup()->setOrientation(\PhpOffice\PhpSpreadsheet\Worksheet\PageSetup::ORIENTATION_LANDSCAPE);
+        // Set judul file excel nya
+        $sheet->setTitle("FORMAT KEGIATAN CSR");
+        // Proses file excel
+        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+        header('Content-Disposition: attachment; filename="format_kegiatan_csr.xlsx"'); // Set nama file excel nya
+        header('Cache-Control: max-age=0');
+        $writer = new Xlsx($spreadsheet);
+        $writer->save('php://output');
+        exit;
+      }
 }
