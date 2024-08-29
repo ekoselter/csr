@@ -214,7 +214,12 @@ class Kegiatan_Csr extends BaseController
                 if (!empty($ruang)) {
                     $id_ruang = $ruang['id'];
                 } else {
-                    $id_ruang = '';
+                    $data_ruang_lingkup = [
+                        'ket' => strtoupper($ruang_lingkup)
+                    ];
+                    $this->db->table('ruang_lingkup')->insert($data_ruang_lingkup);
+                    $ruang = $this->db->table('ruang_lingkup')->like('TRIM(ket)', trim($des_lingkup))->get()->getRowArray();
+                    $id_ruang = $ruang['id'];
                 }
 
                 //bidang
@@ -234,6 +239,11 @@ class Kegiatan_Csr extends BaseController
                     break;
                 }
 
+                if (empty($alamat)) {
+                    $alamat = '';
+                } else {
+                    $alamat = $alamat;
+                }
                 //kalurahan
                 if (empty($kalurahan)) {
                     $nm_kalurahan = '';
