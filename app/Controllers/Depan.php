@@ -76,7 +76,9 @@ class Depan extends BaseController
             $query->where('id_kapanewon', $this->request->getVar('kapanewon'));
         }
         if ($this->request->getVar('kalurahan') != '') {
-            $query->where('id_kalurahan', $this->request->getVar('kalurahan'));
+            if ($this->request->getVar('kalurahan') != 'all_kalurahan') {
+                $query->where('id_kalurahan', $this->request->getVar('kalurahan'));
+            }
         }
         if ($this->request->getVar('kegiatan') != '') {
             $query->where('program_kegiatan', $this->request->getVar('kegiatan'));
@@ -155,7 +157,9 @@ class Depan extends BaseController
             $query->where('id_kapanewon', $this->request->getVar('kapanewon'));
         }
         if ($this->request->getVar('kalurahan') != '') {
-            $query->where('id_kalurahan', $this->request->getVar('kalurahan'));
+            if ($this->request->getVar('kalurahan') != 'all_kalurahan') {
+                $query->where('id_kalurahan', $this->request->getVar('kalurahan'));
+            }
         }
         if ($this->request->getVar('kegiatan') != '') {
             $query->where('program_kegiatan', $this->request->getVar('kegiatan'));

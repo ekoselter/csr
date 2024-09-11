@@ -147,6 +147,10 @@
                     url: "<?= base_url() ?>/kegiatan_csr/getkalurahan/" + id_kapanewon,
                     success: function(data) {
                         data = JSON.parse(data);
+                            $('#kalurahan').append($('<option>', {
+                                value: 'all_kalurahan',
+                                text: 'ALL'
+                            }));
                         data.forEach(function(item) {
                             $('#kalurahan').append($('<option>', {
                                 value: item.id_kalurahan,
