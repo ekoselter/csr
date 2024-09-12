@@ -30,11 +30,17 @@ class Laporan extends BaseController
             ->join('user', 'perusahaan.id_user=user.id')
             ->where('level >', 0)
             ->get()->getResultArray();
+        $kegiatan_filter = $this->db->table('kegiatan_csr')
+            ->select('program_kegiatan')
+            ->groupby('program_kegiatan')
+            ->orderby('program_kegiatan','ASC')
+            ->get()->getResultArray();
         $data = [
             'report' => $report,
             'urusan_bidang' => $urusan_bidang,
             'kapanewon' => $kapanewon,
-            'perusahaan' => $perusahaan
+            'perusahaan' => $perusahaan,
+            'kegiatan_filter' => $kegiatan_filter
         ];
 
         // dd($data);
@@ -117,6 +123,9 @@ class Laporan extends BaseController
         }
         if ($this->request->getVar('kalurahan') != '') {
             $query->where('id_kalurahan', $this->request->getVar('kalurahan'));
+        }
+        if ($this->request->getVar('program_kegiatan') != '') {
+            $query->where('program_kegiatan', $this->request->getVar('program_kegiatan'));
         }
         $report = $query->get()->getResultArray();
         $data = [

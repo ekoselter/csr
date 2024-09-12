@@ -120,9 +120,20 @@
                                             <option value="">Pilih Kalurahan</option>
                                         </select>
                                     </div>
-
+                                </div>
+                                <div class="row">
                                     <div class="col-md-6">
-                                    <div>
+                                        <h6 class="mt-lg-0 input-title">Progam/Kegiatan</h6>
+                                        <select class="select2 form-control mb-3 custom-select" id="program_kegiatan" name="program_kegiatan" style="width: 100%; height:36px;">
+                                            <option value="">Pilih kegiatan</option>
+                                                <?php foreach ($kegiatan_filter as $k) : ?>
+                                                    <option value="<?= $k['program_kegiatan']; ?>"><?= $k['program_kegiatan']; ?></option>
+                                                <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
                                         <button type="button" class="btn btn-primary waves-effect waves-light" id="search">
                                             Pencarian
                                         </button>
@@ -130,7 +141,6 @@
                                             Print
                                         </button>
                                     </div>
-                                </div>
                                 </div>
                             </div>
                         </div>
@@ -245,6 +255,7 @@
             var urusan_bidang = $('#urusan_bidang').val();
             var kapanewon = $('#kapanewon').val();
             var kalurahan = $('#kalurahan').val();
+            var program_kegiatan = $('#program_kegiatan').val();
 
             $.ajax({
                 url: '<?= base_url() ?>/laporan/report_search',
@@ -254,6 +265,7 @@
                     urusan_bidang: urusan_bidang,
                     kapanewon: kapanewon,
                     kalurahan: kalurahan,
+                    program_kegiatan: program_kegiatan,
                 },
                 success: function(data) {
                     $('#hasilsearch').html(data);
