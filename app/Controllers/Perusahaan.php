@@ -85,4 +85,12 @@ class Perusahaan extends BaseController
 
         return redirect()->to(base_url('/perusahaan'));
     }
+
+    public function perusahaan_hapus($id)
+    {
+
+        $this->db->table('perusahaan')->where('id', $id)->delete();
+        return redirect()->to(base_url('/perusahaan'));
+    }
+
 }

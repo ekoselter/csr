@@ -35,6 +35,7 @@ $routes->get('/perusahaan', 'Perusahaan::index');
 $routes->post('/perusahaan_save', 'Perusahaan::perusahaan_save');
 $routes->get('/perusahaan/edit/(:any)', 'Perusahaan::edit/$1');
 $routes->post('/perusahaan_update', 'Perusahaan::perusahaan_update');
+$routes->get('/perusahaan/hapus/(:any)', 'Perusahaan::perusahaan_hapus/$1');
 $routes->get('/login', 'User::login');
 $routes->post('/verifikasi', 'User::verifikasi');
 $routes->get('/logout', 'User::logout');

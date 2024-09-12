@@ -56,12 +56,11 @@
                                     <th>Alamat</th>
                                     <th>Kapanewon</th>
                                     <th>Kalurahan</th>
-                                    <th>Biaya (star range)</th>
-                                    <th>Biaya (end range)</th>
-                                    <th>Keterangan</th>
-                                    <th>Sumber Usulan</th>
-                                    <th>OPD</th>
-                                    <th>Nominal</th>
+                                    <th>Kebutuhan biaya</th>
+                                    <th>Volume</th>
+                                    <th>Satuan</th>
+                                    <th>OPD Pengampu</th>
+                                    <th>CSR yang disalurkan</th>
                                 </tr>
                             </thead>
 
