@@ -982,5 +982,3 @@ INFO - 2024-09-12 10:25:39 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-09-12 10:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-09-12 10:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-09-12 10:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-09-12 10:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2024-09-12 12:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
