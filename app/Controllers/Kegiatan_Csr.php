@@ -141,7 +141,7 @@ class Kegiatan_Csr extends BaseController
     public function my_kegiatan_csr()
     {
         $kegiatan = $this->db->table('detail_kegiatan_csr')
-            ->select('detail_kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, detail_kegiatan_csr.nominal, detail_kegiatan_csr.file')
+            ->select('detail_kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, detail_kegiatan_csr.nominal, detail_kegiatan_csr.file')
             ->where('id_user', session('id_user'))
             ->join('kegiatan_csr', 'detail_kegiatan_csr.id_kegiatan_csr=kegiatan_csr.id')
             ->join('ruang_lingkup', 'kegiatan_csr.ruang_lingkup=ruang_lingkup.id')

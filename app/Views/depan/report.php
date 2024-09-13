@@ -38,10 +38,10 @@
                     </div>
                     <div class="col-md-8">
                         <div class="single-select-inner style-bg-border">
-                            <span class="label">Urusan/Bidang</span>
-                            <select name="urusan_bidang" id="urusan_bidang">
-                                <option value="">Pilih Urusan / Bidang</option>
-                                <?php foreach ($urusan_bidang as $r) : ?>
+                            <span class="label">Ruang Lingkup</span>
+                            <select name="ruang_lingkup" id="ruang_lingkup">
+                                <option value="">Pilih Ruang Lingkup</option>
+                                <?php foreach ($ruang_lingkup as $r) : ?>
                                     <option value="<?= $r['id']; ?>"><?= $r['ket']; ?></option>
                                 <?php endforeach; ?>
                             </select>
@@ -68,11 +68,11 @@
                     </div>
                     <div class="col-md-4">
                         <div class="single-select-inner style-bg-border">
-                            <span class="label">Kegiatan</span>
-                            <select name="kegiatan" id="kegiatan">
+                            <span class="label">Aktifitas</span>
+                            <select name="aktifitas" id="aktifitas">
                                 <option value="">Pilih kegiatan</option>
-                                <?php foreach ($kegiatan_filter as $k) : ?>
-                                    <option value="<?= $k['program_kegiatan']; ?>"><?= $k['program_kegiatan']; ?></option>
+                                <?php foreach ($aktifitas_filter as $k) : ?>
+                                    <option value="<?= $k['aktifitas']; ?>"><?= $k['aktifitas']; ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
@@ -97,7 +97,9 @@
                                     <th style="width: 5%;">No</th>
                                     <th>Perusahaan</th>
                                     <th>Bidang</th>
+                                    <th>Ruang Lingkup</th>
                                     <th>Kegiatan</th>
+                                    <th>Aktifitas</th>
                                     <th>Waktu Pelaksanaan</th>
                                     <th>Lokasi</th>
                                 </tr>
@@ -109,7 +111,9 @@
                                         <td style="text-align:center;"><?= $no++; ?></td>
                                         <td style="text-align:center;"><?= $r['nama_perusahaan']; ?></td>
                                         <td><?= $r['urusan_bidang']; ?></td>
+                                        <td><?= $r['ruang_lingkup']; ?></td>
                                         <td><?= $r['program_kegiatan']; ?></td>
+                                        <td><?= $r['aktifitas']; ?></td>
                                         <td><?= date('Y-m-d', strtotime($r['waktu'])); ?></td>
                                         <td>
                                             <b>Alamat:</b><?= $r['alamat']; ?>
@@ -174,20 +178,20 @@
     $(document).ready(function() {
         $('#search').click(function() {
             var perusahaan = $('#perusahaan').val();
-            var urusan_bidang = $('#urusan_bidang').val();
+            var ruang_lingkup = $('#ruang_lingkup').val();
             var kapanewon = $('#kapanewon').val();
             var kalurahan = $('#kalurahan').val();
-            var kegiatan = $('#kegiatan').val();
+            var aktifitas = $('#aktifitas').val();
 
             $.ajax({
                 url: '<?= base_url() ?>/depan/report_search',
                 method: 'post',
                 data: {
                     perusahaan: perusahaan,
-                    urusan_bidang: urusan_bidang,
+                    ruang_lingkup: ruang_lingkup,
                     kapanewon: kapanewon,
                     kalurahan: kalurahan,
-                    kegiatan: kegiatan,
+                    aktifitas: aktifitas,
                 },
                 success: function(data) {
                     $('#hasilsearch').html(data);

@@ -15,7 +15,9 @@
                             <th style="width: 5%;">No</th>
                             <th>Perusahaan</th>
                             <th>Bidang</th>
+                            <th>Ruang Lingkup</th>
                             <th>Kegiatan</th>
+                            <th>Aktifitas</th>
                             <th>Waktu Pelaksanaan</th>
                             <th>Lokasi</th>
                             <th>Laporan</th>
@@ -28,7 +30,9 @@
                                 <td style="text-align:center;"><?= $no++; ?></td>
                                 <td style="text-align:center;"><?= $r['nama_perusahaan']; ?></td>
                                 <td><?= $r['urusan_bidang']; ?></td>
+                                <td><?= $r['ruang_lingkup']; ?></td>
                                 <td><?= $r['program_kegiatan']; ?></td>
+                                <td><?= $r['aktifitas']; ?></td>
                                 <td><?= date('Y-m-d', strtotime($r['waktu'])); ?></td>
                                 <td>
                                     <b>Alamat:</b><?= $r['alamat']; ?>
@@ -62,14 +66,16 @@
                         <th style="width: 5%;">No</th>
                         <th>Perusahaan</th>
                         <th>Bidang</th>
+                        <th>Ruang Lingkup</th>
                         <th>Kegiatan</th>
+                        <th>Aktifitas</th>
                         <th>Waktu Pelaksanaan</th>
                         <th>Lokasi</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td colspan="6" style="text-align: center;">Data Tidak Ditemukan</td>
+                        <td colspan="10" style="text-align: center;">Data Tidak Ditemukan</td>
                     </tr>
                 </tbody>
             </table>

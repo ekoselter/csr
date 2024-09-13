@@ -18,66 +18,6 @@
         </div>
         <!-- end page title end breadcrumb -->
 
-        <!-- CONTOH form pencarian -->
-        <!-- <div class="row">
-            <div class="col-sm-12">
-                <div class="container">
-                    <form action="">
-                        <div class="btn btn-base hover-none">Form Pencarian</div>
-                        <div class="property-form-grid">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="single-select-inner style-bg-border">
-                                        <span class="label">Perusahaan</span>
-                                        <select name="perusahaan" id="perusahaan">
-                                            <option value="">Pilih Perusahan</option>
-                                            <?php foreach ($perusahaan as $p) : ?>
-                                                <option value="<?= $p['id']; ?>"><?= $p['nama_perusahaan']; ?></option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="single-select-inner style-bg-border">
-                                        <span class="label">Urusan/Bidang</span>
-                                        <select name="urusan_bidang" id="urusan_bidang">
-                                            <option value="">Pilih Urusan / Bidang</option>
-                                            <?php foreach ($urusan_bidang as $r) : ?>
-                                                <option value="<?= $r['id']; ?>"><?= $r['ket']; ?></option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-select-inner style-bg-border">
-                                        <span class="label">Kapanewon</span>
-                                        <select id="kapanewon" name="kapanewon">
-                                            <option value="">Pilih Kapanewon</option>
-                                            <?php foreach ($kapanewon as $k) : ?>
-                                                <option value="<?= $k['id_kapanewon']; ?>"><?= $k['nm_kapanewon']; ?></option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-select-inner style-bg-border">
-                                        <span class="label">Kalurahan</span>
-                                        <select id="kalurahan" name="kalurahan">
-                                            <option value="">Pilih Kalurahan</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 text-center mb-4">
-                                    <button type="button" class="btn btn-base" id="search">Pencarian</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div> -->
-
         <div class="row">
                 <div class="col-lg-12">
                     <form class="" action="<?= base_url(); ?>laporan_print" method="get" enctype="multipart/form-data" target="_blank">
@@ -95,10 +35,10 @@
                                         </select>
                                     </div>
                                     <div class="col-md-6">
-                                        <h6 class="mt-lg-0 input-title">Urusan/Bidang</h6>
-                                        <select class="select2 form-control mb-3 custom-select" name="urusan_bidang" id="urusan_bidang" style="width: 100%; height:36px;">
-                                            <option value="">Pilih Urusan / Bidang</option>
-                                                <?php foreach ($urusan_bidang as $r) : ?>
+                                        <h6 class="mt-lg-0 input-title">Ruang Lingkup</h6>
+                                        <select class="select2 form-control mb-3 custom-select" name="ruang_lingkup" id="ruang_lingkup" style="width: 100%; height:36px;">
+                                            <option value="">Ruang Lingkup</option>
+                                                <?php foreach ($ruang_lingkup as $r) : ?>
                                                     <option value="<?= $r['id']; ?>"><?= $r['ket']; ?></option>
                                                 <?php endforeach; ?>
                                         </select>
@@ -123,11 +63,11 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <h6 class="mt-lg-0 input-title">Progam/Kegiatan</h6>
-                                        <select class="select2 form-control mb-3 custom-select" id="program_kegiatan" name="program_kegiatan" style="width: 100%; height:36px;">
-                                            <option value="">Pilih kegiatan</option>
-                                                <?php foreach ($kegiatan_filter as $k) : ?>
-                                                    <option value="<?= $k['program_kegiatan']; ?>"><?= $k['program_kegiatan']; ?></option>
+                                        <h6 class="mt-lg-0 input-title">Aktifitas</h6>
+                                        <select class="select2 form-control mb-3 custom-select" id="aktifitas" name="aktifitas" style="width: 100%; height:36px;">
+                                            <option value="">Pilih Aktifitas</option>
+                                                <?php foreach ($aktifitas_filter as $k) : ?>
+                                                    <option value="<?= $k['aktifitas']; ?>"><?= $k['aktifitas']; ?></option>
                                                 <?php endforeach; ?>
                                         </select>
                                     </div>
@@ -173,7 +113,9 @@
                                         <th style="width: 5%;">No</th>
                                         <th>Perusahaan</th>
                                         <th>Bidang</th>
+                                        <th>Ruang Lingkup</th>
                                         <th>Kegiatan</th>
+                                        <th>Aktifitas</th>
                                         <th>Waktu Pelaksanaan</th>
                                         <th>Lokasi</th>
                                         <th>Laporan</th>
@@ -186,7 +128,9 @@
                                             <td style="text-align:center;"><?= $no++; ?></td>
                                             <td style="text-align:center;"><?= $r['nama_perusahaan']; ?></td>
                                             <td><?= $r['urusan_bidang']; ?></td>
+                                            <td><?= $r['ruang_lingkup']; ?></td>
                                             <td><?= $r['program_kegiatan']; ?></td>
+                                            <td><?= $r['aktifitas']; ?></td>
                                             <td><?= date('Y-m-d', strtotime($r['waktu'])); ?></td>
                                             <td>
                                                 <b>Alamat:</b><?= $r['alamat']; ?>
@@ -236,6 +180,10 @@
                     url: "<?= base_url() ?>/kegiatan_csr/getkalurahan/" + id_kapanewon,
                     success: function(data) {
                         data = JSON.parse(data);
+                        $('#kalurahan').append($('<option>', {
+                                value: 'all_kalurahan',
+                                text: 'ALL'
+                            }));
                         data.forEach(function(item) {
                             $('#kalurahan').append($('<option>', {
                                 value: item.id_kalurahan,
@@ -252,20 +200,23 @@
     $(document).ready(function() {
         $('#search').click(function() {
             var perusahaan = $('#perusahaan').val();
-            var urusan_bidang = $('#urusan_bidang').val();
+            // var urusan_bidang = $('#urusan_bidang').val();
+            var ruang_lingkup = $('#ruang_lingkup').val();
             var kapanewon = $('#kapanewon').val();
             var kalurahan = $('#kalurahan').val();
-            var program_kegiatan = $('#program_kegiatan').val();
+            // var program_kegiatan = $('#program_kegiatan').val();
+            var aktifitas = $('#aktifitas').val();
 
             $.ajax({
                 url: '<?= base_url() ?>/laporan/report_search',
                 method: 'post',
                 data: {
                     perusahaan: perusahaan,
-                    urusan_bidang: urusan_bidang,
+                    // urusan_bidang: urusan_bidang,
+                    ruang_lingkup: ruang_lingkup,
                     kapanewon: kapanewon,
                     kalurahan: kalurahan,
-                    program_kegiatan: program_kegiatan,
+                    aktifitas: aktifitas,
                 },
                 success: function(data) {
                     $('#hasilsearch').html(data);
