@@ -93,6 +93,11 @@
                                                             </div>
 
                                                             <div class="col-md-12 mt-3">
+                                                                <h6 class="input-title mt-0">Aktifitas</h6>
+                                                                <textarea class="form-control" name="aktifitas" id="" cols="30" rows="2"></textarea>
+                                                            </div>
+
+                                                            <div class="col-md-12 mt-3">
                                                                 <h6 class="input-title mt-0">Alamat</h6>
                                                                 <textarea class="form-control" name="alamat" id="" cols="30" rows="2"></textarea>
                                                             </div>
@@ -217,6 +222,7 @@
                                     <th>Ruang Lingkup TSP</th>
                                     <th>Urusan / Bidang</th>
                                     <th>Program / Kegiatan</th>
+                                    <th>Aktifitas</th>
                                     <th>Alamat</th>
                                     <th>Kapanewon</th>
                                     <th>Kalurahan</th>
@@ -237,6 +243,7 @@
                                         <td><?= $k['ruang_lingkup']; ?></td>
                                         <td><?= $k['urusan_bidang']; ?></td>
                                         <td><?= $k['program_kegiatan']; ?></td>
+                                        <td><?= $k['aktifitas']; ?></td>
                                         <td><?= $k['alamat']; ?></td>
                                         <td><?= $k['kapanewon']; ?></td>
                                         <td><?= $k['kalurahan']; ?></td>

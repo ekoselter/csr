@@ -64,8 +64,8 @@
                                             </div>
 
                                             <div class="col-md-12 mt-3">
-                                                <h6 class="input-title mt-0">Permasalahan</h6>
-                                                <textarea class="form-control" name="permasalahan" id="" cols="30" rows="3"><?= $d['permasalahan']; ?></textarea>
+                                                <h6 class="input-title mt-0">aktifitas</h6>
+                                                <textarea class="form-control" name="aktifitas" id="" cols="30" rows="3"><?= $d['aktifitas']; ?></textarea>
                                             </div>
 
                                             <div class="col-md-12 mt-3">
@@ -99,32 +99,20 @@
                                                 </select>
                                             </div>
 
-                                            <div class="col-md-4 mt-3">
-                                                <h6 class="input-title mt-0">Sumber Usulan</h6>
-                                                <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;" name="sumber_usulan">
-                                                    <option value="">Pilih Sumber Usulan</option>
-                                                    <option value="musrembang" <?php if ($d['sumber_usulan'] == 'musrembang') {
-                                                                                    echo 'selected';
-                                                                                } ?>>MUSREMBANG</option>
-                                                    <option value="proposal" <?php if ($d['sumber_usulan'] == 'proposal') {
-                                                                                    echo 'selected';
-                                                                                } ?>>PROPOSAL</option>
-                                                </select>
+                                            <div class="col-md-6">
+                                                <h6 class="input-title mt-0">Satuan</h6>
+                                                <input type="text" id="satuan" class="form-control" name="satuan" value="<?= $d['satuan']; ?>">
                                             </div>
 
                                             <div class="col-md-6">
-                                                <h6 class="input-title mt-0">Biaya Perkiraan (start range)</h6>
+                                                <h6 class="input-title mt-0">Perkiraan Biaya</h6>
                                                 <input type="number" class="form-control" name="biaya" value="<?= $d['biaya']; ?>">
                                             </div>
                                             <div class="col-md-6">
-                                                <h6 class="input-title mt-0">Biaya Perkiraan (end range)</h6>
-                                                <input type="number" class="form-control" name="biaya2" value="<?= $d['biaya2']; ?>">
+                                                <h6 class="input-title mt-0">Volume</h6>
+                                                <input type="number" class="form-control" name="volume" value="<?= $d['volume']; ?>">
                                             </div>
 
-                                            <div class="col-md-6 mt-3">
-                                                <h6 class="input-title mt-0">Keterangan</h6>
-                                                <textarea class="form-control" name="keterangan" id="" cols="30" rows="3"><?= $d['keterangan']; ?></textarea>
-                                            </div>
                                             <div class="col-md-6 mt-3">
                                                 <h6 class="input-title mt-0">OPD</h6>
                                                 <textarea class="form-control" name="opd" id="" cols="30" rows="3"><?= $d['opd']; ?></textarea>

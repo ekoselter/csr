@@ -64,6 +64,11 @@
                                             </div>
 
                                             <div class="col-md-12 mt-3">
+                                                <h6 class="input-title mt-0">Aktifitas</h6>
+                                                <textarea class="form-control" name="aktifitas" id="" cols="30" rows="2"><?= $d['aktifitas']; ?></textarea>
+                                            </div>
+
+                                            <div class="col-md-12 mt-3">
                                                 <h6 class="input-title mt-0">Alamat</h6>
                                                 <textarea class="form-control" name="alamat" id="" cols="30" rows="2"><?= $d['alamat']; ?></textarea>
                                             </div>

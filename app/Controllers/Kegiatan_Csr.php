@@ -17,7 +17,7 @@ class Kegiatan_Csr extends BaseController
         }
 
         $kegiatan = $this->db->table('kegiatan_csr')
-            ->select('volume, kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd')
+            ->select('volume, kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd')
             ->join('ruang_lingkup', 'kegiatan_csr.ruang_lingkup=ruang_lingkup.id')
             ->join('urusan_bidang', 'kegiatan_csr.urusan_bidang=urusan_bidang.id')
             ->join('kalurahan', 'kegiatan_csr.kalurahan=kalurahan.id_kalurahan')
@@ -57,6 +57,7 @@ class Kegiatan_Csr extends BaseController
             ->set('ruang_lingkup', $this->request->getVar('ruang_lingkup'))
             ->set('urusan_bidang', $this->request->getVar('urusan_bidang'))
             ->set('program_kegiatan', $this->request->getVar('program_kegiatan'))
+            ->set('aktifitas', $this->request->getVar('aktifitas'))
             ->set('alamat', $this->request->getVar('alamat'))
             ->set('kapanewon', $this->request->getVar('kapanewon'))
             ->set('kalurahan', $this->request->getVar('kalurahan'))
@@ -104,6 +105,7 @@ class Kegiatan_Csr extends BaseController
             ->set('ruang_lingkup', $this->request->getVar('ruang_lingkup'))
             ->set('urusan_bidang', $this->request->getVar('urusan_bidang'))
             ->set('program_kegiatan', $this->request->getVar('program_kegiatan'))
+            ->set('aktifitas', $this->request->getVar('aktifitas'))
             ->set('alamat', $this->request->getVar('alamat'))
             ->set('kapanewon', $this->request->getVar('kapanewon'))
             ->set('kalurahan', $this->request->getVar('kalurahan'))
@@ -196,13 +198,14 @@ class Kegiatan_Csr extends BaseController
                 $ruang_lingkup = $row[2];
                 $urusan_bidang = $row[3];
                 $program_kegiatan = $row[4];
-                $alamat = $row[5];
-                $kalurahan = $row[6];
-                $kapanewon = $row[7];
-                $harga = $row[8];
-                $volume = $row[9];
-                $satuan = $row[10];
-                $opd = $row[11];
+                $aktifitas = $row[5];
+                $alamat = $row[6];
+                $kalurahan = $row[7];
+                $kapanewon = $row[8];
+                $harga = $row[9];
+                $volume = $row[10];
+                $satuan = $row[11];
+                $opd = $row[12];
 
                 //ruang lingkup
                 if (empty($ruang_lingkup)) {
@@ -271,6 +274,7 @@ class Kegiatan_Csr extends BaseController
                     'id_urusan' => $id_urusan,
                     'urusan_bidang' => $urusan_bidang,
                     'program_kegiatan' => $program_kegiatan,
+                    'aktifitas' => $aktifitas,
                     'alamat' => $alamat,
                     'id_kalurahan' => $id_kalurahan,
                     'kalurahan' => $kalurahan,
@@ -315,6 +319,7 @@ class Kegiatan_Csr extends BaseController
                 'ruang_lingkup' => $k['id_ruang'],
                 'urusan_bidang' => $k['id_urusan'],
                 'program_kegiatan' => $k['program_kegiatan'],
+                'aktifitas' => $k['aktifitas'],
                 'alamat' => $k['alamat'],
                 'kapanewon' => $k['id_kapanewon'],
                 'kalurahan' => $k['id_kalurahan'],
@@ -379,6 +384,7 @@ class Kegiatan_Csr extends BaseController
             ->set('id_urusan', $this->request->getVar('urusan_bidang'))
             ->set('urusan_bidang', $urusan['ket'])
             ->set('program_kegiatan', $this->request->getVar('program_kegiatan'))
+            ->set('aktifitas', $this->request->getVar('aktifitas'))
             ->set('alamat', $this->request->getVar('alamat'))
             ->set('id_kapanewon', $this->request->getVar('kapanewon'))
             ->set('kapanewon', $kalurahan['nm_kapanewon'])
@@ -526,13 +532,14 @@ class Kegiatan_Csr extends BaseController
         $sheet->setCellValue('C1', "RUANG LINGKUP TSP"); 
         $sheet->setCellValue('D1', "URUSAN/BIDANG");
         $sheet->setCellValue('E1', "USULAN PROGRAM/KEGIATAN");
-        $sheet->setCellValue('F1', "ALAMAT");
-        $sheet->setCellValue('G1', "KALURAHAN"); 
-        $sheet->setCellValue('H1', "KAPANEWON"); 
-        $sheet->setCellValue('I1', "PERKIRAAN BIAYA"); 
-        $sheet->setCellValue('J1', "VOLUME (RINCIAN)"); 
-        $sheet->setCellValue('K1', "SATUAN"); 
-        $sheet->setCellValue('L1', "OPD"); 
+        $sheet->setCellValue('F1', "AKTIFITAS");
+        $sheet->setCellValue('G1', "ALAMAT");
+        $sheet->setCellValue('H1', "KALURAHAN"); 
+        $sheet->setCellValue('I1', "KAPANEWON"); 
+        $sheet->setCellValue('J1', "PERKIRAAN BIAYA"); 
+        $sheet->setCellValue('K1', "VOLUME (RINCIAN)"); 
+        $sheet->setCellValue('L1', "SATUAN"); 
+        $sheet->setCellValue('M1', "OPD"); 
     
         // Set width kolom
         $sheet->getColumnDimension('A')->setAutoSize(true); // Set width kolom A
@@ -547,6 +554,7 @@ class Kegiatan_Csr extends BaseController
         $sheet->getColumnDimension('J')->setAutoSize(true);
         $sheet->getColumnDimension('K')->setAutoSize(true);
         $sheet->getColumnDimension('L')->setAutoSize(true);
+        $sheet->getColumnDimension('M')->setAutoSize(true);
         
         // Set height semua kolom menjadi auto (mengikuti height isi dari kolommnya, jadi otomatis)
         $sheet->getDefaultRowDimension()->setRowHeight(-1);
