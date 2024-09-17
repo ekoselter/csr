@@ -9,7 +9,7 @@ class Laporan extends BaseController
     public function index()
     {
         $report = $this->db->table('kegiatan_csr')
-            ->select('file,kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, urusan_bidang.id as id_urusan, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.id_kapanewon as id_kapanewon, kalurahan.nm_kalurahan as kalurahan,  kalurahan.id_kalurahan as id_kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, nama_perusahaan, waktu')
+            ->select('file,kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, urusan_bidang.id as id_urusan, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.id_kapanewon as id_kapanewon, kalurahan.nm_kalurahan as kalurahan,  kalurahan.id_kalurahan as id_kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, nama_perusahaan, waktu, nominal')
             ->join('detail_kegiatan_csr', 'kegiatan_csr.id=detail_kegiatan_csr.id_kegiatan_csr')
             ->join('user', 'detail_kegiatan_csr.id_user=user.id')
             ->join('perusahaan', 'user.id=perusahaan.id_user')
@@ -77,7 +77,7 @@ class Laporan extends BaseController
         // var_dump($perusahaan,$urusan_bidang,$kapanewon,$kalurahan);
         // exit;
         $report = $this->db->table('kegiatan_csr')
-            ->select('kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, urusan_bidang.id as id_urusan, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.id_kapanewon as id_kapanewon, kalurahan.nm_kalurahan as kalurahan,  kalurahan.id_kalurahan as id_kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, nama_perusahaan, waktu')
+            ->select('kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, urusan_bidang.id as id_urusan, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.id_kapanewon as id_kapanewon, kalurahan.nm_kalurahan as kalurahan,  kalurahan.id_kalurahan as id_kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, nama_perusahaan, waktu, nominal')
             ->join('detail_kegiatan_csr', 'kegiatan_csr.id=detail_kegiatan_csr.id_kegiatan_csr')
             ->join('user', 'detail_kegiatan_csr.id_user=user.id')
             ->join('perusahaan', 'user.id=perusahaan.id_user')
@@ -94,8 +94,10 @@ class Laporan extends BaseController
         if ($kapanewon != '') {
             $report->where('kapanewon', $kapanewon);
         }
-        if ($kalurahan != '') {
-            $report->where('kalurahan', $kalurahan);
+        if ($this->request->getVar('kalurahan') != '') {
+            if ($this->request->getVar('kalurahan') != 'all_kalurahan') {
+                $report->where('id_kalurahan', $this->request->getVar('kalurahan'));
+            }
         }
             
         $data = [
@@ -108,7 +110,7 @@ class Laporan extends BaseController
     {
         // dd($this->request->getVar('tahun'));
         $query =  $this->db->table('kegiatan_csr')
-            ->select('file, kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, urusan_bidang.id as id_urusan, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.id_kapanewon as id_kapanewon, kalurahan.nm_kalurahan as kalurahan,  kalurahan.id_kalurahan as id_kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, nama_perusahaan, waktu')
+            ->select('file, kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, urusan_bidang.id as id_urusan, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.id_kapanewon as id_kapanewon, kalurahan.nm_kalurahan as kalurahan,  kalurahan.id_kalurahan as id_kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, nama_perusahaan, waktu, nominal')
             ->join('detail_kegiatan_csr', 'kegiatan_csr.id=detail_kegiatan_csr.id_kegiatan_csr')
             ->join('user', 'detail_kegiatan_csr.id_user=user.id')
             ->join('perusahaan', 'user.id=perusahaan.id_user')

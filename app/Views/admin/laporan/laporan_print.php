@@ -42,6 +42,7 @@
                 <th>Aktifitas</th>
                 <th>Waktu Pelaksanaan</th>
                 <th>Lokasi</th>
+                <th>Dana Disalurkan</th>
             </tr>
         </thead>
         <tbody>
@@ -62,6 +63,11 @@
                         <br>
                         <b>Kapanewon:</b> <?= $r['kapanewon']; ?>
                         <br>
+                    </td>
+                    <td>
+                        <?php if (!empty($r['nominal'])) { ?>
+                            <?= number_format($r['nominal'], 0, ',', '.'); ?>
+                        <?php } ?>
                     </td>
                 </tr>
             <?php endforeach; ?>

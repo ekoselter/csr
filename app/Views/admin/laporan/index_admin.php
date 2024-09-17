@@ -118,6 +118,7 @@
                                         <th>Aktifitas</th>
                                         <th>Waktu Pelaksanaan</th>
                                         <th>Lokasi</th>
+                                        <th>Dana Disalurkan</th>
                                         <th>Laporan</th>
                                     </tr>
                                 </thead>
@@ -139,6 +140,11 @@
                                                 <br>
                                                 <b>Kapanewon:</b> <?= $r['kapanewon']; ?>
                                                 <br>
+                                            </td>
+                                            <td>
+                                                <?php if (!empty($r['nominal'])) { ?>
+                                                    <?= number_format($r['nominal'], 0, ',', '.'); ?>
+                                                <?php } ?>
                                             </td>
                                             <td>
                                                 <a href="<?= base_url(); ?>preview_laporan/<?= $r['file'] ?>" target="_blank">
