@@ -89,7 +89,7 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a href="<?= base_url(); ?>"><img src="<?= base_url(); ?>/depan/assets/img/logo_header.png" alt="img"></a>
+                    <a href="<?= base_url(); ?>"><img src="<?= base_url(); ?>/depan/assets/img/logo_header3.png" alt="img"></a>
                 </div>
                 <div class="nav-right-part nav-right-part-mobile">
                     <a class="btn btn-base" href="<?= base_url(); ?>/login">Login</a>

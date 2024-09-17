@@ -46,7 +46,7 @@
                 <!-- Logo container-->
                 <div class="logo">
                     <a href="<?= base_url('dashboard'); ?>" class="logo">
-                        <img src="<?= base_url(); ?>/depan/assets/img/logo_header.png" height="40" alt="">
+                        <img src="<?= base_url(); ?>/depan/assets/img/logo_header3.png" height="40" alt="">
                     </a>
 
                 </div>
