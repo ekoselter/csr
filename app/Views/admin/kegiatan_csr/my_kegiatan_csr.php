@@ -116,7 +116,7 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title mt-0" id="myLargeModalLabel">Upload Laporan</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>                                                   
                                                 </div>
                                                 <div class="modal-body">
                                                     <div class="row">
@@ -125,6 +125,11 @@
                                                                 <input type="hidden" name="id" value="<?= $k['id']; ?>">
                                                                 <div class="card-body bootstrap-select-1">
                                                                     <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="m-b-30">
+                                                                                <a href="<?= base_url(); ?>/kegiatan_csr/format_kegiatan" class="btn btn-success">Download Format</a>
+                                                                            </div>
+                                                                        </div>
                                                                         <div class="col-md-12">
                                                                             <h6 class="input-title mt-0">Tanggal Pelaksanaan</h6>
                                                                             <div class="card m-b-30">

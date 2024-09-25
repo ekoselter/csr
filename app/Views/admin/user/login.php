@@ -16,6 +16,10 @@
     <link href="<?= base_url('admin'); ?>/assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="<?= base_url('admin'); ?>/assets/css/style.css" rel="stylesheet" type="text/css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 
@@ -33,6 +37,12 @@
                     <a href="<?= base_url(); ?>" class="logo logo-admin"><img src="<?= base_url(); ?>/depan/assets/img/logo_header.png" height="50" alt="logo"></a>
                 </div>
 
+                <?php if (session()->getFlashdata('error')): ?>
+                    <div class="alert alert-danger">
+                        <?= session()->getFlashdata('error') ?>
+                    </div>
+                <?php endif; ?>
+                
                 <div class="p-3">
                     <form class="form-horizontal m-t-20" action="<?= base_url(); ?>verifikasi" method="post">
 
@@ -42,9 +52,16 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-4">
+                        <div class="form-group row">
                             <div class="col-12">
                                 <input class="form-control" type="password" required="" placeholder="Password" name="password">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-4">
+                            <div class="col-12">
+                                <!-- Google reCAPTCHA v2 -->
+                                <div class="g-recaptcha" data-sitekey="<?= getenv('RECAPTCHA_SITE_KEY') ?>"></div>
                             </div>
                         </div>
 
@@ -96,6 +113,9 @@
 
     <!-- App js -->
     <script src="<?= base_url('admin'); ?>/assets/js/app.js"></script>
+
+    <!-- Tambahkan script untuk reCAPTCHA v2 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 

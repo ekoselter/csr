@@ -58,3 +58,7 @@ $routes->get('/print_mykegiatan', 'Kegiatan_Csr::print_mykegiatan');
 $routes->get('/laporan_kegiatan', 'Laporan::index');
 $routes->get('/laporan_print', 'Laporan::laporan_print');
 $routes->get('/preview_laporan/(:any)', 'Kegiatan_Csr::preview_laporan/$1');
+
+// captcha
+// $routes->get('/', 'PagesController::index');
+// $routes->post('page/submitContactUs', 'PagesController::submitContactUs');
