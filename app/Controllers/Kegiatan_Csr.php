@@ -415,10 +415,21 @@ class Kegiatan_Csr extends BaseController
 
         $image = $this->request->getFile('laporan');
         // dd($this->request->getFile('laporan'));
+
+        // Validasi tipe file
+        if (!$image->isValid() || $image->getClientMimeType() !== 'application/pdf') {
+            return 'Hanya file PDF yang diperbolehkan.';
+        }
+
+        // Validasi ukuran file maksimal 500 KB (500 * 1024 bytes)
+        if ($image->getSize() > 500 * 1024) {
+            return 'Ukuran file terlalu besar. Maksimal 500 KB.';
+        }
+
         if (empty($image)) {
             return redirect()->to(base_url('/my_kegiatan_csr'));
         }
-        if ($image->isValid() && in_array($image->getClientMIMEType(), ['image/jpg', 'image/jpeg', 'image/png', 'image/gif', 'application/pdf'])) {
+        if ($image->isValid() && in_array($image->getClientMIMEType(), ['application/pdf'])) {
 
             $newName = $image->getRandomName();
             $image->move('laporan', $newName);
