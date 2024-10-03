@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 4.6.6deb5ubuntu0.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 17 Sep 2024 pada 02.03
--- Versi server: 5.7.44
--- Versi PHP: 8.1.10
+-- Generation Time: 03 Okt 2024 pada 08.45
+-- Versi Server: 5.7.42-0ubuntu0.18.04.1
+-- PHP Version: 7.4.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -1287,112 +1286,103 @@ INSERT INTO `user` (`id`, `username`, `password`, `level`, `password2`) VALUES
 --
 
 --
--- Indeks untuk tabel `detail_kegiatan_csr`
+-- Indexes for table `detail_kegiatan_csr`
 --
 ALTER TABLE `detail_kegiatan_csr`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `kalurahan`
+-- Indexes for table `kalurahan`
 --
 ALTER TABLE `kalurahan`
   ADD PRIMARY KEY (`id_kalurahan`);
 
 --
--- Indeks untuk tabel `kegiatan_csr`
+-- Indexes for table `kegiatan_csr`
 --
 ALTER TABLE `kegiatan_csr`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `kegiatan_upload`
+-- Indexes for table `kegiatan_upload`
 --
 ALTER TABLE `kegiatan_upload`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `perusahaan`
+-- Indexes for table `perusahaan`
 --
 ALTER TABLE `perusahaan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `publikasi`
+-- Indexes for table `publikasi`
 --
 ALTER TABLE `publikasi`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `ruang_lingkup`
+-- Indexes for table `ruang_lingkup`
 --
 ALTER TABLE `ruang_lingkup`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `urusan_bidang`
+-- Indexes for table `urusan_bidang`
 --
 ALTER TABLE `urusan_bidang`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `detail_kegiatan_csr`
+-- AUTO_INCREMENT for table `detail_kegiatan_csr`
 --
 ALTER TABLE `detail_kegiatan_csr`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT untuk tabel `kegiatan_csr`
+-- AUTO_INCREMENT for table `kegiatan_csr`
 --
 ALTER TABLE `kegiatan_csr`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=778;
-
 --
--- AUTO_INCREMENT untuk tabel `kegiatan_upload`
+-- AUTO_INCREMENT for table `kegiatan_upload`
 --
 ALTER TABLE `kegiatan_upload`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
--- AUTO_INCREMENT untuk tabel `perusahaan`
+-- AUTO_INCREMENT for table `perusahaan`
 --
 ALTER TABLE `perusahaan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
-
 --
--- AUTO_INCREMENT untuk tabel `publikasi`
+-- AUTO_INCREMENT for table `publikasi`
 --
 ALTER TABLE `publikasi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
 --
--- AUTO_INCREMENT untuk tabel `ruang_lingkup`
+-- AUTO_INCREMENT for table `ruang_lingkup`
 --
 ALTER TABLE `ruang_lingkup`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
 --
--- AUTO_INCREMENT untuk tabel `urusan_bidang`
+-- AUTO_INCREMENT for table `urusan_bidang`
 --
 ALTER TABLE `urusan_bidang`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
-
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
