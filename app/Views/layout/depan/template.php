@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?= base_url(); ?>/depan/assets/css/vendor.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/depan/assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/depan/assets/css/responsive.css">
+    <link rel="icon" href="<?= base_url(); ?>/depan/assets/img/logo_header3.png" type="image/png">
     <link href="<?= base_url('admin'); ?>/assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
     <!-- Responsive datatable examples -->
     <link href="<?= base_url('admin'); ?>/assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
