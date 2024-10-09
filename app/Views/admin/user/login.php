@@ -45,7 +45,7 @@
                 
                 <div class="p-3">
                     <form class="form-horizontal m-t-20" action="<?= base_url(); ?>verifikasi" method="post">
-
+                    <?= csrf_field() ?>
                         <div class="form-group row">
                             <div class="col-12">
                                 <input class="form-control" type="text" required="" placeholder="Username" name="username">

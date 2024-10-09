@@ -205,6 +205,9 @@
 <script>
     $(document).ready(function() {
         $('#search').click(function() {
+            let csrfName = '<?= csrf_token() ?>';
+            let csrfHash = '<?= csrf_hash() ?>';
+
             var perusahaan = $('#perusahaan').val();
             // var urusan_bidang = $('#urusan_bidang').val();
             var ruang_lingkup = $('#ruang_lingkup').val();
@@ -217,6 +220,7 @@
                 url: '<?= base_url() ?>/laporan/report_search',
                 method: 'post',
                 data: {
+                    [csrfName]: csrfHash,
                     perusahaan: perusahaan,
                     // urusan_bidang: urusan_bidang,
                     ruang_lingkup: ruang_lingkup,

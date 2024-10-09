@@ -106,6 +106,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-12">
                                                             <form class="" action="<?= base_url(); ?>/pilih_kegiatan" method="post">
+                                                            <?= csrf_field() ?>
                                                                 <div class="card-body bootstrap-select-1">
                                                                     <div class="row">
                                                                         <input type="hidden" name="id_kegiatan_csr" value="<?= $k['id'] ?>">

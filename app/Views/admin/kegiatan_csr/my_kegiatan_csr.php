@@ -122,6 +122,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-12">
                                                             <form class="" action="<?= base_url('upload_laporan'); ?>" method="post" enctype="multipart/form-data">
+                                                            <?= csrf_field() ?>
                                                                 <input type="hidden" name="id" value="<?= $k['id']; ?>">
                                                                 <div class="card-body bootstrap-select-1">
                                                                     <div class="row">
@@ -182,6 +183,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-12">
                                                             <form class="" action="<?= base_url('upload_laporan'); ?>" method="post" enctype="multipart/form-data">
+                                                            <?= csrf_field() ?>
                                                                 <input type="text" name="id" value="<?= $k['file']; ?>">
                                                                 <img src=<?= base_url('laporan/'.$k['file']); ?>>
                                                                 <div class="card-body bootstrap-select-1">

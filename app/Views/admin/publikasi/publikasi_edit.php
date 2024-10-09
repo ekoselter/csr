@@ -26,6 +26,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <form class="" action="<?= base_url(); ?>publikasi_update" method="post" enctype="multipart/form-data">
+                                <?= csrf_field() ?>
                                     <input type="hidden" name="id" value="<?= $d['id']; ?>">
                                     <div class="card-body bootstrap-select-1">
                                         <div class="row">

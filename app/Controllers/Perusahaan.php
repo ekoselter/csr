@@ -10,7 +10,8 @@ class Perusahaan extends BaseController
     public function index(): string
     {
         $perusahaan = $this->db->table('perusahaan')
-            ->join('user', 'perusahaan.id_user=user.id')
+            ->select('perusahaan.*,user.username, user.password, user.password2')
+            ->join('user', 'user.id=perusahaan.id_user')
             ->where('level >', 0)
             ->get()->getResultArray();
         $data = [
@@ -88,8 +89,10 @@ class Perusahaan extends BaseController
 
     public function perusahaan_hapus($id)
     {
-
+        $cekUser = $this->db->table('perusahaan')->where('id', $id)->get()->getRowArray();
+        // dd($cekUser['id_user']);
         $this->db->table('perusahaan')->where('id', $id)->delete();
+        $this->db->table('user')->where('id', $cekUser['id_user'])->delete();
         return redirect()->to(base_url('/perusahaan'));
     }
 

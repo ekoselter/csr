@@ -17,6 +17,7 @@
     <!-- Responsive datatable examples -->
     <link href="<?= base_url('admin'); ?>/assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
+
 </head>
 
 <body>
@@ -106,7 +107,7 @@
                 </div>
                 <div class="nav-right-part nav-right-part-desktop">
                     <ul>
-                        <li><a class="search" href="#"><i class="fa fa-search"></i></a></li>
+                        <!-- <li><a class="search" href="#"><i class="fa fa-search"></i></a></li> -->
                         <li><a class="btn btn-base" href="<?= base_url('login'); ?>">Login <i class="fa fa-key"></i></a></li>
                     </ul>
                 </div>

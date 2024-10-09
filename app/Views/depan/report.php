@@ -175,8 +175,11 @@
     });
 </script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function() {      
         $('#search').click(function() {
+            let csrfName = '<?= csrf_token() ?>';
+            let csrfHash = '<?= csrf_hash() ?>';
+
             var perusahaan = $('#perusahaan').val();
             var ruang_lingkup = $('#ruang_lingkup').val();
             var kapanewon = $('#kapanewon').val();
@@ -187,12 +190,14 @@
                 url: '<?= base_url() ?>/depan/report_search',
                 method: 'post',
                 data: {
+                    [csrfName]: csrfHash,
                     perusahaan: perusahaan,
                     ruang_lingkup: ruang_lingkup,
                     kapanewon: kapanewon,
                     kalurahan: kalurahan,
                     aktifitas: aktifitas,
                 },
+   
                 success: function(data) {
                     $('#hasilsearch').html(data);
                 }

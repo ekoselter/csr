@@ -167,6 +167,9 @@
 <script>
     $(document).ready(function() {
         $('#search').click(function() {
+            let csrfName = '<?= csrf_token() ?>';
+            let csrfHash = '<?= csrf_hash() ?>';
+
             var tahun = $('#tahun').val();
             var ruang_lingkup = $('#ruang_lingkup').val();
             var kapanewon = $('#kapanewon').val();
@@ -178,6 +181,7 @@
                 url: '<?= base_url() ?>/depan/kegiatan_search',
                 method: 'post',
                 data: {
+                    [csrfName]: csrfHash,
                     tahun: tahun,
                     ruang_lingkup: ruang_lingkup,
                     kapanewon: kapanewon,
