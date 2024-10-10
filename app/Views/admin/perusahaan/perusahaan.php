@@ -46,33 +46,36 @@
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-lg-12">
+                                            <?php if(session()->getFlashdata('error')): ?>
+                                                <p style="color:red"><?= session()->getFlashdata('error') ?></p>
+                                            <?php endif; ?>
                                                 <form class="" action="<?= base_url('perusahaan_save'); ?>" method="post">
                                                 <?= csrf_field() ?>
                                                     <div class="card-body bootstrap-select-1">
                                                         <div class="row">
                                                             <div class="col-md-12">
                                                                 <h6 class="input-title mt-0">Nama Perusahaan</h6>
-                                                                <textarea class="form-control" name="nama_perusahaan" id="" cols="30" rows="2"></textarea>
+                                                                <textarea class="form-control" name="nama_perusahaan" id="" cols="30" rows="2" required></textarea>
                                                             </div>
 
                                                             <div class="col-md-6">
                                                                 <h6 class="input-title mt-3">Nama Penanggungjawab</h6>
-                                                                <input type="text" class="form-control" name="penanggungjawab">
+                                                                <input type="text" class="form-control" name="penanggungjawab" required>
                                                             </div>
 
                                                             <div class="col-md-6">
                                                                 <h6 class="input-title mt-3">CP / No HP</h6>
-                                                                <input type="number" class="form-control" name="no_hp">
+                                                                <input type="number" class="form-control" name="no_hp" required>
                                                             </div>
 
                                                             <div class="col-md-6">
                                                                 <h6 class="input-title mt-3">Username</h6>
-                                                                <input type="text" class="form-control" name="username">
+                                                                <input type="text" class="form-control" name="username" required>
                                                             </div>
 
                                                             <div class="col-md-6">
-                                                                <h6 class="input-title mt-3">Password</h6>
-                                                                <input type="text" class="form-control" name="password">
+                                                                <h6 class="input-title mt-3">Password (minimal 5 karakter, 1 huruf kapital dan satu karakter unik (!@#$%^&*))</h6>
+                                                                <input type="text" class="form-control" name="password" required>
                                                             </div>
 
                                                             <div class="col-md-12 mt-4">
@@ -145,6 +148,14 @@
             "scrollXInner": "100%", // Mengisi seluruh lebar kontainer
 
         });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        <?php if(session()->getFlashdata('error')): ?>
+            var myModal = new bootstrap.Modal(document.querySelector('.tambahKegiatan'));  // Pilih modal berdasarkan class
+            myModal.show();  // Tampilkan modal jika terdapat error
+        <?php endif; ?>
     });
 </script>
 <?= $this->endSection() ?>

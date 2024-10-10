@@ -28,6 +28,25 @@ class Perusahaan extends BaseController
         $encrypted = password_hash($password, PASSWORD_BCRYPT);
         // dd($encrypted);
 
+         // Ambil input dari form
+         $username = $this->request->getVar('username');
+         $password = $this->request->getVar('password');
+
+          // Validasi input dengan aturan khusus untuk password
+          if (!$this->validate([
+            'username' => 'required',
+            'password' => [
+                'rules' => 'required|min_length[5]|regex_match[/(?=.*[A-Z])(?=.*[!@#$%^&*])/]',
+                'errors' => [
+                    'required' => 'Password wajib diisi',
+                    'min_length' => 'Password harus minimal 5 karakter',
+                    'regex_match' => 'Password harus mengandung setidaknya satu huruf kapital dan satu karakter unik (!@#$%^&*)'
+                ]
+            ]
+        ])) {
+            return redirect()->back()->withInput()->with('error', 'Username dan Password tidak valid. Password harus minimal 5 karakter, mengandung huruf kapital, dan karakter unik.');
+        }
+
         $add_user = $this->db->table('user')
             ->set('username', $this->request->getVar('username'))
             ->set('password', $encrypted)
