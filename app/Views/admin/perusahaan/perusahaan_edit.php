@@ -72,6 +72,10 @@
                                         </div>
                                     </div>
                                 </form>
+                                <form action="<?= base_url(); ?>/perusahaan_update_ALL" method="post">
+                                    <?= csrf_field() ?>
+                                    <button type="submit" class="btn btn-warning waves-effect waves-light">Update All Passwords</button>
+                                </form>
                             </div> <!-- end col -->
                         </div>
 

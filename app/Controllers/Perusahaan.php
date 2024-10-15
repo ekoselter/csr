@@ -106,6 +106,29 @@ class Perusahaan extends BaseController
         return redirect()->to(base_url('/perusahaan'));
     }
 
+    public function updateAllPasswords()
+    {
+        $userModel = $this->db->table('user');
+        $users = $userModel->get()->getResultArray();
+        // dd($users);
+        foreach ($users as $user) {
+            // Menambahkan string _csrKU! pada password lama
+            $newPassword = $user['password2'] . '_csrKU!';
+
+            // Enkripsi dengan PASSWORD_BCRYPT
+            $hashedPassword = password_hash($newPassword, PASSWORD_BCRYPT);
+
+            // Update password di database
+            $userModel
+            ->set('password', $hashedPassword)
+            ->set('password2', $newPassword)
+            ->where('id', $user['id'])
+            ->update();
+        }
+
+        return redirect()->back()->with('message', 'All passwords updated successfully!');
+    }
+
     public function perusahaan_hapus($id)
     {
         $cekUser = $this->db->table('perusahaan')->where('id', $id)->get()->getRowArray();
