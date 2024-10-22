@@ -9,6 +9,9 @@ use CodeIgniter\Filters\Honeypot;
 use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\SecureHeaders;
 
+// Tambahkan filter XSS khusus
+use App\Filters\XSSFilter;
+
 class Filters extends BaseConfig
 {
     /**
@@ -24,6 +27,8 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        // Tambahkan alias untuk filter XSS
+        'xss'           => XSSFilter::class,
     ];
 
     /**
@@ -37,6 +42,7 @@ class Filters extends BaseConfig
         'before' => [
             // 'honeypot',
             'csrf',
+            'xss',
             // 'invalidchars',
         ],
         'after' => [
