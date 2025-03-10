@@ -99,4 +99,8 @@ class Session extends BaseConfig
      * DB Group for the database session.
      */
     public ?string $DBGroup = null;
+
+    public $cookieSecure = true;
+    public $cookieHTTPOnly = true;
+
 }

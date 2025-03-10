@@ -135,7 +135,7 @@ class Kegiatan_Csr extends BaseController
             ->set('nominal', $nominal)
             ->insert();
 
-        return redirect()->to(base_url('/my_kegiatan_csr'));
+        return redirect()->to(base_url('user/my_kegiatan_csr'));
     }
 
     public function my_kegiatan_csr()
@@ -427,7 +427,7 @@ class Kegiatan_Csr extends BaseController
         }
 
         if (empty($image)) {
-            return redirect()->to(base_url('/my_kegiatan_csr'));
+            return redirect()->to(base_url('user/my_kegiatan_csr'));
         }
         if ($image->isValid() && in_array($image->getClientMIMEType(), ['application/pdf'])) {
 
@@ -440,9 +440,9 @@ class Kegiatan_Csr extends BaseController
                 ->where('id', $this->request->getVar('id'))
                 ->update();
 
-            return redirect()->to(base_url('/my_kegiatan_csr'));
+            return redirect()->to(base_url('user/my_kegiatan_csr'));
         } else {
-            return redirect()->to(base_url('/my_kegiatan_csr'));
+            return redirect()->to(base_url('user/my_kegiatan_csr'));
         }
     }
 

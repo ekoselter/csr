@@ -33,12 +33,13 @@
                                 <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-animation="bounce" data-target=".tambahKegiatan">
                                     <i class="fa fa-plus"></i> Tambah Data
                                 </button>
+                            <?php }else if (session('level') == 1) { ?>                          
+                                <a href="<?= base_url(); ?>user/print_mykegiatan" target="_blank">
+                                    <button type="button" class="btn btn-danger waves-effect waves-light">
+                                        <i class="fa fa-print"></i> Print
+                                    </button>
+                                </a>
                             <?php } ?>
-                            <a href="<?= base_url(); ?>print_mykegiatan" target="_blank">
-                                <button type="button" class="btn btn-danger waves-effect waves-light">
-                                    <i class="fa fa-print"></i> Print
-                                </button>
-                            </a>
                             <!-- <button type="button" class="btn btn-danger btn-sm tombolimport">
                                 <i class="fa fa-plus"></i> Import Excel
                             </button> -->
@@ -80,7 +81,7 @@
                                                     <i class="fa fa-eye"></i> Lihat Laporan
                                                 </button> -->
 
-                                                <a href="<?= base_url(); ?>preview_laporan/<?= $k['file'] ?>" target="_blank">
+                                                <a href="<?= base_url(); ?>user/preview_laporan/<?= $k['file'] ?>" target="_blank">
                                                     <button type="button" class="btn btn-danger waves-effect waves-light">
                                                         <i class="fa fa-eye"></i> Lihat Laporan
                                                     </button>
@@ -121,16 +122,16 @@
                                                 <div class="modal-body">
                                                     <div class="row">
                                                         <div class="col-lg-12">
-                                                            <form class="" action="<?= base_url('upload_laporan'); ?>" method="post" enctype="multipart/form-data">
+                                                            <form class="" action="<?= base_url(); ?>user/upload_laporan" method="post" enctype="multipart/form-data">
                                                             <?= csrf_field() ?>
                                                                 <input type="hidden" name="id" value="<?= $k['id']; ?>">
                                                                 <div class="card-body bootstrap-select-1">
                                                                     <div class="row">
-                                                                        <div class="col-md-12">
+                                                                        <!-- <div class="col-md-12">
                                                                             <div class="m-b-30">
-                                                                                <a href="<?= base_url(); ?>/kegiatan_csr/format_kegiatan" class="btn btn-success">Download Format</a>
+                                                                                <a href="<?= base_url(); ?>user/kegiatan_csr/format_kegiatan" class="btn btn-success">Download Format</a>
                                                                             </div>
-                                                                        </div>
+                                                                        </div> -->
                                                                         <div class="col-md-12">
                                                                             <h6 class="input-title mt-0">Tanggal Pelaksanaan</h6>
                                                                             <div class="card m-b-30">
@@ -138,7 +139,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-12">
-                                                                            <h6 class="input-title mt-0">File Laporan</h6>
+                                                                            <h6 class="input-title mt-0">File Laporan (dapat berupa foto dalam pdf)</h6>
                                                                             <div class="card m-b-30">
                                                                                 <div class="card-body">
 
@@ -182,7 +183,7 @@
                                                 <div class="modal-body">
                                                     <div class="row">
                                                         <div class="col-lg-12">
-                                                            <form class="" action="<?= base_url('upload_laporan'); ?>" method="post" enctype="multipart/form-data">
+                                                            <form class="" action="<?= base_url('user/upload_laporan'); ?>" method="post" enctype="multipart/form-data">
                                                             <?= csrf_field() ?>
                                                                 <input type="text" name="id" value="<?= $k['file']; ?>">
                                                                 <img src=<?= base_url('laporan/'.$k['file']); ?>>
@@ -263,7 +264,7 @@
                 // console.log(id_kapanewon);
                 $.ajax({
                     type: "GET",
-                    url: "<?= base_url() ?>/kegiatan_csr/getkalurahan/" + id_kapanewon,
+                    url: "<?= base_url() ?>user/kegiatan_csr/getkalurahan/" + id_kapanewon,
                     success: function(data) {
                         data = JSON.parse(data);
                         data.forEach(function(item) {

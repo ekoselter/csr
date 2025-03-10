@@ -58,6 +58,8 @@ abstract class BaseController extends Controller
         $this->hasher = \Config\Services::passwordHash();
         $this->encryption = \Config\Services::MyEncryption();
         $this->encrypter = \Config\Services::encrypter();
+        // Start session
+        $this->session = \Config\Services::session();
 
         helper('text');
     }

@@ -105,35 +105,38 @@
                 <div id="navigation">
                     <!-- Navigation Menu-->
                     <ul class="navigation-menu">
-
-                        <li class="has-submenu">
-                            <a href="<?= base_url('dashboard'); ?>"><i class="dripicons-device-desktop"></i>Dashboard</a>
-                        </li>
+                        
                         <?php if (session('level') == 0) { ?>
+                            <li class="has-submenu">
+                                <a href="<?= base_url('admin/dashboard'); ?>"><i class="dripicons-device-desktop"></i>Dashboard</a>
+                            </li>
                             <li class="has-submenu">
                                 <a href="#"><i class="dripicons-stack"></i>Data Master</a>
                                 <ul class="submenu megamenu">
                                     <li>
                                         <ul>
-                                            <li><a href="<?= base_url('perusahaan'); ?>">Perusahaan</a></li>
+                                            <li><a href="<?= base_url('admin/perusahaan'); ?>">Perusahaan</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
 
                             <li class="has-submenu">
-                                <a href="<?= base_url('kegiatan_csr'); ?>"><i class="dripicons-blog"></i>Kegiatan CSR</a>
+                                <a href="<?= base_url('admin/kegiatan_csr'); ?>"><i class="dripicons-blog"></i>Kegiatan CSR</a>
                             </li>
                         <?php } ?>
 
                         <?php if (session('level') > 0) { ?>
                             <li class="has-submenu">
+                                <a href="<?= base_url('user/dashboard'); ?>"><i class="dripicons-device-desktop"></i>Dashboard</a>
+                            </li>
+                            <li class="has-submenu">
                                 <a href="#"><i class="dripicons-stack"></i>Kegiatan CSR</a>
                                 <ul class="submenu megamenu">
                                     <li>
                                         <ul>
-                                            <li><a href="<?= base_url('kegiatan_csr'); ?>">All Kegiatan</a></li>
-                                            <li><a href="<?= base_url('my_kegiatan_csr'); ?>">My Kegiatan</a></li>
+                                            <li><a href="<?= base_url('user/kegiatan_csr'); ?>">All Kegiatan</a></li>
+                                            <li><a href="<?= base_url('user/my_kegiatan_csr'); ?>">My Kegiatan</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -142,7 +145,7 @@
 
                         <?php if (session('level') == 0) { ?>
                             <li class="has-submenu">
-                                <a href="<?= base_url('laporan_kegiatan'); ?>"><i class="dripicons-blog"></i>Laporan Kegiatan CSR</a>
+                                <a href="<?= base_url('user/laporan_kegiatan'); ?>"><i class="dripicons-blog"></i>Laporan Kegiatan CSR</a>
                             </li>
                         <?php } ?>
 

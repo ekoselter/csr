@@ -29,6 +29,8 @@ class Filters extends BaseConfig
         'secureheaders' => SecureHeaders::class,
         // Tambahkan alias untuk filter XSS
         'xss'           => XSSFilter::class,
+        'auth'          => \App\Filters\AuthFilter::class,
+        // 'csp'           => \App\Filters\CSPFilter::class,
     ];
 
     /**
@@ -47,6 +49,7 @@ class Filters extends BaseConfig
         ],
         'after' => [
             'toolbar',
+            // 'csp',
             // 'honeypot',
             // 'secureheaders',
         ],
@@ -72,5 +75,7 @@ class Filters extends BaseConfig
      * Example:
      * 'isLoggedIn' => ['before' => ['account/*', 'profiles/*']]
      */
-    public array $filters = [];
+    public array $filters = [
+        'auth' => ['before' => ['dashboard', 'admin/*']],
+    ];
 }
