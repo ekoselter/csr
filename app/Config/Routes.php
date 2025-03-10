@@ -75,6 +75,7 @@ $routes->group('user', ['filter' => 'auth:1'], function ($routes) {
     $routes->post('upload_laporan', 'Kegiatan_Csr::upload_laporan');
     $routes->get('print_allkegiatan', 'Kegiatan_Csr::print_allkegiatan');
     $routes->get('print_mykegiatan', 'Kegiatan_Csr::print_mykegiatan');
+    $routes->get('preview_laporan/(:any)', 'Kegiatan_Csr::preview_laporan/$1');
 });
 
 // Login & Autentikasi

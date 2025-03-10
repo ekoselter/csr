@@ -44,7 +44,7 @@ class Filters extends BaseConfig
         'before' => [
             // 'honeypot',
             'csrf',
-            'xss',
+            'xss' => ['except' => ['user/upload_laporan']],
             // 'invalidchars',
         ],
         'after' => [

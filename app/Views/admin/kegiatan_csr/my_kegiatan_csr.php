@@ -143,7 +143,7 @@
                                                                             <div class="card m-b-30">
                                                                                 <div class="card-body">
 
-                                                                                    <input type="file" name="laporan" accept=".pdf"/>
+                                                                                    <input type="file" name="laporan" accept=".pdf" required/>
                                                                                 </div>
                                                                             </div>
                                                                             <p>Upload File dengan format .pdf maksimal 500 KB</p>
