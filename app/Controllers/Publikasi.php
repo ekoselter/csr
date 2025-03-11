@@ -82,65 +82,45 @@ class Publikasi extends BaseController
     public function publikasi_update()
     {
         $publikasi = $this->db->table('publikasi')
-            ->where('id', $this->request->getVar('id'))->get()->getRowArray();
+            ->where('id', $this->request->getPost('id'))->get()->getRowArray();
         // dd($this->request->getFile('foto')->getName());
+        $image = $this->request->getFile('foto');
 
-        if ($this->request->getFile('foto')->getName() == '') {
+        if (!$this->request->getFile('foto')->isValid()) {
 
             $encrypted = random_string('alnum', 20);
             $this->db->table('publikasi')
-                ->set('judul', $this->request->getVar('judul'))
+                ->set('judul', $this->request->getPost('judul'))
                 ->set('slug', $encrypted)
-                ->set('deskripsi', $this->request->getVar('deskripsi'))
-                ->set('author', $this->request->getVar('author'))
-                ->where('id', $this->request->getVar('id'))
+                ->set('deskripsi', $this->request->getPost('deskripsi'))
+                ->set('author', $this->request->getPost('author'))
+                ->where('id', $this->request->getPost('id'))
                 ->update();
 
-            return redirect()->to(base_url('/publikasi/admin'));
-        } elseif ($this->request->getFile('foto')->getName() != '') {
-            // dd("gambar ada");
-
-            $image = $this->request->getFile('foto');
-            if ($image->isValid() && in_array($image->getClientMIMEType(), ['image/jpg', 'image/jpeg', 'image/png', 'image/gif'])) {
-
-                $folderPath = 'publikasi/'; // Gantilah dengan path folder yang ingin Anda periksa
-                $fileToDelete = $publikasi['foto']; // Gantilah dengan nama file yang ingin Anda hapus
-
-                // Periksa apakah folder ada
-                if (is_dir($folderPath)) {
-                    // Periksa apakah file yang ingin dihapus ada di dalam folder
-                    if (file_exists("$folderPath/$fileToDelete")) {
-                        // Hapus file
-                        if (unlink("$folderPath/$fileToDelete")) {
-                            echo "File '$fileToDelete' berhasil dihapus.";
-                        } else {
-                            echo "Gagal menghapus file '$fileToDelete'.";
-                        }
-                    } else {
-                        echo "File '$fileToDelete' tidak ditemukan di dalam folder '$folderPath'.";
-                    }
-                } else {
-                    echo "Folder '$folderPath' tidak ada atau bukan merupakan folder.";
-                }
-
-                $newName = $image->getRandomName();
-                $image->move('publikasi', $newName);
-
-                $encrypted = random_string('alnum', 20);
-                $this->db->table('publikasi')
-                    ->set('judul', $this->request->getVar('judul'))
-                    ->set('slug', $encrypted)
-                    ->set('foto', $newName)
-                    ->set('deskripsi', $this->request->getVar('deskripsi'))
-                    ->set('author', $this->request->getVar('author'))
-                    ->where('id', $this->request->getVar('id'))
-                    ->update();
-
-                return redirect()->to(base_url('/publikasi/admin'));
-            } else {
-                return redirect()->to(base_url('/publikasi/admin'));
+            return redirect()->to(base_url('multi/publikasi'));
+        } else {
+             // Jika ada gambar baru, hapus foto lama
+            $fileToDelete = FCPATH . 'publikasi/' . $publikasi['foto'];
+            if (file_exists($fileToDelete)) {
+                unlink($fileToDelete);
             }
+
+             // Upload foto baru
+            $newName = $image->getRandomName();
+            $image->move('publikasi', $newName);
+
+           // Update dengan foto baru
+            $encrypted = random_string('alnum', 20);
+            $this->db->table('publikasi')
+                ->set('judul', $this->request->getPost('judul'))
+                ->set('slug', $encrypted)
+                ->set('foto', $newName)
+                ->set('deskripsi', $this->request->getPost('deskripsi'))
+                ->set('author', $this->request->getPost('author'))
+                ->where('id', $this->request->getPost('id'))
+                ->update();
         }
+        return redirect()->to(base_url('multi/publikasi'));
     }
 
     public function publikasi_hapus($id)
@@ -169,7 +149,7 @@ class Publikasi extends BaseController
         }
 
         $this->db->table('publikasi')->where('id', $id)->delete();
-        return redirect()->to(base_url('/publikasi/admin'));
+        return redirect()->to(base_url('multi/publikasi'));
     }
 
     public function publikasi_view($id)
