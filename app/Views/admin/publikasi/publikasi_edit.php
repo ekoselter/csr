@@ -25,7 +25,7 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <form class="" action="<?= base_url(); ?>publikasi_update" method="post" enctype="multipart/form-data">
+                                <form class="" action="<?= base_url(); ?>admin/publikasi_update" method="post" enctype="multipart/form-data">
                                 <?= csrf_field() ?>
                                     <input type="hidden" name="id" value="<?= $d['id']; ?>">
                                     <div class="card-body bootstrap-select-1">
@@ -40,7 +40,7 @@
                                                 <div class="card m-b-30">
                                                     <div class="card-body">
 
-                                                        <input type="file" id="input-file-now" class="dropify" name="foto" value="<?= $d['foto']; ?>" data-default-file="<?= base_url(); ?>/publikasi/<?= $d['foto']; ?>" />
+                                                        <input type="file" id="input-file-now" class="dropify" name="foto" value="<?= $d['foto']; ?>" data-default-file="<?= base_url(); ?>admin/publikasi/<?= $d['foto']; ?>" />
                                                     </div>
                                                 </div>
                                             </div>

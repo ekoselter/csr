@@ -8,7 +8,7 @@ namespace App\Controllers;
 
 class Publikasi extends BaseController
 {
-    public function index_admin()
+    public function index()
     {
         if (!session()->has('username')) {
             // Redirect ke halaman login jika sesi tidak ada
@@ -28,7 +28,7 @@ class Publikasi extends BaseController
             'publikasi' => $publikasi
         ];
         // dd($data);
-        return view('admin/publikasi/index_admin', $data);
+        return view('admin/publikasi/index', $data);
     }
 
     public function publikasi_simpan()
@@ -39,7 +39,7 @@ class Publikasi extends BaseController
         }
 
         $image = $this->request->getFile('foto');
-        // dd($image);
+        // dd($this->request->getPost());
         if ($image->isValid() && in_array($image->getClientMIMEType(), ['image/jpg', 'image/jpeg', 'image/png', 'image/gif'])) {
 
             $encrypted = random_string('alnum', 20);
@@ -48,17 +48,17 @@ class Publikasi extends BaseController
 
             $this->db->table('publikasi')
                 ->set('tgl', date('Y-m-d H:i:s'))
-                ->set('judul', $this->request->getVar('judul'))
+                ->set('judul', $this->request->getPost('judul'))
                 ->set('slug', $encrypted)
                 ->set('foto', $newName)
-                ->set('deskripsi', $this->request->getVar('deskripsi'))
+                ->set('deskripsi', $this->request->getPost('deskripsi'))
                 ->set('id_user', session('id_user'))
-                ->set('author', $this->request->getVar('author'))
+                ->set('author', $this->request->getPost('author'))
                 ->insert();
 
-            return redirect()->to(base_url('/publikasi/admin'));
+            return redirect()->to(base_url('multi/publikasi'));
         } else {
-            return redirect()->to(base_url('/publikasi/admin'));
+            return redirect()->to(base_url('multi/publikasi'));
         }
     }
 

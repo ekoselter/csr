@@ -37,14 +37,6 @@ $routes->group('admin', ['filter' => 'auth:0'], function ($routes) {
     $routes->post('perusahaan_update', 'Perusahaan::perusahaan_update');
     $routes->post('perusahaan_update_ALL', 'Perusahaan::updateAllPasswords');
     $routes->get('perusahaan/hapus/(:any)', 'Perusahaan::perusahaan_hapus/$1');
-    // Publikasi
-    $routes->get('publikasi/admin', 'Publikasi::index_admin');
-    $routes->post('publikasi_save', 'Publikasi::publikasi_simpan');
-    $routes->get('publikasi_edit/(:any)', 'Publikasi::publikasi_edit/$1');
-    $routes->post('publikasi_update', 'Publikasi::publikasi_update');
-    $routes->get('publikasi_hapus/(:any)', 'Publikasi::publikasi_hapus/$1');
-    $routes->get('publikasi_view/(:any)', 'Publikasi::publikasi_view/$1');
-    $routes->get('publikasi_detail/(:any)', 'Publikasi::publikasi_detail/$1');
     // Laporan
     $routes->get('laporan_kegiatan', 'Laporan::index');
     $routes->get('laporan_print', 'Laporan::laporan_print');
@@ -76,6 +68,17 @@ $routes->group('user', ['filter' => 'auth:1'], function ($routes) {
     $routes->get('print_allkegiatan', 'Kegiatan_Csr::print_allkegiatan');
     $routes->get('print_mykegiatan', 'Kegiatan_Csr::print_mykegiatan');
     $routes->get('preview_laporan/(:any)', 'Kegiatan_Csr::preview_laporan/$1');
+});
+
+$routes->group('multi', ['filter' => 'auth:0,1'], function ($routes) {
+     // Publikasi
+     $routes->get('publikasi', 'Publikasi::index');
+     $routes->post('publikasi_save', 'Publikasi::publikasi_simpan');
+     $routes->get('publikasi_edit/(:any)', 'Publikasi::publikasi_edit/$1');
+     $routes->post('publikasi_update', 'Publikasi::publikasi_update');
+     $routes->get('publikasi_hapus/(:any)', 'Publikasi::publikasi_hapus/$1');
+     $routes->get('publikasi_view/(:any)', 'Publikasi::publikasi_view/$1');
+     $routes->get('publikasi_detail/(:any)', 'Publikasi::publikasi_detail/$1');
 });
 
 // Login & Autentikasi

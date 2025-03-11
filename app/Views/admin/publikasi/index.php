@@ -46,7 +46,7 @@
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <form class="" action="<?= base_url('publikasi_save'); ?>" method="post" enctype="multipart/form-data">
+                                                <form class="" action="<?= base_url('multi/publikasi_save'); ?>" method="post" enctype="multipart/form-data">
                                                 <?= csrf_field() ?>
                                                     <div class="card-body bootstrap-select-1">
                                                         <div class="row">
@@ -118,18 +118,18 @@
                                             <img class="rounded mr-2 mo-mb-2" alt="200x200" style="width: 200px;" src="<?= base_url(); ?>/publikasi/<?= $k['foto']; ?>" data-holder-rendered="true">
                                         </td>
                                         <td><?= $k['judul']; ?></td>
-                                        <td><?= $k['deskripsi']; ?></td>
+                                        <td><?= strip_tags(html_entity_decode($k['deskripsi'])); ?></td>
                                         <td><?= $k['author']; ?></td>
                                         <td>
                                             <?php if (session('level') == 0) { ?>
                                                 <?php if ($k['status'] == 0) { ?>
-                                                    <a href="<?= base_url(); ?>publikasi_view/<?= $k['slug'] ?>" class="btn btn-sm btn-info"><i class="fas fa-eye"></i></a>
+                                                    <a href="<?= base_url(); ?>multi/publikasi_view/<?= $k['slug'] ?>" class="btn btn-sm btn-info"><i class="fas fa-eye"></i></a>
                                                 <?php } else { ?>
-                                                    <a href="<?= base_url(); ?>publikasi_view/<?= $k['slug'] ?>" class="btn btn-sm btn-info"><i class="fas fa-eye-slash"></i></a>
+                                                    <a href="<?= base_url(); ?>multi/publikasi_view/<?= $k['slug'] ?>" class="btn btn-sm btn-info"><i class="fas fa-eye-slash"></i></a>
                                             <?php }
                                             } ?>
-                                            <a href="<?= base_url(); ?>publikasi_edit/<?= $k['id'] ?>" class="btn btn-sm btn-success"><i class="fas fa-edit"></i></a>
-                                            <a href="<?= base_url(); ?>publikasi_hapus/<?= $k['id'] ?>" onclick="return confirm('apakah anda ingin hapus data?');" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
+                                            <a href="<?= base_url(); ?>multi/publikasi_edit/<?= $k['id'] ?>" class="btn btn-sm btn-success"><i class="fas fa-edit"></i></a>
+                                            <a href="<?= base_url(); ?>multi/publikasi_hapus/<?= $k['id'] ?>" onclick="return confirm('apakah anda ingin hapus data?');" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>

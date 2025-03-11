@@ -148,10 +148,11 @@
                                 <a href="<?= base_url('user/laporan_kegiatan'); ?>"><i class="dripicons-blog"></i>Laporan Kegiatan CSR</a>
                             </li>
                         <?php } ?>
-
+                       
                         <li class="has-submenu">
-                            <a href="<?= base_url('publikasi/admin'); ?>"><i class="dripicons-blog"></i>Publikasi</a>
+                            <a href="<?= base_url('multi/publikasi'); ?>"><i class="dripicons-blog"></i>Publikasi</a>
                         </li>
+       
 
                     </ul>
                     <!-- End navigation menu -->
