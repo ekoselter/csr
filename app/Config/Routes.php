@@ -30,6 +30,14 @@ $routes->group('admin', ['filter' => 'auth:0'], function ($routes) {
     $routes->get('kegiatan_hapus/(:any)', 'Kegiatan_Csr::kegiatan_hapus/$1');
     $routes->post('kegiatan_upload', 'Kegiatan_Csr::kegiatan_upload');
     $routes->get('kegiatan_csr/detail/(:any)', 'Kegiatan_Csr::detail_csr/$1');
+    $routes->get('print_allkegiatan', 'Kegiatan_Csr::print_allkegiatan');
+    // Upload Kegiatan
+    $routes->get('kegiatan_upload_all', 'Kegiatan_Csr::kegiatan_upload_all');
+    $routes->get('kegiatan_upload/edit/(:any)', 'Kegiatan_Csr::kegiatan_upload_edit/$1');
+    $routes->post('kegiatan_upload_update', 'Kegiatan_Csr::kegiatan_upload_update');
+    $routes->get('kegiatan_upload_hapus/(:any)', 'Kegiatan_Csr::kegiatan_upload_hapus/$1');
+    $routes->get('kegiatan_upload_submit', 'Kegiatan_Csr::kegiatan_upload_submit');
+    $routes->get('kegiatan_upload_kosong', 'Kegiatan_Csr::kegiatan_upload_kosong');
     // Perusahaan
     $routes->get('perusahaan', 'Perusahaan::index');
     $routes->post('perusahaan_save', 'Perusahaan::perusahaan_save');

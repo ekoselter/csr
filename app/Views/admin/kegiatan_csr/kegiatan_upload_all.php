@@ -35,12 +35,12 @@
                                         <i class="fa fa-arrow-left"></i> Kembali
                                     </button>
                                 </a>
-                                <a href="<?= base_url(); ?>kegiatan_upload_submit">
+                                <a href="<?= base_url(); ?>admin/kegiatan_upload_submit">
                                     <button type="button" class="btn btn-success waves-effect waves-light">
                                         <i class="fa fa-save"></i> Submit Data
                                     </button>
                                 </a>
-                                <a href="<?= base_url(); ?>kegiatan_upload_kosong">
+                                <a href="<?= base_url(); ?>admin/kegiatan_upload_kosong">
                                     <button type="button" class="btn btn-danger waves-effect waves-light">
                                         <i class="fa fa-trash"></i> Kosongkan Data
                                     </button>
@@ -90,8 +90,8 @@
                                         <td><?= $k['opd']; ?></td>
                                         <td>
                                             <?php if (session('level') == 0) { ?>
-                                                <a href="<?= base_url(); ?>kegiatan_upload/edit/<?= $k['id'] ?>" class="btn btn-sm btn-success"><i class="fas fa-edit"></i></a>
-                                                <a href="<?= base_url(); ?>kegiatan_upload_hapus/<?= $k['id'] ?>" onclick="return confirm('apakah anda ingin hapus data?');" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
+                                                <a href="<?= base_url(); ?>admin/kegiatan_upload/edit/<?= $k['id'] ?>" class="btn btn-sm btn-success"><i class="fas fa-edit"></i></a>
+                                                <a href="<?= base_url(); ?>admin/kegiatan_upload_hapus/<?= $k['id'] ?>" onclick="return confirm('apakah anda ingin hapus data?');" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
                                             <?php } ?>
                                         </td>
                                     </tr>
@@ -105,7 +105,7 @@
                                                 <div class="modal-body">
                                                     <div class="row">
                                                         <div class="col-lg-12">
-                                                            <form class="" action="<?= base_url(); ?>/pilih_kegiatan" method="post">
+                                                            <form class="" action="<?= base_url(); ?>admin/pilih_kegiatan" method="post">
                                                             <?= csrf_field() ?>
                                                                 <div class="card-body bootstrap-select-1">
                                                                     <div class="row">

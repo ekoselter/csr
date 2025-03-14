@@ -25,7 +25,7 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <form class="" action="<?= base_url(); ?>/kegiatan_upload_update" method="post">
+                                <form class="" action="<?= base_url(); ?>admin/kegiatan_upload_update" method="post">
                                 <?= csrf_field() ?>
                                     <input type="hidden" name="id" value="<?= $d['id']; ?>">
                                     <div class="card-body bootstrap-select-1">
@@ -125,7 +125,7 @@
                                                         <button type="submit" class="btn btn-primary waves-effect waves-light">
                                                             Submit
                                                         </button>
-                                                        <a href="<?= base_url(); ?>kegiatan_upload_all" class="btn btn-secondary waves-effect m-l-5">
+                                                        <a href="<?= base_url(); ?>admin/kegiatan_upload_all" class="btn btn-secondary waves-effect m-l-5">
                                                             Cancel
                                                         </a>
                                                     </div>

@@ -49,7 +49,7 @@
                                             <?php if(session()->getFlashdata('error')): ?>
                                                 <p style="color:red"><?= session()->getFlashdata('error') ?></p>
                                             <?php endif; ?>
-                                                <form class="" action="<?= base_url('perusahaan_save'); ?>" method="post">
+                                                <form class="" action="<?= base_url('admin/perusahaan_save'); ?>" method="post">
                                                 <?= csrf_field() ?>
                                                     <div class="card-body bootstrap-select-1">
                                                         <div class="row">
@@ -120,8 +120,8 @@
                                         <td><?= $k['penanggungjawab']; ?></td>
                                         <td><?= $k['no_hp']; ?></td>
                                         <td>
-                                            <a href="<?= base_url(); ?>perusahaan/edit/<?= $k['id'] ?>" class="btn btn-sm btn-success"><i class="fas fa-edit"></i></a>
-                                            <a href="<?= base_url(); ?>perusahaan/hapus/<?= $k['id'] ?>" onclick="return confirm('apakah anda ingin hapus data?');" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
+                                            <a href="<?= base_url(); ?>admin/perusahaan/edit/<?= $k['id'] ?>" class="btn btn-sm btn-success"><i class="fas fa-edit"></i></a>
+                                            <a href="<?= base_url(); ?>admin/perusahaan/hapus/<?= $k['id'] ?>" onclick="return confirm('apakah anda ingin hapus data?');" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>

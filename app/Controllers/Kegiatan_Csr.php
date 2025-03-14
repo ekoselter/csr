@@ -67,7 +67,7 @@ class Kegiatan_Csr extends BaseController
             ->set('opd', $this->request->getVar('opd'))
             ->insert();
 
-        return redirect()->to(base_url('/kegiatan_csr'));
+        return redirect()->to(base_url('admin/kegiatan_csr'));
     }
 
     public function edit($id)
@@ -116,13 +116,13 @@ class Kegiatan_Csr extends BaseController
             ->where('id', $this->request->getVar('id'))
             ->update();
 
-        return redirect()->to(base_url('/kegiatan_csr'));
+        return redirect()->to(base_url('admin/kegiatan_csr'));
     }
 
     public function kegiatan_hapus($id)
     {
         $this->db->table('kegiatan_csr')->where('id', $id)->delete();
-        return redirect()->to(base_url('/kegiatan_csr'));
+        return redirect()->to(base_url('admin/kegiatan_csr'));
     }
 
     public function pilih_kegiatan()
@@ -289,7 +289,7 @@ class Kegiatan_Csr extends BaseController
                 $this->db->table('kegiatan_upload')
                     ->insert($hasil);
             }
-            return redirect()->to(base_url('/kegiatan_upload_all'));
+            return redirect()->to(base_url('admin/kegiatan_upload_all'));
             // Proses data sesuai kebutuhan Anda
             // Misalnya, simpan data ke database atau tampilkan data
 
@@ -334,13 +334,13 @@ class Kegiatan_Csr extends BaseController
         }
         // dd($hasil);
         $this->db->table('kegiatan_upload')->truncate();
-        return redirect()->to(base_url('/kegiatan_csr'));
+        return redirect()->to(base_url('admin/kegiatan_csr'));
     }
 
     public function kegiatan_upload_kosong()
     {
         $this->db->table('kegiatan_upload')->truncate();
-        return redirect()->to(base_url('/kegiatan_upload_all'));
+        return redirect()->to(base_url('admin/kegiatan_upload_all'));
     }
 
     public function kegiatan_upload_edit($id)
@@ -397,13 +397,13 @@ class Kegiatan_Csr extends BaseController
             ->where('id', $this->request->getVar('id'))
             ->update();
 
-        return redirect()->to(base_url('/kegiatan_upload_all'));
+        return redirect()->to(base_url('admin/kegiatan_upload_all'));
     }
 
     public function kegiatan_upload_hapus($id)
     {
         $this->db->table('kegiatan_upload')->where('id', $id)->delete();
-        return redirect()->to(base_url('/kegiatan_upload_all'));
+        return redirect()->to(base_url('admin/kegiatan_upload_all'));
     }
 
     public function upload_laporan()

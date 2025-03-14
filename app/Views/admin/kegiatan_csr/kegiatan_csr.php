@@ -36,7 +36,7 @@
                                 <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-animation="bounce" data-target=".uploadKegiatan">
                                     <i class="fa fa-plus"></i> Import Data
                                 </button>
-                                <a href="<?= base_url(); ?>kegiatan_upload_all">
+                                <a href="<?= base_url(); ?>admin/kegiatan_upload_all">
                                     <button type="button" class="btn btn-info waves-effect waves-light">
                                         <i class="fa fa-excel"></i> Kegiatan Belum Tersubmit
                                     </button>
@@ -65,7 +65,7 @@
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <form class="" id="form" action="<?= base_url(); ?>/kegiatan_save" method="post">
+                                                <form class="" id="form" action="<?= base_url(); ?>/admin/kegiatan_save" method="post">
                                                 <?= csrf_field() ?>
                                                     <div class="card-body bootstrap-select-1">
                                                         <div class="row">
@@ -179,7 +179,7 @@
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <form class="" action="<?= base_url(); ?>kegiatan_upload" method="post" enctype="multipart/form-data">
+                                                <form class="" action="<?= base_url(); ?>admin/kegiatan_upload" method="post" enctype="multipart/form-data">
                                                 <?= csrf_field() ?>
                                                     <div class="card-body bootstrap-select-1">
                                                         <div class="row">
@@ -191,11 +191,11 @@
 
                                                             <div class="col-md-12">
                                                                 <h6 class="input-title mt-3">File Excel</h6>
-                                                                <a href="<?= base_url(); ?>/kegiatan_csr/format_kegiatan" class="btn btn-success">Download Format</a>
+                                                                <a href="<?= base_url(); ?>admin/kegiatan_csr/format_kegiatan" class="btn btn-success">Download Format</a>
                                                                 <div class="card m-b-30">
                                                                     <div class="card-body">
 
-                                                                        <input type="file" id="input-file-now" class="dropify" name="fileexcel" accept=".xls, .xlsx" />
+                                                                        <input type="file" id="input-file-now" class="dropify" name="fileexcel" accept=".xls, .xlsx" required/>
                                                                     </div>
                                                                 </div>
                                                             </div>

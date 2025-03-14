@@ -63,7 +63,7 @@ class Perusahaan extends BaseController
             ->set('id_user', $lastInsertID)
             ->insert();
 
-        return redirect()->to(base_url('/perusahaan'));
+        return redirect()->to(base_url('admin/perusahaan'));
     }
 
     public function edit($id)
@@ -103,7 +103,7 @@ class Perusahaan extends BaseController
             ->where('id_user', $this->request->getVar('id_user'))
             ->update();
 
-        return redirect()->to(base_url('/perusahaan'));
+        return redirect()->to(base_url('admin/perusahaan'));
     }
 
     public function updateAllPasswords()
@@ -135,7 +135,7 @@ class Perusahaan extends BaseController
         // dd($cekUser['id_user']);
         $this->db->table('perusahaan')->where('id', $id)->delete();
         $this->db->table('user')->where('id', $cekUser['id_user'])->delete();
-        return redirect()->to(base_url('/perusahaan'));
+        return redirect()->to(base_url('admin/perusahaan'));
     }
 
 }

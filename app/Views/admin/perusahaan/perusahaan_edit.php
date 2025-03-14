@@ -25,7 +25,7 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <form class="" action="<?= base_url(); ?>/perusahaan_update" method="post">
+                                <form class="" action="<?= base_url(); ?>admin/perusahaan_update" method="post">
                                     <?= csrf_field() ?>
                                     <input type="hidden" name="id_user" value="<?= $d['id_user']; ?>">
                                     <div class="card-body bootstrap-select-1">
@@ -62,7 +62,7 @@
                                                         <button type="submit" class="btn btn-primary waves-effect waves-light">
                                                             Submit
                                                         </button>
-                                                        <a href="<?= base_url(); ?>perusahaan" class="btn btn-secondary waves-effect m-l-5">
+                                                        <a href="<?= base_url(); ?>admin/perusahaan" class="btn btn-secondary waves-effect m-l-5">
                                                             Cancel
                                                         </a>
                                                     </div>
@@ -72,10 +72,10 @@
                                         </div>
                                     </div>
                                 </form>
-                                <form action="<?= base_url(); ?>/perusahaan_update_ALL" method="post">
+                                <!-- <form action="<?= base_url(); ?>admin/perusahaan_update_ALL" method="post">
                                     <?= csrf_field() ?>
                                     <button type="submit" class="btn btn-warning waves-effect waves-light">Update All Passwords</button>
-                                </form>
+                                </form> -->
                             </div> <!-- end col -->
                         </div>
 
