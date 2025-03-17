@@ -39,8 +39,7 @@
                             <img src="<?= base_url(); ?>/publikasi/<?= $d['foto']; ?>" alt="img">
                         </div>
                         <div class="details p-0 pt-3">
-                            <p><?= $d['deskripsi']; ?></p>
-
+                            <p><?= strip_tags(html_entity_decode($d['deskripsi'])); ?></p>
                         </div>
                     </div>
                 </div>

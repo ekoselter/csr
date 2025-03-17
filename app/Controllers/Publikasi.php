@@ -166,7 +166,7 @@ class Publikasi extends BaseController
             ->where('slug', $id)
             ->update();
 
-        return redirect()->to(base_url('/publikasi/admin'));
+        return redirect()->to(base_url('multi/publikasi'));
     }
 
     public function publikasi_detail($id)

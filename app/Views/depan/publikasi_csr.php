@@ -34,7 +34,7 @@
                                 <li><i class="fa fa-calendar-alt"></i>Marce 9 , 2020</li>
                             </ul>
                             <h4><a href="#"><?= $k['judul']; ?></a></h4>
-                            <p><?= $k['deskripsi']; ?></p>
+                            <p><?= strip_tags(html_entity_decode($k['deskripsi'])); ?></p>
                         </div>
                     </div>
                 </div>

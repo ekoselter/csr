@@ -1,0 +1,45 @@
+INFO - 2025-03-17 08:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-17 08:49:40 --> Undefined variable: k
+in APPPATH\Views\depan\publikasi_detail.php on line 42.
+ 1 APPPATH\Views\depan\publikasi_detail.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: k', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\publikasi_detail.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\publikasi_detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/publikasi_detail', [], true)
+ 5 APPPATH\Controllers\Publikasi.php(191): view('depan/publikasi_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Publikasi->publikasi_detail('RgOKdSjA1sOJ8YhVBaDf')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publikasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-17 08:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-17 08:50:08 --> Undefined variable: k
+in APPPATH\Views\depan\publikasi_detail.php on line 42.
+ 1 APPPATH\Views\depan\publikasi_detail.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: k', 'C:\\laragon\\www\\csr\\app\\Views\\depan\\publikasi_detail.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\depan\\publikasi_detail.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('depan/publikasi_detail', [], true)
+ 5 APPPATH\Controllers\Publikasi.php(191): view('depan/publikasi_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Publikasi->publikasi_detail('RgOKdSjA1sOJ8YhVBaDf')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publikasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-17 08:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:53:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:53:27 --> CSRF token verified.
+INFO - 2025-03-17 08:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-17 08:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -102,7 +102,7 @@
                                     <?= substr(strip_tags($k['judul']), 0, 25); ?>...
                                 </a>
                             </h5>
-                            <p><?= substr(strip_tags($k['deskripsi']), 0, 100); ?>...</p>
+                            <p><?= substr(strip_tags(html_entity_decode($k['deskripsi'])), 0, 100); ?>...</p>
                         </div>
                     </div>
                 </div>

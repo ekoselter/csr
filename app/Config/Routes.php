@@ -17,6 +17,7 @@ $routes->post('/laporan/report_search', 'Laporan::report_search');
 $routes->get('/publikasi_csr', 'Depan::publikasi_csr');
 $routes->get('/kontak_kami', 'Depan::kontak_kami');
 $routes->get('kegiatan_csr/getkalurahan/(:any)', 'Kegiatan_Csr::getKalurahan/$1');
+$routes->get('publikasi_detail/(:any)', 'Publikasi::publikasi_detail/$1');
 
 // Admin (dilindungi dengan filter 'auth')
 $routes->group('admin', ['filter' => 'auth:0'], function ($routes) {
@@ -46,9 +47,9 @@ $routes->group('admin', ['filter' => 'auth:0'], function ($routes) {
     $routes->post('perusahaan_update_ALL', 'Perusahaan::updateAllPasswords');
     $routes->get('perusahaan/hapus/(:any)', 'Perusahaan::perusahaan_hapus/$1');
     // Laporan
-    $routes->get('laporan_kegiatan', 'Laporan::index');
-    $routes->get('laporan_print', 'Laporan::laporan_print');
-    $routes->get('preview_laporan/(:any)', 'Kegiatan_Csr::preview_laporan/$1');
+    // $routes->get('laporan_kegiatan', 'Laporan::index');
+    // $routes->get('laporan_print', 'Laporan::laporan_print');
+    // $routes->get('preview_laporan/(:any)', 'Kegiatan_Csr::preview_laporan/$1');
 
 });
 $routes->group('user', ['filter' => 'auth:1'], function ($routes) {
@@ -87,6 +88,10 @@ $routes->group('multi', ['filter' => 'auth:0,1'], function ($routes) {
      $routes->get('publikasi_hapus/(:any)', 'Publikasi::publikasi_hapus/$1');
      $routes->get('publikasi_view/(:any)', 'Publikasi::publikasi_view/$1');
      $routes->get('publikasi_detail/(:any)', 'Publikasi::publikasi_detail/$1');
+         // Laporan
+    $routes->get('laporan_kegiatan', 'Laporan::index');
+    $routes->get('laporan_print', 'Laporan::laporan_print');
+    $routes->get('preview_laporan/(:any)', 'Kegiatan_Csr::preview_laporan/$1');
 });
 
 // Login & Autentikasi

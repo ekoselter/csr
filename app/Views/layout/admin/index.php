@@ -45,7 +45,7 @@
 
                 <!-- Logo container-->
                 <div class="logo">
-                    <a href="<?= base_url('dashboard'); ?>" class="logo">
+                    <a href="<?= base_url(''); ?>" class="logo">
                         <img src="<?= base_url(); ?>/depan/assets/img/logo_header3.png" height="40" alt="">
                     </a>
 
@@ -145,7 +145,7 @@
 
                         <?php if (session('level') == 0) { ?>
                             <li class="has-submenu">
-                                <a href="<?= base_url('user/laporan_kegiatan'); ?>"><i class="dripicons-blog"></i>Laporan Kegiatan CSR</a>
+                                <a href="<?= base_url('multi/laporan_kegiatan'); ?>"><i class="dripicons-blog"></i>Laporan Kegiatan CSR</a>
                             </li>
                         <?php } ?>
                        

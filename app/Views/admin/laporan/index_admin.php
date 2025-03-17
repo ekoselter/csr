@@ -20,7 +20,7 @@
 
         <div class="row">
                 <div class="col-lg-12">
-                    <form class="" action="<?= base_url(); ?>laporan_print" method="get" enctype="multipart/form-data" target="_blank">
+                    <form class="" action="<?= base_url(); ?>multi/laporan_print" method="get" enctype="multipart/form-data" target="_blank">
                         <div class="card">
                             <div class="card-body bootstrap-select-1">                              
                                 <h4 class="header-title mt-0">FORM PENCARIAN</h4>
@@ -147,7 +147,7 @@
                                                 <?php } ?>
                                             </td>
                                             <td>
-                                                <a href="<?= base_url(); ?>preview_laporan/<?= $r['file'] ?>" target="_blank">
+                                                <a href="<?= base_url(); ?>multi/preview_laporan/<?= $r['file'] ?>" target="_blank">
                                                         <button type="button" class="btn btn-danger waves-effect waves-light">
                                                             <i class="fa fa-eye"></i> Lihat Laporan
                                                         </button>
