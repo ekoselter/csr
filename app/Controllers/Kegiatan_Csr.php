@@ -15,13 +15,20 @@ class Kegiatan_Csr extends BaseController
             // Redirect ke halaman login jika sesi tidak ada
             return redirect()->to('/login');
         }
-
-        $kegiatan = $this->db->table('kegiatan_csr')
-            ->select('volume, kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd')
+    
+        $baseQuery = $this->db->table('kegiatan_csr')
+            ->select('volume, kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, status')
             ->join('ruang_lingkup', 'kegiatan_csr.ruang_lingkup=ruang_lingkup.id')
             ->join('urusan_bidang', 'kegiatan_csr.urusan_bidang=urusan_bidang.id')
-            ->join('kalurahan', 'kegiatan_csr.kalurahan=kalurahan.id_kalurahan')
-            ->get()->getResultArray();
+            ->join('kalurahan', 'kegiatan_csr.kalurahan=kalurahan.id_kalurahan');
+        
+        if (session('level') == 1) {  
+            // User hanya melihat yang belum masuk di detail_kegiatan_csr
+            $baseQuery->where('status', '0');
+        }
+        
+        $kegiatan = $baseQuery->get()->getResultArray();
+    
         $ruang_lingkup = $this->db->table('ruang_lingkup')->get()->getResultArray();
         $urusan_bidang = $this->db->table('urusan_bidang')->get()->getResultArray();
         $kapanewon = $this->db->table('kalurahan')
@@ -127,15 +134,21 @@ class Kegiatan_Csr extends BaseController
 
     public function pilih_kegiatan()
     {
-        $nominal = str_replace('.', '', $this->request->getVar('nominal'));
-        // dd($nominal);
-        $this->db->table('detail_kegiatan_csr')
-            ->set('id_kegiatan_csr', $this->request->getVar('id_kegiatan_csr'))
-            ->set('id_user', session('id_user'))
-            ->set('nominal', $nominal)
-            ->insert();
+        $cekKegiatan = $this->db->table('kegiatan_csr')->where('id', $this->request->getVar('id_kegiatan_csr'))->get()->getRowArray();
+        if ($cekKegiatan['status'] == 1) {
+            session()->setFlashdata('error', 'CSR sudah diambil');
+            return redirect()->to(base_url('user/kegiatan_csr'));
+        } else {
+            $nominal = str_replace('.', '', $this->request->getVar('nominal'));
+            // dd($nominal);
+            $this->db->table('detail_kegiatan_csr')
+                ->set('id_kegiatan_csr', $this->request->getVar('id_kegiatan_csr'))
+                ->set('id_user', session('id_user'))
+                ->set('nominal', $nominal)
+                ->insert();
 
-        return redirect()->to(base_url('user/my_kegiatan_csr'));
+            return redirect()->to(base_url('user/my_kegiatan_csr'));
+        }
     }
 
     public function my_kegiatan_csr()

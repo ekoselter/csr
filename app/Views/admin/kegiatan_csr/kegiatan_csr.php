@@ -55,6 +55,11 @@
                             <?php  } ?>
 
                         </div>
+                        <?php if (session()->getFlashdata('error')) : ?>
+                            <div class="alert alert-danger">
+                                <?= session()->getFlashdata('error'); ?>
+                            </div>
+                        <?php endif; ?>
                         <div class="modal fade tambahKegiatan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
@@ -237,7 +242,10 @@
                                     <th>Perkiraan Biaya</th>
                                     <th>Volume</th>
                                     <th>Satuan</th>
-                                    <th>OPD</th>
+                                    <th>OPD</th>                            
+                                    <?php if (session('level') == 0) { ?>
+                                        <th>Diambil</th>
+                                    <?php } ?>  
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -263,6 +271,9 @@
                                         <td><?= $k['volume']; ?></td>
                                         <td><?= strtoupper($k['satuan']); ?></td>
                                         <td><?= $k['opd']; ?></td>
+                                        <?php if (session('level') == 0) { ?>
+                                            <td><?= ($k['status'])== '1' ? '✅' : '-'; ?></td>
+                                        <?php } ?>  
                                         <td>
                                             <?php if (session('level') > 0) { ?>
                                                 <button type="button" class="btn btn-primary waves-effect waves-light btn-sm" data-toggle="modal" data-animation="bounce" data-target=".pilihKegiatan<?= $k['id'] ?>">
