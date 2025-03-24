@@ -1,0 +1,91 @@
+INFO - 2025-03-24 08:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:54:45 --> CSRF token verified.
+INFO - 2025-03-24 08:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:55:24 --> CSRF token verified.
+INFO - 2025-03-24 08:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:56:55 --> CSRF token verified.
+INFO - 2025-03-24 08:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 08:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-24 09:09:25 --> Undefined index: perusahaan
+in APPPATH\Views\admin\kegiatan_csr\upload_laporan_admin.php on line 60.
+ 1 APPPATH\Views\admin\kegiatan_csr\upload_laporan_admin.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: perusahaan', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\upload_laporan_admin.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\upload_laporan_admin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/upload_laporan_admin', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(394): view('admin/kegiatan_csr/upload_laporan_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->upload_laporan_admin()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-24 09:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-24 09:10:26 --> mysqli_sql_exception: Unknown column 'perusahaan' in 'field list' in C:\laragon\www\csr\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\csr\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `perusah...', 0)
+#1 C:\laragon\www\csr\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `perusah...')
+#2 C:\laragon\www\csr\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `perusah...')
+#3 C:\laragon\www\csr\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `perusah...', Array, false)
+#4 C:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(388): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->upload_laporan_admin()
+#6 C:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#7 C:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-03-24 09:10:26 --> Unknown column 'perusahaan' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `perusahaan`, `detail_kegiatan_csr`.`id`, `kegiatan_csr`.`tahun`, `ruang_lingkup`.`ket` as `ruang_lingkup`, `urusan_bidang`.`ket` as `urusan_bidang`, `kegiatan_csr`.`program_kegiatan`, `aktifitas`, `kegiatan_csr`.`alamat`, `kalurahan`.`nm_kapanewon` as `kapanewon`, `kalurahan`.`nm_kalurahan` as `kalurahan`, `kegiatan_csr`.`biaya`, `kegiatan_csr`.`volume`, `kegiatan_csr`.`satuan`, `kegiatan_csr`.`opd`, `detail_kegiatan_csr`.`nominal`, `detail_kegiatan_csr`.`file`
+FROM `detail_kegiatan_csr`
+JOIN `kegiatan_csr` ON `detail_kegiatan_csr`.`id_kegiatan_csr`=`kegiatan_csr`.`id`
+JOIN `ruang_lingkup` ON `kegiatan_csr`.`ruang_lingkup`=`ruang_lingkup`.`id`
+JOIN `urusan_bidang` ON `kegiatan_csr`.`urusan_bidang`=`urusan_bidang`.`id`
+JOIN `kalurahan` ON `kegiatan_csr`.`kalurahan`=`kalurahan`.`id_kalurahan`
+JOIN `perusahaan` ON `detail_kegiatan_csr`.`id_user`=`perusahaan`.`id_user`
+WHERE `file` IS NULL', [], false)
+ 2 APPPATH\Controllers\Kegiatan_Csr.php(388): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->upload_laporan_admin()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-24 09:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-24 09:10:54 --> Undefined index: perusahaan
+in APPPATH\Views\admin\kegiatan_csr\upload_laporan_admin.php on line 60.
+ 1 APPPATH\Views\admin\kegiatan_csr\upload_laporan_admin.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: perusahaan', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\upload_laporan_admin.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\upload_laporan_admin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/upload_laporan_admin', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(395): view('admin/kegiatan_csr/upload_laporan_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->upload_laporan_admin()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-24 09:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:31:48 --> CSRF token verified.
+INFO - 2025-03-24 09:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-24 09:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

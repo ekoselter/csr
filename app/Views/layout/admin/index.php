@@ -145,12 +145,18 @@
 
                         <?php if (session('level') == 0) { ?>
                             <li class="has-submenu">
-                                <a href="<?= base_url('multi/laporan_kegiatan'); ?>"><i class="dripicons-blog"></i>Laporan Kegiatan CSR</a>
+                                <a href="<?= base_url('admin/kegiatan_csr_non'); ?>"><i class="dripicons-link-broken"></i>Kegiatan CSR Non List</a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="<?= base_url('admin/upload_laporan_admin'); ?>"><i class="dripicons-upload"></i>Upload Laporan</a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="<?= base_url('multi/laporan_kegiatan'); ?>"><i class="dripicons-copy"></i>Laporan Kegiatan CSR</a>
                             </li>
                         <?php } ?>
                        
                         <li class="has-submenu">
-                            <a href="<?= base_url('multi/publikasi'); ?>"><i class="dripicons-blog"></i>Publikasi</a>
+                            <a href="<?= base_url('multi/publikasi'); ?>"><i class="dripicons-broadcast"></i>Publikasi</a>
                         </li>
        
 

@@ -48,6 +48,47 @@ class Kegiatan_Csr extends BaseController
         return view('admin/kegiatan_csr/kegiatan_csr', $data);
     }
 
+    public function kegiatan_csr_non()
+    {
+        if (!session()->has('username')) {
+            // Redirect ke halaman login jika sesi tidak ada
+            return redirect()->to('/login');
+        }
+    
+        $baseQuery = $this->db->table('kegiatan_csr')
+            ->select('volume, kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, status, waktu, file, nominal, detail_kegiatan_csr.id as id_detail')
+            ->join('ruang_lingkup', 'kegiatan_csr.ruang_lingkup=ruang_lingkup.id')
+            ->join('urusan_bidang', 'kegiatan_csr.urusan_bidang=urusan_bidang.id')
+            ->join('kalurahan', 'kegiatan_csr.kalurahan=kalurahan.id_kalurahan')
+            ->join('detail_kegiatan_csr', 'kegiatan_csr.id=detail_kegiatan_csr.id_kegiatan_csr')
+            ->where('id_user', session('id_user'));
+        
+        if (session('level') == 1) {  
+            // User hanya melihat yang belum masuk di detail_kegiatan_csr
+            $baseQuery->where('status', '0');
+        }
+        
+        $kegiatan = $baseQuery->get()->getResultArray();
+    
+        $ruang_lingkup = $this->db->table('ruang_lingkup')->get()->getResultArray();
+        $urusan_bidang = $this->db->table('urusan_bidang')->get()->getResultArray();
+        $kapanewon = $this->db->table('kalurahan')
+            ->select('kalurahan.id_kapanewon, kalurahan.nm_kapanewon')
+            ->groupBy('kalurahan.id_kapanewon')
+            ->groupBy('kalurahan.nm_kapanewon')
+            ->get()
+            ->getResultArray();
+
+        $data = [
+            'kegiatan' => $kegiatan,
+            'ruang_lingkup' => $ruang_lingkup,
+            'urusan_bidang' => $urusan_bidang,
+            'kapanewon' => $kapanewon,
+        ];
+        // dd($data);
+        return view('admin/kegiatan_csr/kegiatan_csr_non', $data);
+    }
+
     public function getKalurahan($id_kapanewon)
     {
         $data = $this->db->table('kalurahan')->where('id_kapanewon', $id_kapanewon)->get()->getResultArray();
@@ -77,6 +118,64 @@ class Kegiatan_Csr extends BaseController
         return redirect()->to(base_url('admin/kegiatan_csr'));
     }
 
+    public function kegiatan_save_non()
+    {
+
+        $image = $this->request->getFile('laporan');
+        // Hapus tanda titik
+        $biaya = str_replace('.', '', $this->request->getPost('biaya'));
+        $nominal = str_replace('.', '', $this->request->getPost('nominal'));
+        // laporan
+            // Validasi tipe file
+            if (!$image->isValid() || $image->getClientMimeType() !== 'application/pdf') {
+                return 'Hanya file PDF yang diperbolehkan.';
+            }
+            // Validasi ukuran file maksimal 500 KB (500 * 1024 bytes)
+            if ($image->getSize() > 500 * 1024) {
+                return 'Ukuran file terlalu besar. Maksimal 500 KB.';
+            }
+            if (empty($image)) {
+                return redirect()->to(base_url('admin/kegiatan_csr_non'));
+            }
+            // dd($this->request->getPost());
+        // input kegiatan
+        $this->db->table('kegiatan_csr')
+            ->set('tahun', $this->request->getPost('tahun'))
+            ->set('ruang_lingkup', $this->request->getPost('ruang_lingkup'))
+            ->set('urusan_bidang', $this->request->getPost('urusan_bidang'))
+            ->set('program_kegiatan', $this->request->getPost('program_kegiatan'))
+            ->set('aktifitas', $this->request->getPost('aktifitas'))
+            ->set('alamat', $this->request->getPost('alamat'))
+            ->set('kapanewon', $this->request->getPost('kapanewon'))
+            ->set('kalurahan', $this->request->getPost('kalurahan'))
+            ->set('biaya', $biaya)
+            ->set('volume', $this->request->getPost('volume'))
+            ->set('satuan', $this->request->getPost('satuan'))
+            ->set('opd', $this->request->getPost('opd'))
+            ->set('status', '1')
+            ->insert();
+
+            // input ke pilih kegiatan  
+            // ambil ID terakhir yang diinsert
+            $waktu_input = $this->request->getPost('tgl_pelaksanaan');
+            $waktu_db =  $waktu_input . ' 00:00:00';
+            $id_kegiatan_csr = $this->db->insertID();
+            if ($image->isValid() && in_array($image->getClientMIMEType(), ['application/pdf'])) {
+                $newName = $image->getRandomName();
+                $image->move('laporan', $newName);
+                $this->db->table('detail_kegiatan_csr')
+                    ->set('id_kegiatan_csr', $id_kegiatan_csr)
+                    ->set('id_user', session('id_user'))
+                    ->set('nominal', $nominal)
+                    ->set('waktu', $waktu_db)
+                    ->set('file', $newName)
+                    ->insert();
+            }
+
+        session()->setFlashdata('success', 'Data berhasil disimpan');
+        return redirect()->to(base_url('admin/kegiatan_csr_non'));
+    }
+
     public function edit($id)
     {
         $ruang_lingkup = $this->db->table('ruang_lingkup')->get()->getResultArray();
@@ -103,6 +202,35 @@ class Kegiatan_Csr extends BaseController
         return view('admin/kegiatan_csr/kegiatan_csr_edit', $data);
     }
 
+    public function edit_non($id)
+    {
+        $ruang_lingkup = $this->db->table('ruang_lingkup')->get()->getResultArray();
+        $urusan_bidang = $this->db->table('urusan_bidang')->get()->getResultArray();
+        $kapanewon = $this->db->table('kalurahan')
+            ->select('kalurahan.id_kapanewon, kalurahan.nm_kapanewon')
+            ->groupBy('kalurahan.id_kapanewon')
+            ->groupBy('kalurahan.nm_kapanewon')
+            ->get()
+            ->getResultArray();
+        $kegiatan = $this->db->table('kegiatan_csr')
+        ->select('kegiatan_csr.*, detail_kegiatan_csr.id as id_detail, nominal, waktu, file')
+        ->join('detail_kegiatan_csr', 'kegiatan_csr.id=detail_kegiatan_csr.id_kegiatan_csr')
+        ->where('kegiatan_csr.id', $id)->get()->getRowArray();
+        $kalurahan = $this->db->table('kalurahan')
+            ->where('id_kapanewon', $kegiatan['kapanewon'])
+            ->get()
+            ->getResultArray();
+        $data = [
+            'ruang_lingkup' => $ruang_lingkup,
+            'urusan_bidang' => $urusan_bidang,
+            'kapanewon' => $kapanewon,
+            'kalurahan' => $kalurahan,
+            'd' => $kegiatan
+        ];
+        // dd($data);
+        return view('admin/kegiatan_csr/kegiatan_csr_edit_non', $data);
+    }
+
     public function kegiatan_update()
     {
         // dd($this->request->getVar());
@@ -126,10 +254,87 @@ class Kegiatan_Csr extends BaseController
         return redirect()->to(base_url('admin/kegiatan_csr'));
     }
 
+    public function kegiatan_update_non()
+    {
+        // dd($this->request->getVar());
+        
+        if ($this->request->getFile('laporan')->getError() === 4) {
+
+            $this->db->table('kegiatan_csr')
+                ->set('tahun', $this->request->getPost('tahun'))
+                ->set('ruang_lingkup', $this->request->getPost('ruang_lingkup'))
+                ->set('urusan_bidang', $this->request->getPost('urusan_bidang'))
+                ->set('program_kegiatan', $this->request->getPost('program_kegiatan'))
+                ->set('aktifitas', $this->request->getPost('aktifitas'))
+                ->set('alamat', $this->request->getPost('alamat'))
+                ->set('kapanewon', $this->request->getPost('kapanewon'))
+                ->set('kalurahan', $this->request->getPost('kalurahan'))
+                ->set('biaya', $this->request->getPost('biaya'))
+                ->set('volume', $this->request->getPost('volume'))
+                ->set('satuan', $this->request->getPost('satuan'))
+                ->set('opd', $this->request->getPost('opd'))
+                ->where('id', $this->request->getPost('id'))
+                ->update();
+
+            $this->db->table('detail_kegiatan_csr')
+                ->set('nominal', $this->request->getPost('nominal'))
+                ->set('waktu', $this->request->getPost('tgl_pelaksanaan'))
+                ->where('id', $this->request->getPost('id_detail'))
+                ->update();
+        } else {
+            // dd('oke');
+            $fileLama = $this->db->table('detail_kegiatan_csr')
+                ->where('id', $this->request->getPost('id_detail'))->get()->getRowArray();
+            // dd($this->request->getFile('foto')->getName());
+            $fileBaru = $this->request->getFile('laporan');
+
+             // Jika ada file baru, hapus file lama
+             $fileToDelete = FCPATH . 'laporan/' . $fileLama['file'];
+             if (file_exists($fileToDelete)) {
+                 unlink($fileToDelete);
+             }
+               // Upload file baru
+            $newName = $fileBaru->getRandomName();
+            $fileBaru->move('laporan', $newName);
+
+            $this->db->table('kegiatan_csr')
+                ->set('tahun', $this->request->getPost('tahun'))
+                ->set('ruang_lingkup', $this->request->getPost('ruang_lingkup'))
+                ->set('urusan_bidang', $this->request->getPost('urusan_bidang'))
+                ->set('program_kegiatan', $this->request->getPost('program_kegiatan'))
+                ->set('aktifitas', $this->request->getPost('aktifitas'))
+                ->set('alamat', $this->request->getPost('alamat'))
+                ->set('kapanewon', $this->request->getPost('kapanewon'))
+                ->set('kalurahan', $this->request->getPost('kalurahan'))
+                ->set('biaya', $this->request->getPost('biaya'))
+                ->set('volume', $this->request->getPost('volume'))
+                ->set('satuan', $this->request->getPost('satuan'))
+                ->set('opd', $this->request->getPost('opd'))
+                ->where('id', $this->request->getPost('id'))
+                ->update();
+
+            $this->db->table('detail_kegiatan_csr')
+                ->set('nominal', $this->request->getPost('nominal'))
+                ->set('file', $newName)
+                ->set('waktu', $this->request->getPost('tgl_pelaksanaan'))
+                ->where('id', $this->request->getPost('id_detail'))
+                ->update();
+        }
+        session()->setFlashdata('success', 'Data berhasil disimpan');
+        return redirect()->to(base_url('admin/kegiatan_csr_non'));
+    }
+
     public function kegiatan_hapus($id)
     {
         $this->db->table('kegiatan_csr')->where('id', $id)->delete();
         return redirect()->to(base_url('admin/kegiatan_csr'));
+    }
+
+    public function kegiatan_hapus_non($id, $id_detail)
+    {
+        $this->db->table('kegiatan_csr')->where('id', $id)->delete();
+        $this->db->table('detail_kegiatan_csr')->where('id', $id_detail)->delete();
+        return redirect()->to(base_url('admin/kegiatan_csr_non'))->with('success', 'Data berhasil dihapus');
     }
 
     public function pilih_kegiatan()
@@ -168,6 +373,26 @@ class Kegiatan_Csr extends BaseController
         ];
         // dd($data);
         return view('admin/kegiatan_csr/my_kegiatan_csr', $data);
+    }
+
+    public function upload_laporan_admin()
+    {
+        $kegiatan = $this->db->table('detail_kegiatan_csr')
+            ->select('nama_perusahaan, detail_kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, detail_kegiatan_csr.nominal, detail_kegiatan_csr.file')
+            ->join('kegiatan_csr', 'detail_kegiatan_csr.id_kegiatan_csr=kegiatan_csr.id')
+            ->join('ruang_lingkup', 'kegiatan_csr.ruang_lingkup=ruang_lingkup.id')
+            ->join('urusan_bidang', 'kegiatan_csr.urusan_bidang=urusan_bidang.id')
+            ->join('kalurahan', 'kegiatan_csr.kalurahan=kalurahan.id_kalurahan')
+            ->join('perusahaan', 'detail_kegiatan_csr.id_user=perusahaan.id_user')
+            ->where('file', null)
+            ->get()->getResultArray();
+
+
+        $data = [
+            'kegiatan' => $kegiatan,
+        ];
+        // dd($data);
+        return view('admin/kegiatan_csr/upload_laporan_admin', $data);
     }
 
     public function detail_csr($id)
@@ -443,19 +668,61 @@ class Kegiatan_Csr extends BaseController
             return redirect()->to(base_url('user/my_kegiatan_csr'));
         }
         if ($image->isValid() && in_array($image->getClientMIMEType(), ['application/pdf'])) {
-
+            $waktu_input = $this->request->getPost('tgl_pelaksanaan');
+            $waktu_db =  $waktu_input . ' 00:00:00';
             $newName = $image->getRandomName();
             $image->move('laporan', $newName);
 
             $this->db->table('detail_kegiatan_csr')
-                ->set('waktu', date('Y-m-d H:i:s'))
+                ->set('waktu', $waktu_db)
                 ->set('file', $newName)
-                ->where('id', $this->request->getVar('id'))
+                ->where('id', $this->request->getPost('id'))
                 ->update();
 
             return redirect()->to(base_url('user/my_kegiatan_csr'));
         } else {
             return redirect()->to(base_url('user/my_kegiatan_csr'));
+        }
+    }
+
+    public function upload_laporan_simpan()
+    {
+        if (!session()->has('username')) {
+            // Redirect ke halaman login jika sesi tidak ada
+            return redirect()->to('/login');
+        }
+
+        $image = $this->request->getFile('laporan');
+        // dd($this->request->getFile('laporan'));
+
+        // Validasi tipe file
+        if (!$image->isValid() || $image->getClientMimeType() !== 'application/pdf') {
+            return 'Hanya file PDF yang diperbolehkan.';
+        }
+
+        // Validasi ukuran file maksimal 500 KB (500 * 1024 bytes)
+        if ($image->getSize() > 500 * 1024) {
+            return 'Ukuran file terlalu besar. Maksimal 500 KB.';
+        }
+
+        if (empty($image)) {
+            return redirect()->to(base_url('admin/upload_laporan_admin'));
+        }
+        if ($image->isValid() && in_array($image->getClientMIMEType(), ['application/pdf'])) {
+            $waktu_input = $this->request->getPost('tgl_pelaksanaan');
+            $waktu_db =  $waktu_input . ' 00:00:00';
+            $newName = $image->getRandomName();
+            $image->move('laporan', $newName);
+
+            $this->db->table('detail_kegiatan_csr')
+                ->set('waktu', $waktu_db)
+                ->set('file', $newName)
+                ->where('id', $this->request->getPost('id'))
+                ->update();
+
+            return redirect()->to(base_url('admin/upload_laporan_admin'))->with('success', 'Data berhasil diupload');
+        } else {
+            return redirect()->to(base_url('admin/upload_laporan_admin'))->with('success', 'Data berhasil diupload');
         }
     }
 
@@ -471,6 +738,22 @@ class Kegiatan_Csr extends BaseController
             'kegiatan' => $kegiatan
         ];
         return view('admin/kegiatan_csr/print_allkegiatan', $data);
+    }
+
+    public function print_allkegiatan_non()
+    {
+        $kegiatan = $this->db->table('kegiatan_csr')
+            ->select('volume, kegiatan_csr.id, kegiatan_csr.tahun, ruang_lingkup.ket as ruang_lingkup, urusan_bidang.ket as urusan_bidang, kegiatan_csr.program_kegiatan, aktifitas, kegiatan_csr.alamat, kalurahan.nm_kapanewon as kapanewon, kalurahan.nm_kalurahan as kalurahan, kegiatan_csr.biaya, kegiatan_csr.volume, kegiatan_csr.satuan, kegiatan_csr.opd, status, waktu, file, nominal, detail_kegiatan_csr.id as id_detail')
+            ->join('ruang_lingkup', 'kegiatan_csr.ruang_lingkup=ruang_lingkup.id')
+            ->join('urusan_bidang', 'kegiatan_csr.urusan_bidang=urusan_bidang.id')
+            ->join('kalurahan', 'kegiatan_csr.kalurahan=kalurahan.id_kalurahan')
+            ->join('detail_kegiatan_csr', 'kegiatan_csr.id=detail_kegiatan_csr.id_kegiatan_csr')
+            ->where('id_user', session('id_user'))
+            ->get()->getResultArray();
+        $data = [
+            'kegiatan' => $kegiatan
+        ];
+        return view('admin/kegiatan_csr/print_allkegiatan_non', $data);
     }
 
     public function print_mykegiatan()

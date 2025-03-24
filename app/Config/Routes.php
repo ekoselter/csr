@@ -24,14 +24,22 @@ $routes->group('admin', ['filter' => 'auth:0'], function ($routes) {
     $routes->get('dashboard', 'Dashboard::index');
     // Kegiatan CSR
     $routes->get('kegiatan_csr', 'Kegiatan_Csr::index');
+    $routes->get('kegiatan_csr_non', 'Kegiatan_Csr::kegiatan_csr_non');
     $routes->get('kegiatan_csr/format_kegiatan', 'Kegiatan_Csr::format_kegiatan');   
     $routes->post('kegiatan_save', 'Kegiatan_Csr::kegiatan_save');
+    $routes->post('kegiatan_save_non', 'Kegiatan_Csr::kegiatan_save_non');
     $routes->get('kegiatan_csr/edit/(:any)', 'Kegiatan_Csr::edit/$1');
+    $routes->get('kegiatan_csr/edit_non/(:any)', 'Kegiatan_Csr::edit_non/$1');
     $routes->post('kegiatan_update', 'Kegiatan_Csr::kegiatan_update');
+    $routes->post('kegiatan_update_non', 'Kegiatan_Csr::kegiatan_update_non');
     $routes->get('kegiatan_hapus/(:any)', 'Kegiatan_Csr::kegiatan_hapus/$1');
+    $routes->get('kegiatan_hapus_non/(:any)/(:any)', 'Kegiatan_Csr::kegiatan_hapus_non/$1/$2');
     $routes->post('kegiatan_upload', 'Kegiatan_Csr::kegiatan_upload');
     $routes->get('kegiatan_csr/detail/(:any)', 'Kegiatan_Csr::detail_csr/$1');
     $routes->get('print_allkegiatan', 'Kegiatan_Csr::print_allkegiatan');
+    $routes->get('print_allkegiatan_non', 'Kegiatan_Csr::print_allkegiatan_non');
+    $routes->get('upload_laporan_admin', 'Kegiatan_Csr::upload_laporan_admin');
+    $routes->post('upload_laporan_simpan', 'Kegiatan_Csr::upload_laporan_simpan');
     // Upload Kegiatan
     $routes->get('kegiatan_upload_all', 'Kegiatan_Csr::kegiatan_upload_all');
     $routes->get('kegiatan_upload/edit/(:any)', 'Kegiatan_Csr::kegiatan_upload_edit/$1');

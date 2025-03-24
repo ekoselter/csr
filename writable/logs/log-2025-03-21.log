@@ -1,0 +1,106 @@
+INFO - 2025-03-21 07:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:29:01 --> CSRF token verified.
+INFO - 2025-03-21 07:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:29:16 --> CSRF token verified.
+INFO - 2025-03-21 07:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:29:34 --> CSRF token verified.
+INFO - 2025-03-21 07:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:29:35 --> CSRF token verified.
+INFO - 2025-03-21 07:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:29:50 --> CSRF token verified.
+INFO - 2025-03-21 07:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-21 07:41:57 --> Undefined index: id_detail
+in APPPATH\Views\admin\kegiatan_csr\kegiatan_csr_non.php on line 245.
+ 1 APPPATH\Views\admin\kegiatan_csr\kegiatan_csr_non.php(245): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_detail', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\kegiatan_csr_non.php', 245, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\kegiatan_csr_non.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/kegiatan_csr_non', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(89): view('admin/kegiatan_csr/kegiatan_csr_non', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_csr_non()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-21 07:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-21 07:44:22 --> mysqli_sql_exception: Table 'csr.kegiatan_csr_detail' doesn't exist in C:\laragon\www\csr\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\csr\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ke...', 0)
+#1 C:\laragon\www\csr\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ke...')
+#2 C:\laragon\www\csr\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ke...')
+#3 C:\laragon\www\csr\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ke...', Array, false)
+#4 C:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(336): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_hapus_non('789', '789')
+#6 C:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#7 C:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-03-21 07:44:22 --> Table 'csr.kegiatan_csr_detail' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `kegiatan_csr_detail`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\Kegiatan_Csr.php(336): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_hapus_non('789', '789')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-21 07:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-21 07:48:58 --> mysqli_sql_exception: Unknown column 'detail_kegiatan_csr' in 'field list' in C:\laragon\www\csr\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\csr\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `volume`...', 0)
+#1 C:\laragon\www\csr\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `volume`...')
+#2 C:\laragon\www\csr\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `volume`...')
+#3 C:\laragon\www\csr\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `volume`...', Array, false)
+#4 C:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_csr_non()
+#6 C:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#7 C:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-03-21 07:48:58 --> Unknown column 'detail_kegiatan_csr' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `volume`, `kegiatan_csr`.`id`, `kegiatan_csr`.`tahun`, `ruang_lingkup`.`ket` as `ruang_lingkup`, `urusan_bidang`.`ket` as `urusan_bidang`, `kegiatan_csr`.`program_kegiatan`, `aktifitas`, `kegiatan_csr`.`alamat`, `kalurahan`.`nm_kapanewon` as `kapanewon`, `kalurahan`.`nm_kalurahan` as `kalurahan`, `kegiatan_csr`.`biaya`, `kegiatan_csr`.`volume`, `kegiatan_csr`.`satuan`, `kegiatan_csr`.`opd`, `status`, `waktu`, `file`, `nominal`, `detail_kegiatan_csr` as `id_detail`
+FROM `kegiatan_csr`
+JOIN `ruang_lingkup` ON `kegiatan_csr`.`ruang_lingkup`=`ruang_lingkup`.`id`
+JOIN `urusan_bidang` ON `kegiatan_csr`.`urusan_bidang`=`urusan_bidang`.`id`
+JOIN `kalurahan` ON `kegiatan_csr`.`kalurahan`=`kalurahan`.`id_kalurahan`
+JOIN `detail_kegiatan_csr` ON `kegiatan_csr`.`id`=`detail_kegiatan_csr`.`id_kegiatan_csr`
+WHERE `id_user` = :id_user:', [...], false)
+ 2 APPPATH\Controllers\Kegiatan_Csr.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_csr_non()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-21 07:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:49:54 --> CSRF token verified.
+INFO - 2025-03-21 07:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:50:51 --> CSRF token verified.
+INFO - 2025-03-21 07:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 07:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 08:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 08:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 08:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 08:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 08:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-21 08:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -10,7 +10,7 @@
             <div class="col-sm-12">
                 <div class="page-title-box">
 
-                    <h4 class="page-title">Kegiatan CSR</h4>
+                    <h4 class="page-title">Kegiatan CSR Non List</h4>
 
 
                 </div>
@@ -30,58 +30,39 @@
                         </p> -->
                         <div class="card-title mb-4">
                             <?php if (session('level') == 0) { ?>
-                                <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-animation="bounce" data-target=".tambahKegiatan">
+                                <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-animation="bounce" data-target=".tambahNon">
                                     <i class="fa fa-plus"></i> Tambah Data
                                 </button>
-                                <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-animation="bounce" data-target=".uploadKegiatan">
-                                    <i class="fa fa-plus"></i> Import Data
-                                </button>
-                                <a href="<?= base_url(); ?>admin/kegiatan_upload_all">
-                                    <button type="button" class="btn btn-info waves-effect waves-light">
-                                        <i class="fa fa-excel"></i> Kegiatan Belum Tersubmit
-                                    </button>
-                                </a>
-                                <a href="<?= base_url(); ?>admin/print_allkegiatan" target="_blank">
+                                <a href="<?= base_url(); ?>admin/print_allkegiatan_non" target="_blank">
                                     <button type="button" class="btn btn-danger waves-effect waves-light">
                                         <i class="fa fa-print"></i> Print
                                     </button>
                                 </a>
-                            <?php }else if (session('level') == 1){ ?>
-                                <a href="<?= base_url(); ?>user/print_allkegiatan" target="_blank">
-                                    <button type="button" class="btn btn-danger waves-effect waves-light">
-                                        <i class="fa fa-print"></i> Print
-                                    </button>
-                                </a>
-                            <?php  } ?>
+                            <?php } ?>
 
                         </div>
-                        <?php if (session()->getFlashdata('error')) : ?>
-                            <div class="alert alert-danger">
-                                <?= session()->getFlashdata('error'); ?>
-                            </div>
-                        <?php endif; ?>
                         <?php if (session()->getFlashdata('success')) : ?>
                             <div class="alert alert-success">
                                 <?= session()->getFlashdata('success'); ?>
                             </div>
                         <?php endif; ?>
-                        <div class="modal fade tambahKegiatan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal fade tambahNon" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title mt-0" id="myLargeModalLabel">Tambah Kegiatan</h5>
+                                        <h5 class="modal-title mt-0" id="myLargeModalLabel">Tambah Kegiatan Non List</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <form class="" id="form" action="<?= base_url(); ?>/admin/kegiatan_save" method="post">
+                                                <form class="" id="form" action="<?= base_url(); ?>/admin/kegiatan_save_non" method="post" enctype="multipart/form-data">
                                                 <?= csrf_field() ?>
                                                     <div class="card-body bootstrap-select-1">
                                                         <div class="row">
                                                             <div class="col-md-12">
                                                                 <h6 class="input-title mt-0">Tahun</h6>
-                                                                <input type="number" class="form-control" name="tahun">
+                                                                <input type="number" class="form-control" name="tahun" required>
                                                             </div>
                                                             <div class="col-md-12">
                                                                 <h6 class="input-title mt-3">Ruang Lingkup TSP</h6>
@@ -121,7 +102,7 @@
 
                                                             <div class="col-md-4 mt-3">
                                                                 <h6 class="input-title mt-0">Kapanewon</h6>
-                                                                <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;" id="kapanewon" name="kapanewon" required>
+                                                                <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;" id="kapanewonNon" name="kapanewon" required>
                                                                     <option value="">Pilih Kapanewon</option>
 
                                                                     <?php foreach ($kapanewon as $k) : ?>
@@ -132,7 +113,7 @@
 
                                                             <div class="col-md-4 mt-3">
                                                                 <h6 class="input-title mt-0">Kalurahan</h6>
-                                                                <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;" id="kalurahan" name="kalurahan" required>
+                                                                <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;" id="kalurahanNon" name="kalurahan" required>
                                                                     <option value="">Pilih Kalurahan</option>
 
                                                                 </select>
@@ -145,7 +126,11 @@
 
                                                             <div class="col-md-6">
                                                                 <h6 class="input-title mt-0">Perkiraan Biaya</h6>
-                                                                <input type="text" id="biaya" class="form-control" name="biaya" oninput="updateRupiahInput()">
+                                                                <input type="text" id="biayaNon" class="form-control" name="biaya" oninput="updateRupiahInputNon()">
+                                                            </div>
+                                                            <div class="col-md-6 mt-3">
+                                                                <h6 class="input-title mt-0">Biaya yang disalurkan</h6>
+                                                                <input type="text" id="nominalNon" class="form-control" name="nominal" oninput="updateRupiahInputNon2()">
                                                             </div>
                                                             <div class="col-md-6 mt-3">
                                                                 <h6 class="input-title mt-0">Volume</h6>
@@ -155,59 +140,23 @@
                                                             <div class="col-md-6 mt-3">
                                                                 <h6 class="input-title mt-0">OPD</h6>
                                                                 <textarea class="form-control" name="opd" id="" cols="30" rows="3"></textarea>
-                                                            </div>
-
-                                                            <div class="col-md-12 mt-4">
-                                                                <div class="form-group">
-                                                                    <div>
-                                                                        <button type="submit" class="btn btn-primary waves-effect waves-light">
-                                                                            Submit
-                                                                        </button>
-                                                                        <button type="reset" class="btn btn-secondary waves-effect m-l-5">
-                                                                            Reset
-                                                                        </button>
-                                                                    </div>
+                                                            </div>    
+                                                            
+                                                            <div class="col-md-12 mt-3">
+                                                                <h6 class="input-title mt-0">Tanggal Pelaksanaan</h6>
+                                                                <div class="card m-b-30">
+                                                                    <input type="date" class="form-control" name="tgl_pelaksanaan" />
                                                                 </div>
                                                             </div>
-
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div> <!-- end col -->
-                                        </div>
-                                    </div>
-                                </div><!-- /.modal-content -->
-                            </div><!-- /.modal-dialog -->
-                        </div>
-                        <div class="modal fade uploadKegiatan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title mt-0" id="myLargeModalLabel">Upload Kegiatan</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <form class="" action="<?= base_url(); ?>admin/kegiatan_upload" method="post" enctype="multipart/form-data">
-                                                <?= csrf_field() ?>
-                                                    <div class="card-body bootstrap-select-1">
-                                                        <div class="row">
-
-                                                            <!-- <div class="col-md-12">
-                                                                <h6 class="input-title mt-3">Tahun</h6>
-                                                                <input type="number" class="form-control" name="tahun">
-                                                            </div> -->
-
                                                             <div class="col-md-12">
-                                                                <h6 class="input-title mt-3">File Excel</h6>
-                                                                <a href="<?= base_url(); ?>admin/kegiatan_csr/format_kegiatan" class="btn btn-success">Download Format</a>
+                                                                <h6 class="input-title mt-0">File Laporan (dapat berupa foto dalam pdf)</h6>
                                                                 <div class="card m-b-30">
                                                                     <div class="card-body">
 
-                                                                        <input type="file" id="input-file-now" class="dropify" name="fileexcel" accept=".xls, .xlsx" required/>
+                                                                        <input type="file" name="laporan" accept=".pdf" required/>
                                                                     </div>
                                                                 </div>
+                                                                <p style="font-size: 11px; color:crimson">Upload File dengan format .pdf maksimal 500 KB</p>
                                                             </div>
 
                                                             <div class="col-md-12 mt-4">
@@ -247,10 +196,10 @@
                                     <th>Perkiraan Biaya</th>
                                     <th>Volume</th>
                                     <th>Satuan</th>
-                                    <th>OPD</th>                            
-                                    <?php if (session('level') == 0) { ?>
-                                        <th>Diambil</th>
-                                    <?php } ?>  
+                                    <th>OPD</th>        
+                                    <th>Biaya disalurkan</th>
+                                    <th>Waktu</th> 
+                                    <th>Laporan</th>                    
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -276,78 +225,27 @@
                                         <td><?= $k['volume']; ?></td>
                                         <td><?= strtoupper($k['satuan']); ?></td>
                                         <td><?= $k['opd']; ?></td>
-                                        <?php if (session('level') == 0) { ?>
-                                            <td><?= ($k['status'])== '1' ? '✅' : '-'; ?></td>
-                                        <?php } ?>  
                                         <td>
-                                            <?php if (session('level') > 0) { ?>
-                                                <button type="button" class="btn btn-primary waves-effect waves-light btn-sm" data-toggle="modal" data-animation="bounce" data-target=".pilihKegiatan<?= $k['id'] ?>">
-                                                    Pilih CSR
-                                                </button>
+                                            <?php if (!empty($k['nominal'])) { ?>
+                                                <?= number_format($k['nominal'], 0, ',', '.'); ?>
                                             <?php } ?>
+                                        </td>
+                                        <td><?= date('d-m-Y', strtotime($k['waktu'])); ?></td>
+                                        <td>                                  
+                                            <a href="<?= base_url(); ?>multi/preview_laporan/<?= $k['file'] ?>" target="_blank">
+                                                <button type="button" class="btn btn-danger waves-effect waves-light">
+                                                    <i class="fa fa-eye"></i> Lihat Laporan
+                                                </button>
+                                            </a>                               
+                                        </td>
+                                        <td>
                                             <?php if (session('level') == 0) { ?>
-                                                <a href="<?= base_url(); ?>admin/kegiatan_csr/detail/<?= $k['id'] ?>" class="btn btn-sm btn-info"><i class="fas fa-list"></i></a>
-                                                <a href="<?= base_url(); ?>admin/kegiatan_csr/edit/<?= $k['id'] ?>" class="btn btn-sm btn-success"><i class="fas fa-edit"></i></a>
-                                                <a href="<?= base_url(); ?>admin/kegiatan_hapus/<?= $k['id'] ?>" onclick="return confirm('apakah anda ingin hapus data?');" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
+                                                <!-- <a href="<?= base_url(); ?>admin/kegiatan_csr/detail/<?= $k['id'] ?>" class="btn btn-sm btn-info"><i class="fas fa-list"></i></a> -->
+                                                <a href="<?= base_url(); ?>admin/kegiatan_csr/edit_non/<?= $k['id'] ?>" class="btn btn-sm btn-success"><i class="fas fa-edit"></i></a>
+                                                <a href="<?= base_url(); ?>admin/kegiatan_hapus_non/<?= $k['id'] ?>/<?= $k['id_detail'] ?>/" onclick="return confirm('apakah anda ingin hapus data?');" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
                                             <?php } ?>
                                         </td>
                                     </tr>
-                                    <div class="modal fade pilihKegiatan<?= $k['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title mt-0" id="myLargeModalLabel">Pilih Kegiatan</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <form class="" action="<?= base_url(); ?>user/pilih_kegiatan" method="post">
-                                                            <?= csrf_field() ?>
-                                                                <div class="card-body bootstrap-select-1">
-                                                                    <div class="row">
-                                                                        <?php $nilaiFloat = floatval($k['biaya']);
-                                                                        $biaya = number_format($nilaiFloat, 0, ',', '.');
-                                                                        ?>
-                                                                        <input type="hidden" name="id_kegiatan_csr" value="<?= $k['id'] ?>">
-                                                                        <div class="col-md-6">
-                                                                            <h6 class="input-title mt-0">Perkiraan Biaya</h6>
-                                                                            <input type="text" class="form-control" value="<?= $biaya; ?>" readonly>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <h6 class="input-title mt-0">Volume</h6>
-                                                                            <input type="text" class="form-control" value="<?php echo $k['volume'] ?>" readonly>
-                                                                        </div>
-                                                                        <div class="col-md-6 mt-3">
-                                                                            <h6 class="input-title mt-0">Satuan</h6>
-                                                                            <input type="text" class="form-control" value="<?php echo $k['satuan'] ?>" readonly>
-                                                                        </div>
-                                                                        <div class="col-md-6 mt-3">
-                                                                            <h6 class="input-title mt-0">Biaya yang akan di salurkan</h6>
-                                                                            <input type="text" id="nominal<?php echo $k['id'] ?>" class="form-control" name="nominal" oninput="updatenominal<?php echo $k['id'] ?>()">
-                                                                        </div>
-                                                                        <div class="col-md-12 mt-4">
-                                                                            <div class="form-group">
-                                                                                <div>
-                                                                                    <button type="submit" class="btn btn-primary waves-effect waves-light">
-                                                                                        Submit
-                                                                                    </button>
-                                                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5">
-                                                                                        Reset
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 <?php endforeach; ?>
                             </tbody>
                         </table>
@@ -373,9 +271,9 @@
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 <script>
     $(document).ready(function() {
-        $('#kapanewon').change(function() {
+        $('#kapanewonNon').change(function() {
             var id_kapanewon = $(this).val();
-            $('#kalurahan').empty();
+            $('#kalurahanNon').empty();
             if (id_kapanewon !== "") {
                 // console.log(id_kapanewon);
                 $.ajax({
@@ -384,7 +282,7 @@
                     success: function(data) {
                         data = JSON.parse(data);
                         data.forEach(function(item) {
-                            $('#kalurahan').append($('<option>', {
+                            $('#kalurahanNon').append($('<option>', {
                                 value: item.id_kalurahan,
                                 text: item.nm_kalurahan
                             }));
@@ -413,25 +311,17 @@
         // return 'Rp ' + rupiah;
     }
 
-    function updateRupiahInput() {
-        var inputElement = document.getElementById('biaya');
+    function updateRupiahInputNon() {
+        var inputElement = document.getElementById('biayaNon');
         var inputValue = inputElement.value.replace(/[^\d]/g, ''); // Hapus karakter selain angka
         inputElement.value = formatRupiah(inputValue);
     }
 
-    function updateRupiahInput2() {
-        var inputElement = document.getElementById('biaya2');
+    function updateRupiahInputNon2() {
+        var inputElement = document.getElementById('nominalNon');
         var inputValue = inputElement.value.replace(/[^\d]/g, ''); // Hapus karakter selain angka
         inputElement.value = formatRupiah(inputValue);
     }
-    <?php
-    foreach ($kegiatan as $k) : ?>
-
-        function updatenominal<?php echo $k['id'] ?>() {
-            var inputElement = document.getElementById('nominal<?php echo $k['id'] ?>');
-            var inputValue = inputElement.value.replace(/[^\d]/g, ''); // Hapus karakter selain angka
-            inputElement.value = formatRupiah(inputValue);
-        }
-    <?php endforeach; ?>
+  
 </script>
 <?= $this->endSection() ?>
