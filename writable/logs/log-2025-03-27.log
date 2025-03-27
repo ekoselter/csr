@@ -1,0 +1,76 @@
+ERROR - 2025-03-27 09:53:25 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in C:\laragon\www\csr\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\csr\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `volume`...', 0)
+#1 C:\laragon\www\csr\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `volume`...')
+#2 C:\laragon\www\csr\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `volume`...')
+#3 C:\laragon\www\csr\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `volume`...', Array, false)
+#4 C:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_csr_non()
+#6 C:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#7 C:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-03-27 09:53:25 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `volume`, `kegiatan_csr`.`id`, `kegiatan_csr`.`tahun`, `ruang_lingkup`.`ket` as `ruang_lingkup`, `urusan_bidang`.`ket` as `urusan_bidang`, `kegiatan_csr`.`program_kegiatan`, `aktifitas`, `kegiatan_csr`.`alamat`, `kalurahan`.`nm_kapanewon` as `kapanewon`, `kalurahan`.`nm_kalurahan` as `kalurahan`, `kegiatan_csr`.`biaya`, `kegiatan_csr`.`volume`, `kegiatan_csr`.`satuan`, `kegiatan_csr`.`opd`, `status`, `waktu`, `file`, `nominal`, `detail_kegiatan_csr`.`id` as `id_detail`
+FROM `kegiatan_csr`
+JOIN `ruang_lingkup` ON `kegiatan_csr`.`ruang_lingkup`=`ruang_lingkup`.`id`
+JOIN `urusan_bidang` ON `kegiatan_csr`.`urusan_bidang`=`urusan_bidang`.`id`
+JOIN `kalurahan` ON `kegiatan_csr`.`kalurahan`=`kalurahan`.`id_kalurahan`
+JOIN `detail_kegiatan_csr` ON `kegiatan_csr`.`id`=`detail_kegiatan_csr`.`id_kegiatan_csr`
+WHERE `id_user` = :id_user:', [...], false)
+ 2 APPPATH\Controllers\Kegiatan_Csr.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_csr_non()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-27 09:53:50 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in C:\laragon\www\csr\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\csr\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `volume`...', 0)
+#1 C:\laragon\www\csr\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `volume`...')
+#2 C:\laragon\www\csr\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `volume`...')
+#3 C:\laragon\www\csr\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `volume`...', Array, false)
+#4 C:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->index()
+#6 C:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#7 C:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-03-27 09:53:50 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `volume`, `kegiatan_csr`.`id`, `kegiatan_csr`.`tahun`, `ruang_lingkup`.`ket` as `ruang_lingkup`, `urusan_bidang`.`ket` as `urusan_bidang`, `kegiatan_csr`.`program_kegiatan`, `aktifitas`, `kegiatan_csr`.`alamat`, `kalurahan`.`nm_kapanewon` as `kapanewon`, `kalurahan`.`nm_kalurahan` as `kalurahan`, `kegiatan_csr`.`biaya`, `kegiatan_csr`.`volume`, `kegiatan_csr`.`satuan`, `kegiatan_csr`.`opd`, `status`
+FROM `kegiatan_csr`
+JOIN `ruang_lingkup` ON `kegiatan_csr`.`ruang_lingkup`=`ruang_lingkup`.`id`
+JOIN `urusan_bidang` ON `kegiatan_csr`.`urusan_bidang`=`urusan_bidang`.`id`
+JOIN `kalurahan` ON `kegiatan_csr`.`kalurahan`=`kalurahan`.`id_kalurahan`', [], false)
+ 2 APPPATH\Controllers\Kegiatan_Csr.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-27 09:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-27 09:56:23 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in C:\laragon\www\csr\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\csr\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `volume`...', 0)
+#1 C:\laragon\www\csr\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `volume`...')
+#2 C:\laragon\www\csr\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `volume`...')
+#3 C:\laragon\www\csr\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `volume`...', Array, false)
+#4 C:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->index()
+#6 C:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#7 C:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-03-27 09:56:23 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `volume`, `kegiatan_csr`.`id`, `kegiatan_csr`.`tahun`, `ruang_lingkup`.`ket` as `ruang_lingkup`, `urusan_bidang`.`ket` as `urusan_bidang`, `kegiatan_csr`.`program_kegiatan`, `aktifitas`, `kegiatan_csr`.`alamat`, `kalurahan`.`nm_kapanewon` as `kapanewon`, `kalurahan`.`nm_kalurahan` as `kalurahan`, `kegiatan_csr`.`biaya`, `kegiatan_csr`.`volume`, `kegiatan_csr`.`satuan`, `kegiatan_csr`.`opd`, `status`
+FROM `kegiatan_csr`
+JOIN `ruang_lingkup` ON `kegiatan_csr`.`ruang_lingkup`=`ruang_lingkup`.`id`
+JOIN `urusan_bidang` ON `kegiatan_csr`.`urusan_bidang`=`urusan_bidang`.`id`
+JOIN `kalurahan` ON `kegiatan_csr`.`kalurahan`=`kalurahan`.`id_kalurahan`', [], false)
+ 2 APPPATH\Controllers\Kegiatan_Csr.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-03-27 09:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
