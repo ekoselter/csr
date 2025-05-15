@@ -25,7 +25,7 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <form class="" action="<?= base_url(); ?>user/my_kegiatan_csr_update" method="post">
+                                <form class="" action="<?= base_url(); ?>user/mykegiatan_csr_update" method="post">
                                     <?= csrf_field() ?>
                                     <div class="card-body bootstrap-select-1">
                                         <div class="row">                                       
@@ -47,22 +47,20 @@
                                             <div class="col-md-6">
                                                 <div class="col-md-12 mt-0">
                                                     <h6 class="input-title mt-0">Volume yang akan di salurkan</h6>
-                                                    <input type="text" id="vol_salur" class="form-control" name="vol_salur" >
+                                                    <input type="text" id="vol_salur" class="form-control" name="vol_salur" value="<?php echo $k['vol_salur'] ?>" required>
                                                 </div>
                                                 <div class="col-md-12 mt-3">
                                                     <h6 class="input-title mt-0">Biaya yang akan di salurkan</h6>
-                                                    <input type="text" id="nominal<?php echo $k['id'] ?>" class="form-control" name="nominal" oninput="updatenominal<?php echo $k['id'] ?>()">
+                                                    <input type="text" id="nominal" class="form-control" name="nominal" value="<?php echo $k['nominal'] ?>" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 mt-4">
                                                 <div class="form-group">
                                                     <div>
                                                         <button type="submit" class="btn btn-primary waves-effect waves-light">
-                                                            Submit
+                                                            Update
                                                         </button>
-                                                        <button type="reset" class="btn btn-secondary waves-effect m-l-5">
-                                                            Reset
-                                                        </button>
+                                                        <a href="<?= base_url(); ?>user/my_kegiatan_csr" class="btn btn-warning waves-effect waves-ligh"> Batal</a>
                                                     </div>
                                                 </div>
                                             </div>

@@ -268,6 +268,19 @@ class Kegiatan_Csr extends BaseController
         return redirect()->to(base_url('admin/kegiatan_csr'));
     }
 
+    public function mykegiatan_csr_update()
+    {
+        // dd($this->request->getVar());
+
+        $this->db->table('detail_kegiatan_csr')
+            ->set('nominal', $this->request->getVar('nominal'))
+            ->set('vol_salur', $this->request->getVar('vol_salur'))
+            ->where('id', $this->request->getVar('id'))
+            ->update();
+
+        return redirect()->to(base_url('user/my_kegiatan_csr'));
+    }
+
     public function kegiatan_update_non()
     {
         // dd($this->request->getVar());

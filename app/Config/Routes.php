@@ -79,6 +79,7 @@ $routes->group('user', ['filter' => 'auth:1'], function ($routes) {
     $routes->get('kegiatan_upload_all', 'Kegiatan_Csr::kegiatan_upload_all');
     $routes->get('kegiatan_upload/edit/(:any)', 'Kegiatan_Csr::kegiatan_upload_edit/$1');
     $routes->post('kegiatan_upload_update', 'Kegiatan_Csr::kegiatan_upload_update');
+    $routes->post('mykegiatan_csr_update', 'Kegiatan_Csr::mykegiatan_csr_update');
     $routes->get('kegiatan_upload_hapus/(:any)', 'Kegiatan_Csr::kegiatan_upload_hapus/$1');
     $routes->get('kegiatan_upload_submit', 'Kegiatan_Csr::kegiatan_upload_submit');
     $routes->get('kegiatan_upload_kosong', 'Kegiatan_Csr::kegiatan_upload_kosong');
