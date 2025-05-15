@@ -73,6 +73,7 @@ $routes->group('user', ['filter' => 'auth:1'], function ($routes) {
     $routes->post('kegiatan_upload', 'Kegiatan_Csr::kegiatan_upload');
     $routes->post('pilih_kegiatan', 'Kegiatan_Csr::pilih_kegiatan');
     $routes->get('my_kegiatan_csr', 'Kegiatan_Csr::my_kegiatan_csr');
+    $routes->get('mykegiatan_csr_edit/(:any)', 'Kegiatan_Csr::mykegiatan_csr_edit/$1');
     $routes->get('kegiatan_csr/detail/(:any)', 'Kegiatan_Csr::detail_csr/$1');
     // Upload Kegiatan
     $routes->get('kegiatan_upload_all', 'Kegiatan_Csr::kegiatan_upload_all');

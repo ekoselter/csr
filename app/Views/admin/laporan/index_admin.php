@@ -118,6 +118,8 @@
                                         <th>Aktifitas</th>
                                         <th>Waktu Pelaksanaan</th>
                                         <th>Lokasi</th>
+                                        <th>Satuan</th>
+                                        <th>Volume Disalurkan</th>
                                         <th>Dana Disalurkan</th>
                                         <th>Laporan</th>
                                     </tr>
@@ -141,6 +143,8 @@
                                                 <b>Kapanewon:</b> <?= $r['kapanewon']; ?>
                                                 <br>
                                             </td>
+                                            <td><?= $r['satuan']; ?></td>
+                                            <td><?= $r['vol_salur']; ?></td>
                                             <td>
                                                 <?php if (!empty($r['nominal'])) { ?>
                                                     <?= number_format($r['nominal'], 0, ',', '.'); ?>

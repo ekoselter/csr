@@ -136,12 +136,14 @@
                                                                 <h6 class="input-title mt-0">Volume</h6>
                                                                 <input type="text" id="volume" class="form-control" name="volume">
                                                             </div>
-
+                                                            <div class="col-md-6 mt-3">
+                                                                <h6 class="input-title mt-0">Volume Disalurkan</h6>
+                                                                <input type="text" id="vol_salur" class="form-control" name="vol_salur">
+                                                            </div>
                                                             <div class="col-md-6 mt-3">
                                                                 <h6 class="input-title mt-0">OPD</h6>
                                                                 <textarea class="form-control" name="opd" id="" cols="30" rows="3"></textarea>
-                                                            </div>    
-                                                            
+                                                            </div>                                                               
                                                             <div class="col-md-12 mt-3">
                                                                 <h6 class="input-title mt-0">Tanggal Pelaksanaan</h6>
                                                                 <div class="card m-b-30">
@@ -195,6 +197,7 @@
                                     <th>Kalurahan</th>
                                     <th>Perkiraan Biaya</th>
                                     <th>Volume</th>
+                                    <th>Volume disalurkan</th>
                                     <th>Satuan</th>
                                     <th>OPD</th>        
                                     <th>Biaya disalurkan</th>
@@ -223,6 +226,7 @@
                                             <?php } ?>
                                         </td>
                                         <td><?= $k['volume']; ?></td>
+                                        <td><?= $k['vol_salur']; ?></td>
                                         <td><?= strtoupper($k['satuan']); ?></td>
                                         <td><?= $k['opd']; ?></td>
                                         <td>

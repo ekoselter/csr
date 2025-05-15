@@ -42,7 +42,7 @@
                                     <th>Kapanewon</th>
                                     <th>Kalurahan</th>
                                     <th>Kebutuhan biaya</th>
-                                    <th>Volume</th>
+                                    <th>Volume Disalurkan</th>
                                     <th>Satuan</th>
                                     <th>OPD Pengampu</th>
                                     <th>CSR yang disalurkan</th>
@@ -73,7 +73,7 @@
                                                 <?= number_format($k['biaya'], 0, ',', '.'); ?>
                                             <?php } ?>
                                         </td>
-                                        <td><?= $k['volume']; ?></td>
+                                        <td><?= $k['vol_salur']; ?></td>
                                         <td><?= strtoupper($k['satuan']); ?></td>
                                         <td><?= $k['opd']; ?></td>
                                         <td>

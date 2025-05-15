@@ -59,7 +59,7 @@
                                     <th>Kapanewon</th>
                                     <th>Kalurahan</th>
                                     <th>Kebutuhan biaya</th>
-                                    <th>Volume</th>
+                                    <th>Volume Disalurkan</th>
                                     <th>Satuan</th>
                                     <th>OPD Pengampu</th>
                                     <th>CSR yang disalurkan</th>
@@ -76,6 +76,7 @@
                                                 <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-animation="bounce" data-target=".uploadLap<?= $k['id'] ?>">
                                                     <i class="fa fa-upload"></i> Upload Laporan
                                                 </button>
+                                                <a href="<?= base_url(); ?>user/mykegiatan_csr_edit/<?= $k['id'] ?>" class="btn btn-sm btn-warning mt-2"><i class="fas fa-edit"></i> Edit</a>
                                             <?php } else { ?>
                                                 <!-- <button type="button" class="btn btn-danger waves-effect waves-light" data-toggle="modal" data-animation="bounce" data-target=".lihatLap<?= $k['id'] ?>">
                                                     <i class="fa fa-eye"></i> Lihat Laporan
@@ -101,7 +102,7 @@
                                                 <?= number_format($k['biaya'], 0, ',', '.'); ?>
                                             <?php } ?>
                                         </td>
-                                        <td><?= $k['volume']; ?></td>
+                                        <td><?= $k['vol_salur']; ?></td>
                                         <td><?= strtoupper($k['satuan']); ?></td>
                                         <td><?= $k['opd']; ?></td>
                                         <td>

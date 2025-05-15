@@ -309,22 +309,30 @@
                                                                         <?php $nilaiFloat = floatval($k['biaya']);
                                                                         $biaya = number_format($nilaiFloat, 0, ',', '.');
                                                                         ?>
-                                                                        <input type="hidden" name="id_kegiatan_csr" value="<?= $k['id'] ?>">
                                                                         <div class="col-md-6">
-                                                                            <h6 class="input-title mt-0">Perkiraan Biaya</h6>
-                                                                            <input type="text" class="form-control" value="<?= $biaya; ?>" readonly>
+                                                                            <input type="hidden" name="id_kegiatan_csr" value="<?= $k['id'] ?>">
+                                                                            <div class="col-md-12">
+                                                                                <h6 class="input-title mt-0">Perkiraan Biaya</h6>
+                                                                                <input type="text" class="form-control" value="<?= $biaya; ?>" readonly>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h6 class="input-title mt-3">Volume</h6>
+                                                                                <input type="text" class="form-control" value="<?php echo $k['volume'] ?>" readonly>
+                                                                            </div>
+                                                                            <div class="col-md-12 mt-3">
+                                                                                <h6 class="input-title mt-0">Satuan</h6>
+                                                                                <input type="text" class="form-control" value="<?php echo $k['satuan'] ?>" readonly>
+                                                                            </div>
                                                                         </div>
                                                                         <div class="col-md-6">
-                                                                            <h6 class="input-title mt-0">Volume</h6>
-                                                                            <input type="text" class="form-control" value="<?php echo $k['volume'] ?>" readonly>
-                                                                        </div>
-                                                                        <div class="col-md-6 mt-3">
-                                                                            <h6 class="input-title mt-0">Satuan</h6>
-                                                                            <input type="text" class="form-control" value="<?php echo $k['satuan'] ?>" readonly>
-                                                                        </div>
-                                                                        <div class="col-md-6 mt-3">
-                                                                            <h6 class="input-title mt-0">Biaya yang akan di salurkan</h6>
-                                                                            <input type="text" id="nominal<?php echo $k['id'] ?>" class="form-control" name="nominal" oninput="updatenominal<?php echo $k['id'] ?>()">
+                                                                            <div class="col-md-12 mt-0">
+                                                                                <h6 class="input-title mt-0">Volume yang akan di salurkan</h6>
+                                                                                <input type="text" id="vol_salur" class="form-control" name="vol_salur" >
+                                                                            </div>
+                                                                            <div class="col-md-12 mt-3">
+                                                                                <h6 class="input-title mt-0">Biaya yang akan di salurkan</h6>
+                                                                                <input type="text" id="nominal<?php echo $k['id'] ?>" class="form-control" name="nominal" oninput="updatenominal<?php echo $k['id'] ?>()">
+                                                                            </div>
                                                                         </div>
                                                                         <div class="col-md-12 mt-4">
                                                                             <div class="form-group">

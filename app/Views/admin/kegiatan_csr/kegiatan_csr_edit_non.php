@@ -118,7 +118,10 @@
                                                 <h6 class="input-title mt-0">Volume</h6>
                                                 <input type="number" class="form-control" name="volume" value="<?= $d['volume']; ?>">
                                             </div>
-
+                                            <div class="col-md-4 mt-3">
+                                                <h6 class="input-title mt-0">Volume Disalurkan</h6>
+                                                <input type="vol_salur" class="form-control" name="vol_salur" value="<?= $d['vol_salur']; ?>">
+                                            </div>
                                             <div class="col-md-12 mt-3">
                                                 <h6 class="input-title mt-0">OPD</h6>
                                                 <textarea class="form-control" name="opd" id="" cols="30" rows="3"><?= $d['opd']; ?></textarea>

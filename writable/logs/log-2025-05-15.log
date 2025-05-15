@@ -1,0 +1,346 @@
+INFO - 2025-05-15 08:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:37:50 --> CSRF token verified.
+INFO - 2025-05-15 08:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 08:38:02 --> file_get_contents(): php_network_getaddresses: getaddrinfo failed: No such host is known. 
+in APPPATH\Controllers\User.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo failed: No such host is known. ', 'C:\\laragon\\www\\csr\\app\\Controllers\\User.php', 22, [...])
+ 2 APPPATH\Controllers\User.php(22): file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6LeCNU4qAAAAAMtWdjmdRGqWxwPvywxnqBdVk9-e&response=03AFcWeA5pflTHLiRcROapL6tV442KX1Qo8Ld59-cMy2JLEjZcSvr_E_C4ww36h-TGwdFAm2PpCpmfp6gxhnswntfSoa_rxezM0M-PXmoSxwupBXvovXJkKswyQqreGlfEkLz2285sy3e1qpTXjBYc9icSJ1KZeVmwhi93NLj3e2OseSsxR7mz0A8ah1TI5VqE_sLANV6JxxR7rbQeL453geQdpNl3aWtlRYIwtjdkPD6ULUxqAVRfwm_dKHS6uo-wzoPMnAtc7Q93Huq3cZJH3Ac8O0t2IYtHZ_Q9fy8wRE5vDkW03A7DKL7oiza0pCMRDqV2UvFo9lvgBiqpVgWyO-VvCmY8wVk8nWBfZqDTN6TXywJWZXuTTiid2QeYQJPCIeMNMnjpmyJWN2KJJvVfMhhDLYb_fDM9F_mCugIybjG_YfrAfb7_5W41IESQDeOrFausZKJwR_00az_68fSvP7Br0Ngfr8YsGAd874rqepdmzovhvaL3igEaFVqvXtcl5OiZvLBWdMp8rgQkIXIOeMIx9O6cJh4mnQjvkuXOsSHW2zGCK5SdIGXTrP0wEIhDbEbkerSeEuQzE8B8yX_4SjVjrm-3AIrAFKyS-9xlOHIWZ_6eeq7mnTKL_faALCzvdcbSAeh14eouZmPUEwz7rTp_naDjcR4Au-ki5Oyo1mL10XljELVKQ9cSW5kMM2erf75lxenhJADJ6SzjnYhatbjSNA22YpVvGAGWur7wxxMeqbzmejkPdzbA5HzGv7po1tkSbJFi9FmrYBb1AMIZtmA-ymHcd_QAlnhx8yA79oWMNgGxeilrUX55ikOAwypy_t52r_JVopptp5NJwQq0JNpkhiRiWwGMdCW1RN6rn65P5ZfNmIihuDopiMqkV1vqGGApYuucgqHUdkoE7rfsqdIp_qzAyOjEnt99Gl42APnhMP7Z3Twba9pUrgOxAk5SB_4ScBBgyxz-A26323wA95_q2T3CeuSVr2aNKtC2Liqs5bqlIVhE-kT1xutvfedB0fw8Gvjvdfx6QN-iO_10gVQ7M_Bhc0pCKCiRdPClf9r822_u3RSFk_w4UXrD50JH0L2D0URXo29IaljZDvNupBDzJBy_LLifgx4CgfW-16SL5RYXKNSLmH6kiudja5fHKuIoEmdHbqEC3LeBFx1EftFNNuWxgCqLvfHee4Dd-SPJD8w3emFgwS--5nsvwCxeBmpYAqSmZKg0EFc3YTECjvyBNk6lz2iZTvVK0scqwRMi12PjmV4F0QOInOcIH5e87jvZIxB2XlqmrCibcU80NmnmGuXZ7U2nwOtwfR7lqw5ZvNDkUtE0QrgRypLvL_jS77VfYOawhLw8PA5EtX3l-1W8bQiGieMNhddRZHTblvviq4c7A5z07mAHGI0pmQ477JEsogQLw3fQaDIy-Wfs2smpYhyB8lQPjAIR21uSx1ohSscs5vkV3Ouvy8hX-DrcNt-zujaebtiCNGSmaOGB0cqjQssrSBtNrd5mjWi194OUYYk151rGfFbZxkQl4a1opfrfv75z2YK3NQIqGvqwCXgpyU_QH3ccHgxlaDy1a9c1A54zObkNyH04TOOigoMXmeuqsS5xfGNBOFfoU0FjouJtHcaFhMmf7xmm67qmPg2ehR2prqdZhKdKxeJEvKfxFfNaF0l2oNyVu9J3Cse0QIDIpsokwG8cj-4CggPbu3jz0ox27awxI5Twaht-Mi8rG4fCRmhOIg4w0buV9y5-UWHuzVxDA5iKVXAM6R8zKzxFf4jdwN-AGT626I1jnli6yHlMsYaM1XmGni8cghWr7wxC8gyZPx8Jnf2__VrhKK4LuZBeXox-c93EzPivbgC3ZQU8pozrX12L8QxRPSUxyi3UH48rV2FCVLFJlrcRswjHFZKgr85jBl2b0vDyFO8qnEyLOtwyw2Lx2Sfn8d4aiQ_fQ5h4czeR0apfhTNrw3c6PziU75M-5vmMOY9R7KAbWc-i4VXU6lAg1L6DtfBZooRerSIKRv3Gea_pc0wZ9DUC9q9q3FM2AW6hstixC9gBiXVCyPzO1nE5We4QkX0f2b-PDWsxW-6STt1VfaYF8sGe_nsXwfatqpzDr_3rsMAspEfbai_fuIYUl1BjEPU1OoC5FsswT9holzBabI18csKCSlwEt26uNwJiVlf6IE2StWjl7ZrXb0PA97oARzws3n5nDa3N8aT453ym791AS2E0E4veZCJg87xNWIGd27cC8-nkcyfiO5m3SPrxRZXdWLLm8BBfZFbgz4Nje8pFtofJQLZU2oCtbBuPSOEBBMhA46S_EhWYVvX8XW4zEgYiITxIRvTMK4btUA')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->verifikasi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 08:38:09 --> CSRF token verified.
+INFO - 2025-05-15 08:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 08:38:20 --> file_get_contents(): php_network_getaddresses: getaddrinfo failed: No such host is known. 
+in APPPATH\Controllers\User.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo failed: No such host is known. ', 'C:\\laragon\\www\\csr\\app\\Controllers\\User.php', 22, [...])
+ 2 APPPATH\Controllers\User.php(22): file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6LeCNU4qAAAAAMtWdjmdRGqWxwPvywxnqBdVk9-e&response=03AFcWeA5pflTHLiRcROapL6tV442KX1Qo8Ld59-cMy2JLEjZcSvr_E_C4ww36h-TGwdFAm2PpCpmfp6gxhnswntfSoa_rxezM0M-PXmoSxwupBXvovXJkKswyQqreGlfEkLz2285sy3e1qpTXjBYc9icSJ1KZeVmwhi93NLj3e2OseSsxR7mz0A8ah1TI5VqE_sLANV6JxxR7rbQeL453geQdpNl3aWtlRYIwtjdkPD6ULUxqAVRfwm_dKHS6uo-wzoPMnAtc7Q93Huq3cZJH3Ac8O0t2IYtHZ_Q9fy8wRE5vDkW03A7DKL7oiza0pCMRDqV2UvFo9lvgBiqpVgWyO-VvCmY8wVk8nWBfZqDTN6TXywJWZXuTTiid2QeYQJPCIeMNMnjpmyJWN2KJJvVfMhhDLYb_fDM9F_mCugIybjG_YfrAfb7_5W41IESQDeOrFausZKJwR_00az_68fSvP7Br0Ngfr8YsGAd874rqepdmzovhvaL3igEaFVqvXtcl5OiZvLBWdMp8rgQkIXIOeMIx9O6cJh4mnQjvkuXOsSHW2zGCK5SdIGXTrP0wEIhDbEbkerSeEuQzE8B8yX_4SjVjrm-3AIrAFKyS-9xlOHIWZ_6eeq7mnTKL_faALCzvdcbSAeh14eouZmPUEwz7rTp_naDjcR4Au-ki5Oyo1mL10XljELVKQ9cSW5kMM2erf75lxenhJADJ6SzjnYhatbjSNA22YpVvGAGWur7wxxMeqbzmejkPdzbA5HzGv7po1tkSbJFi9FmrYBb1AMIZtmA-ymHcd_QAlnhx8yA79oWMNgGxeilrUX55ikOAwypy_t52r_JVopptp5NJwQq0JNpkhiRiWwGMdCW1RN6rn65P5ZfNmIihuDopiMqkV1vqGGApYuucgqHUdkoE7rfsqdIp_qzAyOjEnt99Gl42APnhMP7Z3Twba9pUrgOxAk5SB_4ScBBgyxz-A26323wA95_q2T3CeuSVr2aNKtC2Liqs5bqlIVhE-kT1xutvfedB0fw8Gvjvdfx6QN-iO_10gVQ7M_Bhc0pCKCiRdPClf9r822_u3RSFk_w4UXrD50JH0L2D0URXo29IaljZDvNupBDzJBy_LLifgx4CgfW-16SL5RYXKNSLmH6kiudja5fHKuIoEmdHbqEC3LeBFx1EftFNNuWxgCqLvfHee4Dd-SPJD8w3emFgwS--5nsvwCxeBmpYAqSmZKg0EFc3YTECjvyBNk6lz2iZTvVK0scqwRMi12PjmV4F0QOInOcIH5e87jvZIxB2XlqmrCibcU80NmnmGuXZ7U2nwOtwfR7lqw5ZvNDkUtE0QrgRypLvL_jS77VfYOawhLw8PA5EtX3l-1W8bQiGieMNhddRZHTblvviq4c7A5z07mAHGI0pmQ477JEsogQLw3fQaDIy-Wfs2smpYhyB8lQPjAIR21uSx1ohSscs5vkV3Ouvy8hX-DrcNt-zujaebtiCNGSmaOGB0cqjQssrSBtNrd5mjWi194OUYYk151rGfFbZxkQl4a1opfrfv75z2YK3NQIqGvqwCXgpyU_QH3ccHgxlaDy1a9c1A54zObkNyH04TOOigoMXmeuqsS5xfGNBOFfoU0FjouJtHcaFhMmf7xmm67qmPg2ehR2prqdZhKdKxeJEvKfxFfNaF0l2oNyVu9J3Cse0QIDIpsokwG8cj-4CggPbu3jz0ox27awxI5Twaht-Mi8rG4fCRmhOIg4w0buV9y5-UWHuzVxDA5iKVXAM6R8zKzxFf4jdwN-AGT626I1jnli6yHlMsYaM1XmGni8cghWr7wxC8gyZPx8Jnf2__VrhKK4LuZBeXox-c93EzPivbgC3ZQU8pozrX12L8QxRPSUxyi3UH48rV2FCVLFJlrcRswjHFZKgr85jBl2b0vDyFO8qnEyLOtwyw2Lx2Sfn8d4aiQ_fQ5h4czeR0apfhTNrw3c6PziU75M-5vmMOY9R7KAbWc-i4VXU6lAg1L6DtfBZooRerSIKRv3Gea_pc0wZ9DUC9q9q3FM2AW6hstixC9gBiXVCyPzO1nE5We4QkX0f2b-PDWsxW-6STt1VfaYF8sGe_nsXwfatqpzDr_3rsMAspEfbai_fuIYUl1BjEPU1OoC5FsswT9holzBabI18csKCSlwEt26uNwJiVlf6IE2StWjl7ZrXb0PA97oARzws3n5nDa3N8aT453ym791AS2E0E4veZCJg87xNWIGd27cC8-nkcyfiO5m3SPrxRZXdWLLm8BBfZFbgz4Nje8pFtofJQLZU2oCtbBuPSOEBBMhA46S_EhWYVvX8XW4zEgYiITxIRvTMK4btUA')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->verifikasi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 08:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:39:47 --> CSRF token verified.
+INFO - 2025-05-15 08:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 08:39:59 --> file_get_contents(): php_network_getaddresses: getaddrinfo failed: No such host is known. 
+in APPPATH\Controllers\User.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo failed: No such host is known. ', 'C:\\laragon\\www\\csr\\app\\Controllers\\User.php', 22, [...])
+ 2 APPPATH\Controllers\User.php(22): file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6LeCNU4qAAAAAMtWdjmdRGqWxwPvywxnqBdVk9-e&response=03AFcWeA4-1e04zhcKWmFTeB-oxxajzFGQbx2t3M4u3qhpY7F80qnV9QiG-CCYwoAW1_AiuUmRcCN5ZummtOMOW5qUq3nJRUe52CO506m_ScUdQrh2XuaAnZbWJHLkntnC2sr_D6KFvOqeeSNQyYMFLVqs6xLrkIkGlIozr2mEojsv0l4vTWuEPbSxmy1gvqh_vmU0b-YImM-QP0n5VgDDA0WlmGxVYVJBqY3fW-nEkbOQnkOBRE-0MoQ2hOQkVV_1gaf2_CLaNg2JbcKsqP8AL1iW53HyVMcoy786QojvetCZX9bp6Czhh7u6HuPhX7mxfx1JGX5o9CVrdo1adAMu42fMn8XfrKu-SC-G0YKzqTU6QHxOGxnS4XSS_dXiRjEsb2Rtbx7In-FTudCw02PQ8Ch135R75ALkvF_IZm4X1gU0qF3-ynt9peKv-17fJXlizooyT150hX9qaLWadbvRoHUQ1FwgSE2mRI96-gB9WyIaTyLurve9uMFa3VaMnjxs7EBcQsRWvUEhopbShADC_XRPCWbjzY2IM-iG_C1sPUC3TGKQAf-jZwiLskgnaJTMvCUbB4SGqDlZXjE--ON0kS_d9Mdv8XLRk-2QCAqTGrYUUjSo_5mi2kKDjpQpExMe_SyQSMJOdzl6b54dIcs9o8STxB43ofAnvVHJilSZVKwvxPLB3OGn-eAZEGpS1k4GtzhgQeaOesL2gEQX6QguaIgtE12HAX4TaJZJ9IytduizIw_QCZVnw9r-VmwpzzpqwZHBTlPW_0aCTpMs11rAipMsBPa-iM_Uv0B5JEGbXsKXWt_e1y7NMPnrChVjQCHbhIRzgJ7w8Ch9egyvwuKid6Gz2ZQ9sfML4AoUkIp9UWmm70SKeB0U0fCqS8A6Vqj9U9PQUFIdTnYd7ss32xvTfU_JiHCjvmvXImu0L1uoUYZ0AHU2A41FbYvom4bftZEV5SDW2dx-6MdFlDiciJagwBDNiaYa4Wv3EKxXT-qiX0QRcAgCqv7WzX_iLC_qcv2mYv7jl21i1SDWWbmwSQct-roJHtMfZ9LUssDTT3CRmguQXdBESpl-ofqAEgQN9t-ywPb6lF5xQ_NmwJdF9lANljAmiRTfmkhYb-59lT8FlhuISYiG9N9SsbkUicSSzq-FG2YsthZjpVQkGr9DRKSEQ2Mhy5ycr4tYw02Ik-4EtzaojTCe6kotBdEKjG92J1PCnOCAgBuJalj3jxnck0Nz9R5x-tus_pTmwVyR5BTZJwFJN5jX7kDD9E-5Egi-Z2fg621aaq16hNe0Px4DAevpZpu_ckIdRavh4i3CA4lGqeJ2X8ZqPpMfRZ83s94udTEl03vcAloeQDAVqSX3gLRtxGrPc3i2ifMBDpltN6iTxkWP7tkG4UsUjjFaRrmSxelG-Onv_mjVaEaMyfj485q23liojPscdhLOBLtzOK7Ch4K-e3-bXgQ0FNuMief0KkpzpnsS-lV1W8NRDF_gpXcHzOF2xyZs0p6KFPs1NTyReKKhEUDF3ZOnnyFW7fj97NZM7kmQczj12PNcQ0GzVmySgkb9dnh7UWR--6HfdSX2O15BU2UGFCdLdtrucZfc8id_ECOpbbKaZmEQ-uHpm3oq3wRfdDMdlcNYElnKuASgfAP7RdfSEhkWsMqXzE6EPOE9zI-uDQBGG92RndCmqnOSt3H1KaSbS_OHj65aIlHZtDCYTCUsBKOnb9Tzhu0FSLTIkFyUBABxOtGhOGWoey1SIg5jS8LSg-MwgYzwMGU_q-_yLLKo9R6MOg4GJkEF_wO9QmIFfVZpHyoy-eXOHuOWmU1T3qBkxfrwCflGir3WKc1k8A0S2edUwyq4MYdU4TkXSfvEFhpH2KCq3ivv2k-hDy4uekvDQMmezp4ABVSBS-fUh5bO5nrIDnoWKwB-oXL4oTGfTxVRTQ8OL23Bfh-Vo74SpS_Oe0z24B2HWQZC0kt8I11kh9J1JTI2JsSgNgRWCzhVdWXrBU_LqsgzA7dYk9gRhvZjfr3aGpBbfiXS95qEcPEgbzNusRWdvcJ0HzuuzX8Jr85yH4_RniQOeY62mcfmI7aA-m4AOAaEBxWJmM-BoOGDWCUJfCTViWlLxqWb6K3nLpsO25f54pTq0p2HKk_V2VK0QTy5oG600W5xT4Fpyb12ehKGNHjEl-u0Nogy2fx4muZzLKIt0bzMSrGKOg6SnPG3Sph28WNQHjsBG0BPLzHIdyjdLMoJ5PQ0YPLioMoNsRoPCBCQHbnmG6ygzkIVYW1wKBfwXVT-Qdw1yG9qPELqRmh0yK_mJX2oEoDkD7oOUSPYHOz3CWJpSwRzlv_NzjsijclSxg')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->verifikasi()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 08:42:54 --> CSRF token verified.
+INFO - 2025-05-15 08:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:43:21 --> CSRF token verified.
+INFO - 2025-05-15 08:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:59:41 --> CSRF token verified.
+INFO - 2025-05-15 08:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 08:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:27:56 --> CSRF token verified.
+INFO - 2025-05-15 09:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 09:32:29 --> Undefined index: vol_salur
+in APPPATH\Views\admin\kegiatan_csr\my_kegiatan_csr.php on line 104.
+ 1 APPPATH\Views\admin\kegiatan_csr\my_kegiatan_csr.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: vol_salur', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\my_kegiatan_csr.php', 104, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\my_kegiatan_csr.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/my_kegiatan_csr', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(376): view('admin/kegiatan_csr/my_kegiatan_csr', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->my_kegiatan_csr()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 09:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:33:33 --> CSRF token verified.
+INFO - 2025-05-15 09:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:33:52 --> CSRF token verified.
+INFO - 2025-05-15 09:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 09:35:04 --> Undefined index: vol_salur
+in APPPATH\Views\admin\kegiatan_csr\print_mykegiatan.php on line 69.
+ 1 APPPATH\Views\admin\kegiatan_csr\print_mykegiatan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: vol_salur', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\print_mykegiatan.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\print_mykegiatan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/print_mykegiatan', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(773): view('admin/kegiatan_csr/print_mykegiatan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->print_mykegiatan()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 09:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:42:03 --> CSRF token verified.
+INFO - 2025-05-15 09:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 09:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:02:24 --> CSRF token verified.
+ERROR - 2025-05-15 10:02:24 --> mysqli_sql_exception: Unknown column 'vol_salur' in 'field list' in C:\laragon\www\csr\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\csr\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ke...', 0)
+#1 C:\laragon\www\csr\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ke...')
+#2 C:\laragon\www\csr\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ke...')
+#3 C:\laragon\www\csr\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ke...', Array, false)
+#4 C:\laragon\www\csr\app\Controllers\Kegiatan_Csr.php(157): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\csr\system\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_save_non()
+#6 C:\laragon\www\csr\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+#7 C:\laragon\www\csr\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\csr\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-15 10:02:24 --> Unknown column 'vol_salur' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kegiatan_csr` (`tahun`, `ruang_lingkup`, `urusan_bidang`, `program_kegiatan`, `aktifitas`, `alamat`, `kapanewon`, `kalurahan`, `biaya`, `volume`, `vol_salur`, `satuan`, `opd`, `status`) VALUES (:tahun:, :ruang_lingkup:, :urusan_bidang:, :program_kegiatan:, :aktifitas:, :alamat:, :kapanewon:, :kalurahan:, :biaya:, :volume:, :vol_salur:, :satuan:, :opd:, :status:)', [...], false)
+ 2 APPPATH\Controllers\Kegiatan_Csr.php(157): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_save_non()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 10:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:03:00 --> CSRF token verified.
+INFO - 2025-05-15 10:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 10:03:01 --> Undefined index: vol_salur
+in APPPATH\Views\admin\kegiatan_csr\kegiatan_csr_non.php on line 229.
+ 1 APPPATH\Views\admin\kegiatan_csr\kegiatan_csr_non.php(229): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: vol_salur', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\kegiatan_csr_non.php', 229, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\kegiatan_csr_non.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/kegiatan_csr_non', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(89): view('admin/kegiatan_csr/kegiatan_csr_non', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->kegiatan_csr_non()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 10:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:13:37 --> CSRF token verified.
+INFO - 2025-05-15 10:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:17:26 --> CSRF token verified.
+INFO - 2025-05-15 10:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:17:54 --> CSRF token verified.
+INFO - 2025-05-15 10:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 10:18:01 --> Undefined index: vol_salur
+in APPPATH\Views\admin\kegiatan_csr\upload_laporan_admin.php on line 76.
+ 1 APPPATH\Views\admin\kegiatan_csr\upload_laporan_admin.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: vol_salur', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\upload_laporan_admin.php', 76, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\upload_laporan_admin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/upload_laporan_admin', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(398): view('admin/kegiatan_csr/upload_laporan_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->upload_laporan_admin()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 10:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 10:30:02 --> Undefined index: vol_salur
+in APPPATH\Views\admin\laporan\laporan_print.php on line 68.
+ 1 APPPATH\Views\admin\laporan\laporan_print.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: vol_salur', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\laporan_print.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\laporan\\laporan_print.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/laporan/laporan_print', [], true)
+ 5 APPPATH\Controllers\Laporan.php(106): view('admin/laporan/laporan_print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Laporan->laporan_print()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 10:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:30:41 --> CSRF token verified.
+INFO - 2025-05-15 10:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 10:32:07 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('laporan/report_search', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 10:32:08 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('laporan/report_search', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 10:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:36:17 --> CSRF token verified.
+INFO - 2025-05-15 10:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:37:41 --> CSRF token verified.
+INFO - 2025-05-15 10:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:38:19 --> CSRF token verified.
+INFO - 2025-05-15 10:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:40:05 --> CSRF token verified.
+INFO - 2025-05-15 10:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:40:37 --> CSRF token verified.
+INFO - 2025-05-15 10:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 10:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 11:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 11:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 11:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 11:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 11:00:47 --> Invalid file: "admin/my_kegiatan_csr_edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/my_kegiatan_csr_edit.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/my_kegiatan_csr_edit', [], true)
+ 3 APPPATH\Controllers\Kegiatan_Csr.php(245): view('admin/my_kegiatan_csr_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->mykegiatan_csr_edit('18')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 11:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 11:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 11:02:09 --> Undefined variable: k
+in APPPATH\Views\admin\kegiatan_csr\my_kegiatan_csr_edit.php on line 32.
+ 1 APPPATH\Views\admin\kegiatan_csr\my_kegiatan_csr_edit.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: k', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\my_kegiatan_csr_edit.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\my_kegiatan_csr_edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/my_kegiatan_csr_edit', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(245): view('admin/kegiatan_csr/my_kegiatan_csr_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->mykegiatan_csr_edit('18')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 11:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 11:07:13 --> Undefined variable: k
+in APPPATH\Views\admin\kegiatan_csr\my_kegiatan_csr_edit.php on line 36.
+ 1 APPPATH\Views\admin\kegiatan_csr\my_kegiatan_csr_edit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: k', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\my_kegiatan_csr_edit.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\my_kegiatan_csr_edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/my_kegiatan_csr_edit', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(245): view('admin/kegiatan_csr/my_kegiatan_csr_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->mykegiatan_csr_edit('18')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 11:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 11:07:30 --> Undefined variable: d
+in APPPATH\Views\admin\kegiatan_csr\my_kegiatan_csr_edit.php on line 33.
+ 1 APPPATH\Views\admin\kegiatan_csr\my_kegiatan_csr_edit.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: d', 'C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\my_kegiatan_csr_edit.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\csr\\app\\Views\\admin\\kegiatan_csr\\my_kegiatan_csr_edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/kegiatan_csr/my_kegiatan_csr_edit', [], true)
+ 5 APPPATH\Controllers\Kegiatan_Csr.php(245): view('admin/kegiatan_csr/my_kegiatan_csr_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kegiatan_Csr->mykegiatan_csr_edit('18')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kegiatan_Csr))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 11:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 11:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
