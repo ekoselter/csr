@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 27 Mar 2025 pada 02.50
+-- Waktu pembuatan: 15 Bulan Mei 2025 pada 04.47
 -- Versi server: 5.7.44
 -- Versi PHP: 7.4.33
 
@@ -33,16 +33,9 @@ CREATE TABLE `detail_kegiatan_csr` (
   `id_user` int(11) NOT NULL,
   `nominal` varchar(11) NOT NULL DEFAULT '0',
   `file` text,
-  `waktu` datetime DEFAULT NULL
+  `waktu` datetime DEFAULT NULL,
+  `vol_salur` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `detail_kegiatan_csr`
---
-
-INSERT INTO `detail_kegiatan_csr` (`id`, `id_kegiatan_csr`, `id_user`, `nominal`, `file`, `waktu`) VALUES
-(12, 791, 0, '4100', '1742518251_31ea620a9f8bdcf7be55.pdf', '2025-03-21 00:00:00'),
-(13, 4, 2, '2000000', '1742783508_56f1508683c2e47ad197.pdf', '2025-03-25 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -971,7 +964,8 @@ INSERT INTO `kegiatan_csr` (`id`, `tahun`, `ruang_lingkup`, `urusan_bidang`, `pr
 (786, '2024', '1', '1', 'ttttttttttttt', 'ttttttttttttt', 'ttttttttttttt', '34.01.03', '34.01.03.2001', 20000, '30', 'kg', 'ttttttttttttt', '1'),
 (787, '2024', '2', '4', 'ttttttttttttttt', 'ttttttttttttttt', 'ttttttttttttttt', '34.01.01', '34.01.01.2001', 20000, '30', 'kg', 'ttttttttttttttt', '1'),
 (788, '2024', '1', '3', 'rrrrrrrrrrrr', 'rrrrrrrrrrrr', 'rrrrrrrrrrrr', '34.01.05', '34.01.05.2001', 20000, '30', 'kg', 'rrrrrrrrrrrr', '1'),
-(791, '2024', '2', '1', 'teszz', 'teszz', 'teszz', '34.01.08', '34.01.08.2001', 20000, '30', 'm', 'teszz', '1');
+(791, '2024', '2', '1', 'teszz', 'teszz', 'teszz', '34.01.08', '34.01.08.2001', 20000, '30', 'm', 'teszz', '1'),
+(792, '2025', '1', '1', 'tes11', 'K', 'S', '34.01.01', '34.01.01.2001', 21, '1', 'kg', 'DE', '1');
 
 -- --------------------------------------------------------
 
@@ -1371,13 +1365,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `detail_kegiatan_csr`
 --
 ALTER TABLE `detail_kegiatan_csr`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT untuk tabel `kegiatan_csr`
 --
 ALTER TABLE `kegiatan_csr`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=792;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=793;
 
 --
 -- AUTO_INCREMENT untuk tabel `kegiatan_upload`
